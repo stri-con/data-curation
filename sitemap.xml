@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/data-curation/2020/03/28/2020-03-28-r-rmarkdown/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
+    <loc>/data-curation/page/about/</loc>
+    <lastmod>2020-03-29T02:13:50+00:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/</loc>
+    <lastmod>2020-03-29T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/page/</loc>
+    <lastmod>2020-03-29T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/2020/03/28/2020-03-28-r-rmarkdown/</loc>
     <lastmod>2020-03-28T21:13:14-05:00</lastmod>
   </url>
   
@@ -35,16 +45,6 @@
   <url>
     <loc>/data-curation/tags/</loc>
     <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/page/about/</loc>
-    <lastmod>2020-03-28T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/page/</loc>
-    <lastmod>2020-03-28T02:13:50+00:00</lastmod>
   </url>
   
   <url>
