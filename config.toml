@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://stri-con.github.io/data-curation/"
 title = "Topics"
 theme = "ghostwriter"
 languageCode = "en-us"
