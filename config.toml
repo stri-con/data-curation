@@ -1,0 +1,78 @@
+baseurl = "/"
+title = "Topics"
+theme = "ghostwriter"
+languageCode = "en-us"
+copyright = "STRI-CON"
+disqusShortname = "XXX"
+googleAnalytics = ""
+math = true
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+#publishDir = "docs"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[Privacy]
+
+[Privacy.disqus]
+    disable = true
+
+[Privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+
+[Author]
+    name = "STRI-CON"
+    profile = "https://google.com/+XXX"
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    mainSections = ["post"]
+    intro = true
+    headline = "Data 🗄️ Curation"
+    description = "With R Markdown, GitHub, & Public Repositories"
+    github = "https://github.com/stri-con/data-curation"
+    email = false
+    opengraph = true
+    shareSlack = true
+    shareTwitter = false
+    shareFacebook = false
+    shareGooglePlus = false
+    shareLinkedIn = false
+    dateFormat = "Mon, Jan 2, 2006"
+    highlightJsUrl = ""
+    highlightJsLocalUrl = ""
+    exponeaJsUrl = ""
+    exponeaTarget = ""
+    exponeaToken = ""
+    exponeaTrackVisits = false
+    readingTime = true
+    readingTimeText = "Estimated reading time:"
+    fathomUrl = ""
+    fathomSiteId = ""
+
+[Permalinks]
+    post = "/:year/:month/:day/:filename/"
+
+[[menu.main]]
+    name = "HOME"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Course Description"
+    url = "/page/about/"
+    weight = 2
+
+#[[menu.main]]
+#    name = "Topics Calendar"
+#    url = "/page/topics/"
+#    weight = 3
+
+[[menu.main]]
+    name = "Course Resources"
+    url = "/page/resources/"
+    weight = 4

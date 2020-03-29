@@ -1,0 +1,229 @@
+---
+title: "Lesson 0: An Example R Markdown Document"
+author: "Jarrod"
+date: 2020-03-28T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+
+
+<p>In this lesson I’d like to demonstrate <strong>a</strong>) some Markdown syntax, <strong>b</strong>) how you run and format R code, and <strong>c</strong>) how to render R figures. If you read the <a href="/page/about">Course Description</a> you have already seen examples of <a href="https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6">embedded</a> tables. Remember, our primary goal is to create R Markdown documents.</p>
+<blockquote>
+<p>R Markdown integrates the concepts of <a href="https://en.wikipedia.org/wiki/Literate_programming">literate programming</a> and <a href="https://en.wikipedia.org/wiki/Reproducibility">reproducible research</a>, which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.</p>
+</blockquote>
+<p>The page you are reading is a basic R Markdown document with some examples of the functionalities you can incorporate. Something like this is quite attainable in a short amount of time. Some of these examples are unique to R Markdown while others are included to demonstrate cross-platform functionality. I wrote this as if it were a report; to give you a general sense of what these documents look like. I would like you to look at the raw R Markdown code for this page (<a href="https://github.com/stri-con/ecodet2020/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd">available here</a>) <strong>before</strong>, <strong>during</strong>, and <strong>after</strong> you read the post. Doing this will give you a feel for some of what you will be doing. Take a look at the raw document, paying special attention to the code, not the text. Understanding what all of this code means is part of the course. Consider this a prelude ;)</p>
+<div id="markdown" class="section level2">
+<h2>Markdown</h2>
+<p>First let’s talk about the Markdown part of R Markdown. Markdown is a <em>lightweight markup language with plain-text-formatting syntax</em>. What this means is that Markdown is easy-to-write using any generic text editor and easy-to-read in its raw form. Markdown can then be converted to many output formats including HTML, which is the focus of this course. When we render a (R) Markdown document the syntax is converted to HTML. Let me give you some examples. For each example, I will show you the code (displayed in grey code blocks) followed by the output.</p>
+<div id="headers" class="section level3">
+<h3>Headers</h3>
+<p>Many of the headers on this page are Level 2. There are usually 6 header levels. Level 1 is the largest and mostly used for titles, like the one atop this page. OK. So, say we want to write a header in HTML. We need to wrap the text in <code>h2</code> HTML tags like this <code>&lt;h2&gt;Second Level Header&lt;/h2&gt;</code> and we get a</p>
+<h2>
+Second Level Header
+</h2>
+<p>To get the same result in Markdown we use double hash tags like this <code>## Second Level Header</code> (note the space between the second # and first letter is necessary).</p>
+</div>
+</div>
+<div id="second-level-header" class="section level2">
+<h2>Second Level Header</h2>
+<p>Level 3 is <code>###</code> and so on. Seems trivial but imagine doing this a few dozen times. Typing out the HTML tags is also kind of annoying. Let’s take a look at a two more examples of HTML vs Markdown: ordered lists and hyperlinks.</p>
+<div id="ordered-lists" class="section level3">
+<h3>Ordered Lists</h3>
+<div id="html" class="section level4">
+<h4>HTML</h4>
+<p>To write an ordered list in HTML you must enclose each list item in the <code>&lt;li&gt;</code> tag and wrap the whole list in the <code>&lt;ol&gt;</code> tag.</p>
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;Rod Carew&lt;/li&gt;
+  &lt;li&gt;Mariano Rivera&lt;/li&gt;
+  &lt;li&gt;Carlos Lee&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<ol>
+<li>
+Rod Carew
+</li>
+<li>
+Mariano Rivera
+</li>
+<li>
+Carlos Lee
+</li>
+</ol>
+</div>
+<div id="markdown-1" class="section level4">
+<h4>Markdown</h4>
+<p>In Markdown you just write the list with numbers.</p>
+<pre><code>1. Rod Carew
+2. Mariano Rivera
+3. Carlos Lee</code></pre>
+<ol style="list-style-type: decimal">
+<li>Rod Carew</li>
+<li>Mariano Rivera</li>
+<li>Carlos Lee</li>
+</ol>
+<p>If you wanted an unordered list, you would begin each line with a single asterisk (<code>*</code>) instead of a number.</p>
+</div>
+</div>
+<div id="hyperlinks-links" class="section level3">
+<h3>Hyperlinks Links</h3>
+<p>You will probably use hyperlinks a lot in your projects. Let’s take a look at the hyperlink syntax.</p>
+<div id="html-1" class="section level4">
+<h4>HTML</h4>
+<p>To code a link in HTML you need to use the <code>&lt;a&gt;</code> tag and then put the display text in between the tag and the actual link. So here is the code followed by the output (italics added for emphasis.</p>
+<pre><code>This is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Islamic_geometric_patterns&quot;&gt;link&lt;/a&gt; to awesome geometric patterns.</code></pre>
+<p><em>This is a <a href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns">link</a> to awesome geometric patterns.</em></p>
+</div>
+<div id="markdown-2" class="section level4">
+<h4>Markdown</h4>
+<p>To code a link in Markdown you simply put the display text between square brackets followed by the link in parentheses.</p>
+<pre><code>This is a [link](https://en.wikipedia.org/wiki/Islamic_geometric_patterns) to awesome geometric patterns.</code></pre>
+<p><em>This is a <a href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns">link</a> to awesome geometric patterns.</em></p>
+<p>Each example yields the same result but with Markdown we use less, and more intuitive, code. There are many other examples where you will use Markdown syntax for general formatting like <strong>bold text</strong> (wrap in <code>**</code>), <em>italics</em> (wrap in <code>*</code>), and <code>inline code</code> (wrap in back ticks ``). Below is an example of block text. To get this effect you simply use the <span class="math inline">\(&gt;\)</span> symbol at the beginning of the line.</p>
+<p>It is important to note that Markdown can only take you so far. Markdown is great for the basics but once you get into more complicated styles and formating, you will need HTML and CSS. Don’t worry, we will do some of that too.</p>
+</div>
+</div>
+</div>
+<div id="mathjax" class="section level2">
+<h2>MathJax</h2>
+<p>Next, I wanted to show you an example of a different type of text formatting that can be added to your documents, specifically using Mathjax to write mathematical equations. Mathjax will also be important for an example down below.</p>
+<blockquote>
+<p><a href="https://www.mathjax.org/">Mathjax</a> is a <em>cross-browser JavaScript library that displays mathematical notation in web browsers, using MathML, LaTeX and ASCIIMathML markup</em>. There is no need for end user software installation. We can render right in the HTML.</p>
+</blockquote>
+<p>Mathjax has its own lightweight code that is usually wrapped in dollar signs (<code>$</code>). If you hover over your text, a little preview window should pop up that shows you what the final equation will look like before you render the document. We write the code straight in the document. When R Studio renders the document it will see the <code>$</code>, interpret it as Mathjax code, and render elegant Mathjax typography.</p>
+<p>Here is the notation for the <a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz equations</a>. I am showing the actual code here for demonstration purposes only. Normally this would be hidden.</p>
+<p>So this …</p>
+<pre><code>$$
+\begin{cases}
+\dot{x}  = \sigma(y-x)  \\
+\dot{y} = \rho x - y - xz  \\  
+\dot{z} = -\beta z + xy  
+\end{cases}
+$$</code></pre>
+<p>becomes this.</p>
+<p><span class="math display">\[
+\begin{cases}
+\dot{x}  = \sigma(y-x)  \\
+\dot{y} = \rho x - y - xz  \\  
+\dot{z} = -\beta z + xy  
+\end{cases}
+\]</span></p>
+<p>Nice. You can also use simple <code>inline</code> expressions where equations like this <code>$e^{i\pi} + 1 = 0$</code> looks like this <span class="math inline">\(e^{i\pi} + 1 = 0\)</span> or this equation <code>$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$</code> is rendered like this <span class="math inline">\(f(k) = {n \choose k} p^{k} (1-p)^{n-k}\)</span>.</p>
+</div>
+<div id="r-markdown" class="section level2">
+<h2>R Markdown</h2>
+<p>Now that we know a little about Markdown, lets add the R part. This is where the true power of this whole concept comes into view. R Markdown is a an R package—a set of tools that are deeply embedded in R Studio. R Markdown combines Markdown text with R code to create documents that contain formatted text <strong>plus</strong> the results of executing R code. Lets illustrate this with a quick toy example.</p>
+<p>Most of the time you run R code you do it within a special internal environment called a <em>code chunk</em>. The formatting of the chuck tells R Studio that <strong>this is R code and it needs to be run as code and not rendered as text</strong>.</p>
+<p>To run R code in your document there is a specific syntax you must use when creating the code chunk. The format of the code chunk is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>begin with three back ticks (on a mac this is the upper left key), then open curly bracket, then the name of the language (in this case <code>r</code>), followed by a closed curly bracket, and finally a line break. This tells R Studio this is R code.</li>
+<li>An optional but best practice step is to also include a <strong>unique chunk name</strong> and <strong>chunk options</strong>. We will discuss both of these in more detail later.</li>
+<li>On subsequent lines you write the R code like normal.</li>
+<li>Within the chunk you can add comments by beginning a line with a hash tag. R Studio will not interpret this as code.<br />
+</li>
+<li>Add a final line break. End with three back ticks.</li>
+</ol>
+<p>Here is what the example looks like in code chunk format.</p>
+<pre><code>```{r, chunk name, chunk options}
+# Start with three back ticks
+# add the r tag inside curly brackets
+# Name the chunk and add chunk options
+# run some commands
+library(ggplot2)
+summary(cars)
+# And maybe make a plot
+qplot(speed, dist, data=cars) + geom_smooth()
+```</code></pre>
+<p>````</p>
+<p>And this is what happens when the code is executed by R Studio.</p>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/post/2020-03-28-r-rmarkdown_files/figure-html/chunk_name-1.png" width="672" /></p>
+</div>
+<div id="a-better-example-clifford-attractors" class="section level2">
+<h2>A Better Example: Clifford Attractors</h2>
+<p>I really like iteration, chaos, and fractals. So I was pretty jazzed to find this <a href="https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/">R code</a> by Fronkonstin for plotting <a href="http://paulbourke.net/fractals/clifford/">Clifford Attractors</a>, a type of <a href="https://en.wikipedia.org/wiki/Attractor">strange attractor</a> discovered/invented by Cliff Pickover. Clifford Attractors are made by iterating two trigonometric functions (initial conditions <span class="math inline">\(x = 0\)</span> &amp; <span class="math inline">\(y = 0\)</span>) with four variables (<span class="math inline">\(a, b, c, d\)</span>). This code will generate 10,000,000 points (iterates) and render the results as a pretty sweet graphic</p>
+<p>Here is the equation I used in the script below:</p>
+<p><span class="math display">\[
+\begin{cases}
+x_{i + 1} = sin(ay_i) - cos(bx_i) \\
+y_{i + 1} = sin(cx_i) - cos(dy_i)  
+\end{cases}
+\]</span></p>
+<p>With these variables:</p>
+<p><span class="math display">\[
+\begin{align*}
+a = -1.164,  \
+b = 1.41,   \
+c = -1.42,  \
+d = -1.6  \
+\end{align*}
+\]</span></p>
+<p>Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except here the code is decorated with the R Markdown syntax. Give it a try. You may need to install some libraries.</p>
+<p>The R script here is a bit long so let’s use some simple HTML to fold the code. That way the code is available but not taking up a bunch of real estate. We will learn about code folding in the course.</p>
+<details>
+<summary>Show/hide Clifford Attractor code</summary>
+<pre><code>
+
+```r
+opt <- theme(legend.position  = "none",
+            panel.background = element_rect(fill="white"),
+            axis.ticks       = element_blank(),
+            panel.grid       = element_blank(),
+            axis.title       = element_blank(),
+            axis.text        = element_blank())
+ 
+cppFunction('DataFrame createTrajectory(int n, double x0, double y0, 
+            double a, double b, double c, double d) {
+            // create the columns
+            NumericVector x(n);
+            NumericVector y(n);
+            x[0]=x0;
+            y[0]=y0;
+            for(int i = 1; i < n; ++i) {
+            x[i + 1] = sin(a*y[i]) - cos(b*x[i]);
+            y[i + 1] = sin(c*x[i]) - cos(d*y[i]);
+            }
+            // return a new data frame
+            return DataFrame::create(_["x"]= x, _["y"]= y);
+            }
+            ')
+ 
+# Parameters: 
+a = -1.164
+b = 1.41 
+c = -1.42
+d = -1.6
+
+df <- createTrajectory(10000000, 0, 0, a, b, c, d)
+#  10000000, 100
+```
+</code></pre>
+</details>
+<p>And here we plot the results and save a <code>png</code> copy just in case. With so many iterates this will take a minute or two to run. We will also discuss <em>caching</em> code that takes a long time to run.</p>
+<pre class="r"><code>ggplot(df, aes(x, y)) + 
+  geom_point(color=&quot;#007da2&quot;, shape=46, alpha=.01) + 
+  opt + 
+  theme(panel.background = element_rect(fill = &#39;#ffffff&#39;))</code></pre>
+<p><img src="/post/2020-03-28-r-rmarkdown_files/figure-html/clifford_plot-1.png" width="672" /></p>
+<pre class="r"><code>png(&quot;files/clifford_fac015.png&quot;, units=&quot;px&quot;, width=1600, 
+         height=1600, res=100)
+
+dev.off()
+## quartz_off_screen 
+##                 2</code></pre>
+<p>Amazing what a couple of trigonometric functions and 10,000,000 iterates can do.</p>
+<p>And that’s it for this lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others will be added as needed. I will also post a general course outline soon.</p>
+<p>As we move forward keep your <i class="fas fa-eye"></i> out for the <i class="fa fa-pencil" aria-hidden="true"></i> icon. This is where you can find a link to the raw code for the page on GitHub.</p>
+<p><br></p>
+<p class="edit-page">
+<a href="https://github.com/stri-con/ecodet2020/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd">
+<i class="fas fa-pen pr-2"></i> <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
+</a>
+</p>
+</div>
