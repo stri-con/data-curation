@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics</title>
-    <link>/</link>
+    <link>/data-curation/</link>
     <description>Recent content on Topics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
     <lastBuildDate>Sat, 28 Mar 2020 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/data-curation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lesson 0: An Example R Markdown Document</title>
-      <link>/2020/03/28/2020-03-28-r-rmarkdown/</link>
+      <link>/data-curation/2020/03/28/2020-03-28-r-rmarkdown/</link>
       <pubDate>Sat, 28 Mar 2020 21:13:14 -0500</pubDate>
       
-      <guid>/2020/03/28/2020-03-28-r-rmarkdown/</guid>
+      <guid>/data-curation/2020/03/28/2020-03-28-r-rmarkdown/</guid>
       <description>In this mini lesson I’d like to demonstrate a) some Markdown syntax, b) how you run and format R code, and c) how to render R figures. If you read the Course Description you have already seen examples of embedded tables. Remember, our primary goal is to create R Markdown documents.
  R Markdown integrates the concepts of literate programming and reproducible research, which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.</description>
     </item>
     
     <item>
       <title>About the Course</title>
-      <link>/page/about/</link>
+      <link>/data-curation/page/about/</link>
       <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
       
-      <guid>/page/about/</guid>
+      <guid>/data-curation/page/about/</guid>
       <description>Estimated reading time: 5 minutes, 12 seconds.
 Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curation at STRI-Panama. This site (written mainly in R Markdown by the way) will be our guidebook as we make our way through the topics. Our main goals with the course are to learn how to a) create interactive, data-driven web products in R Markdown, b) host those products on GitHub, and c) use tools like figshare for hosting data and data products.</description>
     </item>
     
     <item>
       <title>Resources</title>
-      <link>/page/resources/</link>
+      <link>/data-curation/page/resources/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
       
-      <guid>/page/resources/</guid>
+      <guid>/data-curation/page/resources/</guid>
       <description>Coming Soon We (you and I) will add tools to this page as we go along. Until then, here is a puppy.
 Photo credit Dog789, licenced under CC BY-SA. Original file.
   Edit this page  </description>
@@ -45,10 +45,10 @@ Photo credit Dog789, licenced under CC BY-SA. Original file.
     
     <item>
       <title>My awesome project</title>
-      <link>/project/my-awesome-project/</link>
+      <link>/data-curation/project/my-awesome-project/</link>
       <pubDate>Tue, 18 Nov 2014 02:13:50 +0000</pubDate>
       
-      <guid>/project/my-awesome-project/</guid>
+      <guid>/data-curation/project/my-awesome-project/</guid>
       <description>About project Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
     </item>
     
