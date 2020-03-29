@@ -1,6 +1,6 @@
 ---
 author: Jarrod J Scott
-date: "2020-03-28T02:13:50Z"
+date: "2020-03-29T02:13:50Z"
 description: Preparation & Objectives
 title: About the Course
 ---
@@ -15,7 +15,7 @@ Welcome to the LockDown 2020 Continuing Education course on Data Curation at STR
 
 I consider a web product to be primarily an HTML document that can be opened with a browser like Chrome, Firefox, etc. That doesn't necessarily mean  that it needs to be on the web, just that anyone can access the information without installing special software or understanding specific tools. We will  create what are called **static**, as opposed to **dynamic**, web products. The difference is simple. Dynamic means that anytime a page loads the content and look is tailored to the user, like Facebook or Twitter. Static means everyone who visits the site sees the same thing. But that doesn't mean our products will be dull. Unlike PDF documents, our web products will have interactive components like tables and figures.
 
-Consider this example of Supplementary Material that we submitted for a recent paper. Here is the typical [pdf version](/page/files/Scott_Supplementary.pdf) and here is the [HTML version](https://istmobiome.github.io/DIGEST/Supplementary.html). While the content of the two are identical, their functionalities are not. The first thing to notice is that while the PDF document has hyperlinks, most of the tables are too big to fit in the document and are instead uploaded as separate text files. On the other hand, every table is embedded in the HTML document and [Table S6](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) even contains hyperlinks coded into the table itself. You can copy or download table contents, sort, search, and expand the full content. In fact, since this is a stand-alone document (as opposed to a website) you can also share  the whole thing to you as a single file.
+Consider this example of Supplementary Material that we submitted for a recent paper. Here is the typical [pdf version](../../img/Scott_Supplementary.pdf) and here is the [HTML version](https://istmobiome.github.io/DIGEST/Supplementary.html). While the content of the two are identical, their functionalities are not. The first thing to notice is that while the PDF document has hyperlinks, most of the tables are too big to fit in the document and are instead uploaded as separate text files. On the other hand, every table is embedded in the HTML document and [Table S6](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) even contains hyperlinks coded into the table itself. You can copy or download table contents, sort, search, and expand the full content. In fact, since this is a stand-alone document (as opposed to a website) you can also share  the whole thing to you as a single file.
 
 ## Housekeeping
 
