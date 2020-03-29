@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Topics</title>
+    <title>Pages on Lessons</title>
     <link>/data-curation/page/</link>
-    <description>Recent content in Pages on Topics</description>
+    <description>Recent content in Pages on Lessons</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
@@ -19,7 +19,7 @@
       
       <guid>/data-curation/page/about/</guid>
       <description>Estimated reading time: 5 minutes, 12 seconds.
-Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curation at STRI-Panama. This site (written mainly in R Markdown by the way) will be our guidebook as we make our way through the topics. Our main goals with the course are to learn how to a) create interactive, data-driven web products in R Markdown, b) host those products on GitHub, and c) use tools like figshare for hosting data and data products.</description>
+Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curation at STRI-Panama. This site (written mainly in R Markdown) will be our guidebook as we make our way through the topics. Our main goals with the course are to a) create interactive, data-driven web products in R Markdown, b) host those products on GitHub, and c) use tools like figshare for hosting data and data products.</description>
     </item>
     
     <item>
