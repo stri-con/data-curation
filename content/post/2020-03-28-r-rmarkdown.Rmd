@@ -14,11 +14,11 @@ library(ggplot2)
 library(dplyr)
 ```
 
-In this lesson I'd like to demonstrate **a**) some Markdown syntax, **b**) how you run and format R code, and **c**)  how to render R figures. If you read the [Course Description](/page/about) you have already seen examples of [embedded](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) tables. Remember, our primary goal is to create R Markdown documents. 
+In this mini lesson I'd like to demonstrate **a**) some Markdown syntax, **b**) how you run and format R code, and **c**)  how to render R figures. If you read the [Course Description](/page/about) you have already seen examples of [embedded](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) tables. Remember, our primary goal is to create R Markdown documents. 
 
 > R Markdown  integrates the concepts of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) and [reproducible research](https://en.wikipedia.org/wiki/Reproducibility), which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.
 
-The page you are reading  is a basic R Markdown document  with some examples of the functionalities you can incorporate. Something like this is quite attainable in a short amount of time. Some of these examples are unique to R Markdown while others are included to demonstrate cross-platform functionality. I wrote this as if it were a report; to give you a general sense of what these documents look like. I would like you to  look at the raw R Markdown code for this page ([available here](https://github.com/stri-con/ecodet2020/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd)) **before**, **during**, and **after** you read the post. Doing this  will give you a feel for some of what you will be doing. Take a look at the raw document, paying special attention to the code, not the text. Understanding what all of this code means is part of the course. Consider this a prelude ;)
+The page you are reading  is a basic R Markdown document  with some examples of the functionalities you can incorporate. Something like this is quite attainable in a short amount of time. Some of these examples are unique to R Markdown while others are included to demonstrate cross-platform functionality. I wrote this as if it were a report; to give you a general sense of what these documents look like. I would like you to  look at the raw R Markdown code for this page ([available here](https://github.com/stri-con/data-curation/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd)) **before**, **during**, and **after** you read the post. Doing this  will give you a feel for some of what you will be doing. Take a look at the raw document, paying special attention to the code, not the text. Understanding what all of this code means is part of the course. Consider this a prelude ;)
 
 ## Markdown
 
@@ -256,15 +256,15 @@ dev.off()
 
 Amazing what a couple of trigonometric functions and 10,000,000 iterates can do. 
 
-And that's it for this lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others  will be added as needed. I will also post a general course outline soon. 
+And that's it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others  will be added as needed. I will also post a general course outline soon. 
 
-As we move forward keep your <i class="fas fa-eye"></i> out for the <i class="fa fa-pencil" aria-hidden="true"></i> icon.  This is where you can find a link to the raw code for the page on GitHub.
+As we move forward keep your  <i class="fa fa-eye"></i> out for the <i class="fa fa-pencil" aria-hidden="true"></i> icon.  This is where you can find a link to the raw code for the page on GitHub.
 
 <br>
 
 
 <p class="edit-page">
-  <a href="https://github.com/stri-con/ecodet2020/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd">
+  <a href="https://github.com/stri-con/data-curation/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd">
     <i class="fas fa-pen pr-2"></i>  <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
   </a>
 </p>
