@@ -155,7 +155,8 @@ To run  R code in your document there is a particular syntax you must use when c
 
 Here is what the example looks like in code chunk format. 
 
-<pre><code>```{r, chunk name, chunk options}
+````
+```{r, chunk name, chunk options}`r ''`
 # Start with three back ticks
 # add the r tag inside curly brackets
 # Name the chunk and add chunk options
@@ -164,7 +165,7 @@ library(ggplot2)
 summary(cars)
 # And maybe make a plot
 qplot(speed, dist, data=cars) + geom_smooth()
-```</code></pre>
+```
 ````
 
 And this is what happens when this code is executed by R Studio. First, the command `library(ggplot2)` is executed, then a summary is produced with the `summary(cars)` command, and finally a plot is rendered using the command `qplot(speed, dist, data=cars) + geom_smooth()`. 
@@ -201,13 +202,13 @@ d = -1.6  \
 \end{align*}
 $$
 
-Both the equations and the variables can be tweak to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except here the code is decorated with the R Markdown syntax described above. If you have R installed, give it a try. You may need to install some libraries. 
+The equations and the variables can be tweaked to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except here the code is decorated with the R Markdown syntax described above. If you have R installed, give it a try. You may need to install some libraries. 
 
 The R script here is a bit long so let's use some simple HTML to fold the code. That way the code is available but not taking up a bunch of real estate. We will learn about code folding in the course.
 
 <details markdown="1"><summary>Show/hide Clifford Attractor code</summary>
-```{r, clifford, cache=TRUE}
-#```{r, clifford, cache=TRUE}
+````
+```{r, clifford, cache=TRUE}`r ''`
 opt <- theme(legend.position  = "none",
             panel.background = element_rect(fill="white"),
             axis.ticks       = element_blank(),
@@ -238,9 +239,42 @@ c = -1.42
 d = -1.6
 
 df <- createTrajectory(10000000, 0, 0, a, b, c, d)
-# ```
 ```
+````
 </details>
+
+```{r, clifford, cache=TRUE, echo=FALSE}
+opt <- theme(legend.position  = "none",
+            panel.background = element_rect(fill="white"),
+            axis.ticks       = element_blank(),
+            panel.grid       = element_blank(),
+            axis.title       = element_blank(),
+            axis.text        = element_blank())
+ 
+cppFunction('DataFrame createTrajectory(int n, double x0, double y0, 
+            double a, double b, double c, double d) {
+            // create the columns
+            NumericVector x(n);
+            NumericVector y(n);
+            x[0]=x0;
+            y[0]=y0;
+            for(int i = 1; i < n; ++i) {
+            x[i + 1] = sin(a*y[i]) - cos(b*x[i]);
+            y[i + 1] = sin(c*x[i]) - cos(d*y[i]);
+            }
+            // return a new data frame
+            return DataFrame::create(_["x"]= x, _["y"]= y);
+            }
+            ')
+ 
+# Parameters: 
+a = -1.164
+b = 1.41 
+c = -1.42
+d = -1.6
+
+df <- createTrajectory(10000000, 0, 0, a, b, c, d)
+```
 
 <br/>
 
@@ -253,7 +287,7 @@ ggplot(df, aes(x, y)) +
   theme(panel.background = element_rect(fill = '#ffffff'))
 ```
 
-```{r, clifford_plot_save, cache=TRUE}
+```{r, clifford_plot_save, cache=TRUE, echo = FALSE, eval=FALSE}
 png("files/clifford_fac015.png", units="px", width=1600, 
          height=1600, res=100)
 
@@ -261,6 +295,9 @@ dev.off()
 ```
 
 Amazing what a couple of simple trigonometric functions iterated 10,000,000 times can do. 
+
+You may have noticed that some of the R code above shows the code chunk header---in other words the line ` ```{r, chunk name, chunk options}``` `---while other R code chunks do not. Under normal circumstances (whether you show or fold your code) The code chunk header is never shown, just the actual R code. I included the chunk headers for demonstration purposes only. 
+
 
 And that's it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others  will be added as needed. I will also post a general course outline soon. 
 

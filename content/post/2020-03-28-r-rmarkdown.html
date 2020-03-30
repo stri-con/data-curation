@@ -143,7 +143,6 @@ summary(cars)
 # And maybe make a plot
 qplot(speed, dist, data=cars) + geom_smooth()
 ```</code></pre>
-<p>````</p>
 <p>And this is what happens when this code is executed by R Studio. First, the command <code>library(ggplot2)</code> is executed, then a summary is produced with the <code>summary(cars)</code> command, and finally a plot is rendered using the command <code>qplot(speed, dist, data=cars) + geom_smooth()</code>.</p>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
@@ -175,11 +174,11 @@ c = -1.42,  \
 d = -1.6  \
 \end{align*}
 \]</span></p>
-<p>Both the equations and the variables can be tweak to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except here the code is decorated with the R Markdown syntax described above. If you have R installed, give it a try. You may need to install some libraries.</p>
+<p>The equations and the variables can be tweaked to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except here the code is decorated with the R Markdown syntax described above. If you have R installed, give it a try. You may need to install some libraries.</p>
 <p>The R script here is a bit long so let’s use some simple HTML to fold the code. That way the code is available but not taking up a bunch of real estate. We will learn about code folding in the course.</p>
 <details>
 <p><summary>Show/hide Clifford Attractor code</summary></p>
-<pre class="r"><code>#```{r, clifford, cache=TRUE}
+<pre><code>```{r, clifford, cache=TRUE}
 opt &lt;- theme(legend.position  = &quot;none&quot;,
             panel.background = element_rect(fill=&quot;white&quot;),
             axis.ticks       = element_blank(),
@@ -210,7 +209,7 @@ c = -1.42
 d = -1.6
 
 df &lt;- createTrajectory(10000000, 0, 0, a, b, c, d)
-# ```</code></pre>
+```</code></pre>
 </details>
 <p><br/></p>
 <p>And now we plot the results and save a <code>png</code> copy just in case. With so many iterates this will take a minute or two to run. During the course, we will discuss the option <em>caching</em> code that takes a long time to run.</p>
@@ -219,13 +218,8 @@ df &lt;- createTrajectory(10000000, 0, 0, a, b, c, d)
   opt + 
   theme(panel.background = element_rect(fill = &#39;#ffffff&#39;))</code></pre>
 <p><img src="/data-curation/post/2020-03-28-r-rmarkdown_files/figure-html/clifford_plot-1.png" width="672" /></p>
-<pre class="r"><code>png(&quot;files/clifford_fac015.png&quot;, units=&quot;px&quot;, width=1600, 
-         height=1600, res=100)
-
-dev.off()
-## quartz_off_screen 
-##                 2</code></pre>
 <p>Amazing what a couple of simple trigonometric functions iterated 10,000,000 times can do.</p>
+<p>You may have noticed that some of the R code above shows the code chunk header—in other words the line <code>```{r, chunk name, chunk options}```</code>—while other R code chunks do not. Under normal circumstances (whether you show or fold your code) The code chunk header is never shown, just the actual R code. I included the chunk headers for demonstration purposes only.</p>
 <p>And that’s it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others will be added as needed. I will also post a general course outline soon.</p>
 <p>As we move forward keep your <i class="fa fa-eye"></i> out for the <i class="fa fa-pencil" aria-hidden="true"></i> icon. This is where you can find a link to the raw code for the page on GitHub. The little button on the top of the page (the one that looks like a cat) will take you to the main GitHub repo for this site.</p>
 <p class="edit-page">
