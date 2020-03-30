@@ -14,7 +14,7 @@ library(ggplot2)
 library(dplyr)
 ```
 
-In this mini lesson I'd like to demonstrate **a**) some Markdown syntax, **b**) how you run and format R code, and **c**)  how to render R figures. If you read the [Course Description](/page/about) you have already seen examples of [embedded](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products. 
+In this mini lesson I'd like to demonstrate **a**) some Markdown syntax, **b**) how you run and format R code, and **c**)  how to render R figures. If you read the [Course Description](/page/about/) you have already seen examples of [embedded](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products. 
 
 > R Markdown  integrates the concepts of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) and [reproducible research](https://en.wikipedia.org/wiki/Reproducibility), which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.
 
