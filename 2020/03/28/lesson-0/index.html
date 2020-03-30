@@ -89,7 +89,7 @@
     </p>
     
         <p class="post-reading post-line">
-            <span>Estimated reading time: 10 min</span>
+            <span>Estimated reading time: 11 min</span>
         </p>
     
 </header>
@@ -163,7 +163,7 @@ Carlos Lee
 <p>You will probably use hyperlinks a lot in your projects. Let’s take a look at the hyperlink syntax.</p>
 <div id="html-1" class="section level4">
 <h4>HTML</h4>
-<p>To code a link in HTML you need to use the <code>&lt;a&gt;</code> tag and then put the display text in between the tag and the actual link. So here is the code followed by the output (italics added for emphasis.</p>
+<p>To code a link in HTML you need to use the <code>&lt;a&gt;</code> tag and then put the display text in between the tag and the actual link. So here is the code followed by the output.</p>
 <pre><code>This is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Islamic_geometric_patterns&quot;&gt;link&lt;/a&gt; to awesome geometric patterns.</code></pre>
 <p style="text-align: center;">
 <em>This is a <a href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns">link</a> to awesome geometric patterns.</em>
@@ -189,7 +189,7 @@ Carlos Lee
 </blockquote>
 <p>Mathjax has its own lightweight code that is usually wrapped in dollar signs (<code>$</code>). If you hover over your text while you write it, a little preview window should pop up that shows you what the final equation will look like. This way you can tweak the look before you render the document. Mathjax code can be written straight in the document. When R Studio renders the document it will see the <code>$</code>, interpret it as Mathjax code, and translate the code to elegant Mathjax typography.</p>
 <p>Here is the notation for one of my favorites, the <a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz equations</a>. I am showing the actual code here for demonstration purposes only. Normally this would be hidden.</p>
-<p>So this …</p>
+<p>So this awkward looking code…</p>
 <pre><code>$$
 \begin{cases}
 \dot{x}  = \sigma(y-x)  \\
@@ -197,7 +197,7 @@ Carlos Lee
 \dot{z} = -\beta z + xy  
 \end{cases}
 $$</code></pre>
-<p>becomes this.</p>
+<p>becomes these elegant equations.</p>
 <p><span class="math display">\[
 \begin{cases}
 \dot{x}  = \sigma(y-x)  \\
@@ -245,6 +245,7 @@ qplot(speed, dist, data=cars) + geom_smooth()
 ##  Max.   :25.0   Max.   :120.00
 ## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
 <p><img src="/data-curation/post/lesson-0_files/figure-html/chunk_name-1.png" width="672" /></p>
+<p>In the examples below, you will notice that some of the R code shows the code chunk header—in other words the line <code>```{r, chunk name, chunk options}```</code>—while other R code chunks do not. Under normal circumstances, the code chunk header is never shown, only the actual R code. I included the chunk headers for demonstration purposes only.</p>
 </div>
 <div id="a-better-example-clifford-attractors" class="section level2">
 <h2>A Better Example: Clifford Attractors</h2>
@@ -266,7 +267,7 @@ c = -1.42,  \
 d = -1.6  \
 \end{align*}
 \]</span></p>
-<p>The equations and the variables can be tweaked to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except here the code is decorated with the R Markdown syntax described above. If you have R installed, give it a try. You may need to install some libraries.</p>
+<p>The equations and the variables can be tweaked to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except in R Markdown we decorate the code with the code chunk syntax described above.</p>
 <p>The R script here is a bit long so let’s use some simple HTML to fold the code. That way the code is available but not taking up a bunch of real estate. We will learn about code folding in the course.</p>
 <details>
 <p><summary>Show/hide Clifford Attractor code</summary></p>
@@ -311,7 +312,7 @@ df &lt;- createTrajectory(10000000, 0, 0, a, b, c, d)
   theme(panel.background = element_rect(fill = &#39;#ffffff&#39;))</code></pre>
 <p><img src="/data-curation/post/lesson-0_files/figure-html/clifford_plot-1.png" width="672" /></p>
 <p>Amazing what a couple of simple trigonometric functions iterated 10,000,000 times can do.</p>
-<p>You may have noticed that some of the R code above shows the code chunk header—in other words the line <code>```{r, chunk name, chunk options}```</code>—while other R code chunks do not. Under normal circumstances (whether you show or fold your code) The code chunk header is never shown, just the actual R code. I included the chunk headers for demonstration purposes only.</p>
+<p>If you have regular old R installed, try running the scipt which is available here: <a href="/post/files/lesson-0-clifford.R">Clifford code</a>. There is a small description on the top. You may need to install some libraries.</p>
 <p>And that’s it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others will be added as needed. I will also post a general course outline soon.</p>
 <p>As we move forward keep your <i class="fa fa-eye"></i> out for the <i class="fa fa-pencil" aria-hidden="true"></i> icon. This is where you can find a link to the raw code for the page on GitHub. The little button on the top of the page (the one that looks like a cat) will take you to the main GitHub repo for this site.</p>
 <p class="edit-page">
