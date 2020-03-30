@@ -35,7 +35,7 @@ The structure  and  expectations of the course are pretty straightforward. You w
 
 My philosophy here is that I teach the way I learn. My goal is to create a venue where you can be curious, get your hands dirty, make mistakes, & explore. I’m here to help you see what’s possible and together create something you are proud of :)
 
-And that's it for now. After reading this please let me know if you are (still) interested in the course and I will send you a Slack invitation. Also, please read [the first post](/2020/03/28/2020-03-28-r-rmarkdown/) to get a better idea of some of the things you can do with these tools.
+And that's it for now. After reading this please let me know if you are (still) interested in the course and I will send you a Slack invitation. Also, please read [the first post](2020/03/28/2020-03-28-r-rmarkdown/) to get a better idea of some of the things you can do with these tools.
 
 
 <p class="edit-page">
