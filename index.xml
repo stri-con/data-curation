@@ -24,10 +24,10 @@ Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curatio
     
     <item>
       <title>Lesson 0: An Example R Markdown Document</title>
-      <link>/data-curation/2020/03/28/2020-03-28-r-rmarkdown/</link>
+      <link>/data-curation/2020/03/28/lesson-0/</link>
       <pubDate>Sat, 28 Mar 2020 21:13:14 -0500</pubDate>
       
-      <guid>/data-curation/2020/03/28/2020-03-28-r-rmarkdown/</guid>
+      <guid>/data-curation/2020/03/28/lesson-0/</guid>
       <description>In this mini lesson I’d like to demonstrate a) some Markdown syntax, b) how you run and format R code, and c) how to render R figures. If you read the Course Description you have already seen examples of embedded tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products.
  R Markdown integrates the concepts of literate programming and reproducible research, which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.</description>
     </item>
