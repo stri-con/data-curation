@@ -18,7 +18,7 @@ In this mini lesson I'd like to demonstrate **a**) some Markdown syntax, **b**) 
 
 > R Markdown  integrates the concepts of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) and [reproducible research](https://en.wikipedia.org/wiki/Reproducibility), which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.
 
-The page you are reading  is a basic R Markdown document  with some examples of the functionalities you can incorporate. Building a site like this is very much an attainable goal in a short amount of time. Some of the examples presented below are unique to R Markdown while others are included to demonstrate cross-platform functionality. I wrote this as if it were a report; to give you a general sense of what these documents look like. I would like you to  look at the raw R Markdown code for this page ([available here](https://github.com/stri-con/data-curation/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd)) **before**, **during**, and **after** you read the post. Doing this  will give you a feel for some of what you will be doing. Take a look at the raw document, paying special attention to the code, not the text. Understanding what all of this code means is part of the course. Consider this a prelude ;)
+The page you are reading  is a basic R Markdown document  with some examples of the functionalities you can incorporate. Building a site like this is very much an attainable goal in a short amount of time. Some of the examples presented below are unique to R Markdown while others are included to demonstrate cross-platform functionality. I wrote this as if it were a report; to give you a general sense of what these documents look like. I would like you to  look at the raw R Markdown code for this page ([available here](https://github.com/stri-con/data-curation/blob/master/content/post/lesson-0.Rmd)) **before**, **during**, and **after** you read the post. Doing this  will give you a feel for some of what you will be doing. Take a look at the raw document, paying special attention to the code, not the text. Understanding what all of this code means is part of the course. Consider this a prelude ;)
 
 ## Markdown
 
@@ -180,7 +180,7 @@ qplot(speed, dist, data=cars) + geom_smooth()
 
 Great. Now let's look at something a little more interesting. 
 
-I really like iteration, chaos, and fractals. So I was pretty jazzed to find this [R code](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) by Fronkonstin for plotting [Clifford Attractors](http://paulbourke.net/fractals/clifford/), a type of [strange attractor](https://en.wikipedia.org/wiki/Attractor) discovered/invented by Cliff Pickover. Clifford Attractors are made by iterating two trigonometric functions (initial conditions $x = 0$ & $y = 0$) with four variables ($a, b, c, d$). The code will generate 10,000,000 points (iterates) and render the results as a pretty sweet graphic.
+I really like iteration, chaos, and fractals. So I was pretty jazzed to find this [R code](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) by Fronkonstin for plotting [Clifford Attractors](http://paulbourke.net/fractals/clifford/), a type of [strange attractor](https://en.wikipedia.org/wiki/Attractor) discovered/invented by [Cliff Pickover](https://en.wikipedia.org/wiki/Clifford_A._Pickover). Clifford Attractors are made by iterating two trigonometric functions (initial conditions $x = 0$ & $y = 0$) with four variables ($a, b, c, d$). The code will generate 10,000,000 points (iterates) and render the results as a pretty sweet graphic.
 
 Here is the equation I used in the script below:
 
@@ -305,7 +305,7 @@ As we move forward keep your  <i class="fa fa-eye"></i> out for the <i class="fa
 
 
 <p class="edit-page">
-  <a href="https://github.com/stri-con/data-curation/blob/master/content/post/2020-03-28-r-rmarkdown.Rmd">
+  <a href="https://github.com/stri-con/data-curation/blob/master/content/post/lesson-0.Rmd">
     <i class="fas fa-pen pr-2"></i>  <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
   </a>
 </p>
