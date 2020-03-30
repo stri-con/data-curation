@@ -78,7 +78,7 @@ You will probably use hyperlinks a lot in your projects. Let’s take a look at 
 
 #### HTML
 
-To code a link in  HTML you need to use the `<a>` tag and then put the display text in between the tag and the actual link. So here is the code followed by the output (italics added for emphasis.
+To code a link in  HTML you need to use the `<a>` tag and then put the display text in between the tag and the actual link. So here is the code followed by the output.
 
 ```
 This is a <a href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns">link</a> to awesome geometric patterns.
@@ -110,7 +110,7 @@ Mathjax has its own lightweight code that is usually wrapped in dollar signs (`$
 
 Here is the notation for one of my favorites,  the [Lorenz equations](https://en.wikipedia.org/wiki/Lorenz_system). I am showing the actual code here for demonstration purposes only. Normally this would be hidden.
 
-So this ...
+So this awkward looking code...
 
 ```
 $$
@@ -122,7 +122,7 @@ $$
 $$
 ```
 
-becomes this.
+becomes these elegant equations.
 
 $$
 \begin{cases}
@@ -140,8 +140,7 @@ Now that we know a little about Markdown, lets add the  R part. This is where th
 
 > R Markdown is a an R package---a set of tools deeply embedded in R Studio. R Markdown  combines Markdown text with R code to create documents containing formatted text **plus**  results of executing  R code. 
 
-
-I hope you can see that there is nothing too complicated about the concept. Lets illustrate how we incorporate R code in a Mardown document with   a quick toy example.
+I hope you can see that there is nothing too complicated about the concept. Lets illustrate how we incorporate R code in a Mardown document with a quick toy example.
 
 Most of the time you run R code in an R Markdown document you do it within a special internal environment called a *code chunk*. The specific formatting of the chuck tells R Studio that **this is R code and  it needs to be run as code and not rendered as text**.
 
@@ -176,6 +175,8 @@ summary(cars)
 qplot(speed, dist, data=cars) + geom_smooth()
 ```
 
+In the examples below, you will notice that some of the R code shows the code chunk header---in other words the line ` ```{r, chunk name, chunk options}``` `---while other R code chunks do not. Under normal circumstances, the code chunk header is never shown, only the actual R code. I included the chunk headers for demonstration purposes only. 
+
 ## A Better Example: Clifford Attractors
 
 Great. Now let's look at something a little more interesting. 
@@ -202,7 +203,7 @@ d = -1.6  \
 \end{align*}
 $$
 
-The equations and the variables can be tweaked to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except here the code is decorated with the R Markdown syntax described above. If you have R installed, give it a try. You may need to install some libraries. 
+The equations and the variables can be tweaked to produce a range of beautiful structures. Now we can run the R code and render the results in the document. You can run this exact code in a regular R terminal except in R Markdown we decorate the code with the code chunk syntax described above.  
 
 The R script here is a bit long so let's use some simple HTML to fold the code. That way the code is available but not taking up a bunch of real estate. We will learn about code folding in the course.
 
@@ -296,8 +297,7 @@ dev.off()
 
 Amazing what a couple of simple trigonometric functions iterated 10,000,000 times can do. 
 
-You may have noticed that some of the R code above shows the code chunk header---in other words the line ` ```{r, chunk name, chunk options}``` `---while other R code chunks do not. Under normal circumstances (whether you show or fold your code) The code chunk header is never shown, just the actual R code. I included the chunk headers for demonstration purposes only. 
-
+If you have regular old R installed, try running the scipt which is available here: [Clifford code](/post/files/lesson-0-clifford.R). There is a small description on the top. You may need to install some libraries.
 
 And that's it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others  will be added as needed. I will also post a general course outline soon. 
 
