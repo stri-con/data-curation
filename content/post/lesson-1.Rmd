@@ -68,7 +68,8 @@ Slack is vital tool for this course. Since we can't leave our homes and my inter
 <li> R skills: 3</li>
 <li> R Markdown skills: 2</li>
 <li> HTML/CSS/JS: 5</li>
-<li> Command line tools: 4</li>
+<li> Git/GitHub: 4</li>
+<li> Command line: 4</li>
 <li> Spanish: 5</li>
 <li> English: 5</li>
 </ul>
