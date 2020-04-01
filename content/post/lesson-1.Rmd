@@ -3,7 +3,7 @@ title: "Lesson 1: Building Your Working 🧱️ Environment"
 author: "Jarrod"
 date: 2020-04-01T21:13:14-05:00
 categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+#tags: ["R Markdown", "plot", "regression"]
 ---
 
 ```{r setup, include=FALSE}
@@ -13,9 +13,11 @@ library(Rcpp)
 library(ggplot2)
 library(dplyr)
 library(blogdown)
+library(htmltools)
 ```
 
 We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. If you are interested in developing your skills in HTML and CSS, you can check the a fantastic tutorial I linked on the Tutorials. You can access that page up top in the navigation bar.  Let's begin.
+
 
 In this lesson you will install the tools that we need for the course. Once you have them installed, I would like you to dig around for a bit so that you get familiar with the interfaces and functionalities. Specific instructions can be found in each section below.
 
@@ -62,6 +64,7 @@ Slack is vital tool for this course. Since we can't leave our homes and my inter
 
 <ul>
 <li> Main area of research: Ethnobotany</li>
+<li> Computer operating system: MacOSX</li>
 <li> R skills: 3</li>
 <li> R Markdown skills: 2</li>
 <li> HTML/CSS/JS: 5</li>
