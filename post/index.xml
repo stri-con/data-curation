@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/data-curation/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lesson 1: Building Your Working 🧱️ Environment</title>
+      <link>/data-curation/2020/04/01/lesson-1/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/04/01/lesson-1/</guid>
+      <description>We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already.</description>
+    </item>
+    
+    <item>
+      <title>The Importance of Open Science</title>
+      <link>/data-curation/2020/03/31/rationale/</link>
+      <pubDate>Tue, 31 Mar 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/2020/03/31/rationale/</guid>
+      <description>I wanted to share a few thoughts on what I see as key benefits to the community in creating data driven, open source, web products that capture and communicate your science. Bear with me for a minute. Well technically 4 minutes.
+Accessibility &amp;amp; Inclusivity Many journals and journal articles sit behind pay walls that a lot of people can’t access. That sucks, and while people are revolting against this paradigm, for now this is the reality.</description>
+    </item>
     
     <item>
       <title>Lesson 0: An Example R Markdown Document</title>

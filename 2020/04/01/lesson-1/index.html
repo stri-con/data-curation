@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lesson 1: Building Your Working 🧱️ Environment &middot; STRI-CON</title>
+        <meta name="description" content="We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.67.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Lesson 1: Building Your Working 🧱️ Environment">
+<meta property="og:description" content="We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/data-curation/2020/04/01/lesson-1/">
+        <link rel="stylesheet" href="/data-curation/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Lessons" href="/data-curation/">Lessons</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/data-curation/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/stri-con/data-curation" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="HOME" href="/data-curation/">HOME</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Description" href="/data-curation/page/about/">Course Description</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tutorials" href="/data-curation/page/tutorials/">Tutorials</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Resources" href="/data-curation/page/resources/">Course Resources</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Lesson 1: Building Your Working 🧱️ Environment</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2020-04-01" itemprop="datePublished">Wed, Apr 1, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://google.com/&#43;XXX" itemprop="url" rel="author">Jarrod</a>
+            </span>
+        </span>
+    </p>
+    
+        <p class="post-reading post-line">
+            <span>Estimated reading time: 18 min</span>
+        </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+      <div itemid="articleBody">
+        
+
+
+<p>We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. If you are interested in developing your skills in HTML and CSS, you can check the awseome tutorial I linked on the <a href="/page/tutorials/">Tutorials</a> page up top in the navigation bar. Let’s begin.</p>
+<p>In this lesson you will install the tools that we need for the course. Once you have them installed, I would like you to dig around for a bit so that you get familiar with the interfaces and functionalities. Specific instructions can be found in each section below.</p>
+<ol style="list-style-type: decimal">
+<li><a href="#course-projects-1">Map out a project idea for the course</a>.</li>
+<li><a href="#slack-1">Join the Slack Workspace &amp; participate</a>.</li>
+<li><a href="#text-editors-1">Install &amp; test text editors</a>.</li>
+<li><a href="#browsers-1">Install Chrome and/or Firefox then look at the dev tools</a>.</li>
+<li><a href="#the-r-environment-1">Install R, R Studio, &amp; R packages. Dig around</a>.</li>
+<li><a href="#github-1">Install Github. Dig around</a>.</li>
+</ol>
+<p>At the end, I offer some concluding remarks by sharing a brief story about how I got started using R Markdown for web products.</p>
+<div id="course-goals-overview" class="section level2">
+<h2>Course Goals &amp; Overview</h2>
+<p>As I mentioned, our goals for this course are to build data-driven web products and host those products on GitHub. The project or projects you work on is up to you. If you don’t have any ideas yet, that’s ok. Each lesson will be built around adding functionality to your project. You will start with something simple and, hopefully, by the end have something badass. Some of you may have more experience with some of these tools than I do. That’s great–-you can help me and help your classmates. If you think something I say is wrong, please tell me. I would rather do something the right way than be right about the wrong way I am doing something.</p>
+<p>The other thing I want to mention is that I assure you this in not a web development course. As you go through this lesson it may <em>feel</em> like that is where we are heading, but I promise it is not. Markdown is built on top of HTML and CSS so we will encounter these from time to time. I am interested in functional sites that contain useful content, with maybe a little bit of flair. I have found that even a superficial knowledge of web development and design goes a long way in building good R Markdown sites.</p>
+</div>
+<div id="course-projects" class="section level2">
+<h2>Course Projects</h2>
+<p>It is totally up to you what kind of project you work on; the sky is the limit. Some of you may have a firm idea of what you want to do, others may not. This is going to be a work in progress so don’t worry if your idea is a little unclear. We will all help you come up with a cool project idea. Here is your first assignment.</p>
+<p><p style="color: #006DDB; font-size:1.3em;text-align: center;border-radius:5px; width:300px;margin-left: auto;margin-right: auto;">Assignment <i class="fa fa-edit" aria-hidden="true"></i> </p>
+</p>
+<p>Conceptualize a web project. It doens’t matter if you make an outline, draw a <a href="https://en.wikipedia.org/wiki/Mind_map">mind map</a>, use a <a href="https://trello.com/">Trello board</a>, whatever you like. Your assignment is to sketch out the concept; <strong>a</strong>) what information or story you want to present and <strong>b</strong>) how do you want to present it.</p>
+<figure><a href="/img/mind_map.png">
+    <img src="/img/mind_map.png"
+         alt="Some alt text"/> </a><figcaption>
+            <p>Tennis Mind Map by <a href="http://mindmapping.bg">http://mindmapping.bg</a> (<a href="http://mindmapping.bg/mindmaps/examples/handmade/#!prettyPhoto">source</a>). Licenced under <a href="https://commons.wikimedia.org/w/index.php?curid=27851268">CC BY-SA 2.5</a>. The Wikimedia Commons source page for the image can be found <a href="(https://commons.wikimedia.org/wiki/File:Tennis-mindmap.png)">here</a>.</p>
+        </figcaption>
+</figure>
+
+<p>Think about the content and organization of your project. Do you have images or tables? Do want to make figures and run code? Do you want to embed videos? Make a turtorial? Each piece of this puzzle will require specific tools and the more we can figure out now the easier it will be down the road.</p>
+</div>
+<div id="slack" class="section level2">
+<h2>Slack</h2>
+<p>By now you should have received an invitation to join our <a href="stri-panama.slack.com">Slack Workspace</a>. If you did not, please let me know. We set up this workspace to help facilitate community discussion and help maintain collaborative scientific pursuits during these truly strange times. We are using Slack as the primary communication platorm for the online courses. From this point on, we will use Slack for all course communications and interactions. If you need to get in touch with me privately, you can use Slack for that too. You will find more detailed instructions on how to use the platform when you log in. You should be directed to the <code>#welcome</code> channel, which contains information to help you get started.</p>
+<p>Slack is vital tool for this course. Since we can’t leave our homes and my internet being what it is, at least for now Slack is our virtual seminar room. As the course moves forward we will try something like Zoom. If I gave grades in course, Slack participation would account for 20%. So please be preparred to interact. You should use Slack to ask and answer questions, propose learning objectives, discuss projects, recommend tools, etc.</p>
+<p><p style="color: #006DDB; font-size:1.3em;text-align: center;border-radius:5px; width:300px;margin-left: auto;margin-right: auto;">Assignment <i class="fa fa-edit" aria-hidden="true"></i> </p>
+</p>
+<ol style="list-style-type: decimal">
+<li>Read the pinned post on the <code>#welcome</code> channel and perform the tasks listed at the bottom.</li>
+<li>Join the the channel for our course, <code>#course-curation</code>. On the <code>#course-curation</code> channel you will find a post by me about Introductions.</li>
+<li>Add your answers to these questions in the <strong>thread</strong> off that post. If you don’t know what a thread is go back to #1 and repeat :) This will help me and everyone else learn a bit more about your expertise. Please rate your skills on a scale of 1 to 5 (1 = no skills, 5 = skills). For example:</li>
+</ol>
+<ul>
+<li>
+Main area of research: Ethnobotany
+</li>
+<li>
+R skills: 3
+</li>
+<li>
+R Markdown skills: 2
+</li>
+<li>
+HTML/CSS/JS: 5
+</li>
+<li>
+Command line tools: 4
+</li>
+<li>
+Spanish: 5
+</li>
+<li>
+English: 5
+</li>
+</ul>
+</div>
+<div id="text-editors" class="section level2">
+<h2>Text Editors</h2>
+<p>The next thing you need is a good text editor. I will offer you some recommendations and general guidelines. The key thing to look for is a good <strong>source code editor</strong>. This means that if you tell the editor what language you are writing in (e.g., Markdown), the software will apply special syntax highlighting so you can easily distinguish types of code from regular text. A good editor will also have automatic code formatting, so you don’t have to keep writing the same code over and over.</p>
+<figure><a href="/img/syntax.png">
+    <img src="/img/syntax.png"
+         alt="Some alt text"/> </a><figcaption>
+            <p>Syntax highlighting of the page in Atom. Notice how headers, bold text, and hyperlinks are formatted differently.</p>
+        </figcaption>
+</figure>
+
+<p>R Studio has a good text editing window that I mainly use for testing and writing R code, but it can be clunky for most other types of coding. I write my regular text and code in <a href="https://atom.io/">Atom</a>, a free, open-source, <strong>cross-platform</strong> text and source code editor. Atom works on any operating system. When I need to manipulate large text files, I use <a href="https://www.barebones.com/products/bbedit/">BBEdit</a>. BBEdit is fine as a source code editor but what makes this an amazing tool is that it integrates <a href="https://en.wikipedia.org/wiki/Grep"><code>grep</code></a> functionality. Grep allows you to quickly run complex find-and-replace commands that remove or leave characters of any type. Grep is also a command-line tool but having Grep functionality in a text editor is awesome. Sadly, I think it is only for Mac :( BBEdit has a nice <a href="https://anybrowser.org/bbedit/grep.html">Grep Tutorial</a> that is worth checking out. My last recommendation is <a href="https://www.sublimetext.com/">Sublime Text</a>. Like Atom, Sublime is a cross-platform text and source code editor. It is technically not free, but the trial period never ends. So if you use it a lot, buy a copy. Their homepage has a nice little movie that shows some of the capabilities that I mentioned above. Please have a look.</p>
+<p><p style="color: #006DDB; font-size:1.3em;text-align: center;border-radius:5px; width:300px;margin-left: auto;margin-right: auto;">Assignment <i class="fa fa-edit" aria-hidden="true"></i> </p>
+</p>
+<p>Get a good text editor or two. I want you to start playing around with these tools. If you search the internet for “Best text editors” there are a ton of articles. Here are a couple of articles to get you started. Windows specific <a href="https://www.techtimes.com/brandspin/240045/20190325/top-5-best-text-editor-windows-2019.htm">Best Text Editor For Windows In 2019</a> and general <a href="https://www.techradar.com/best/best-text-editors">Best text editors in 2020</a>. Once you have a good editor, head to the bottom of this page and click the <em>Edit this page</em> link. The link should take you directly to the source code on GitHub. Copy the code and paste it into your text editor so you can see what the syntax formatting looks like. Make sure to change the language to Markdown. In most text editors there is a button on the bottom of the window where you can make a selection.</p>
+<blockquote>
+<p>If you want to practice working in your new source code editor AND learn more HTML/CSS in the process, check out the <a href="/page/tutorials/#html--css"><em>Interneting is Hard</em></a> tutorial in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).</p>
+</blockquote>
+</div>
+<div id="browsers" class="section level2">
+<h2>Browsers</h2>
+<p>The next item on our list is a <a href="https://en.wikipedia.org/wiki/Web_browser">web browser</a> with <strong>good developer tools</strong>. Not all web browsers are created equal in this sense so it’s good to have a few installed on your computer. Developer tools serve many purposes and are powerful allies for web designers. For our purposes, these tools will help us explore the underlying code of a site. Take a look at the window below. The box on the left is showing the CSS formatting for a blockquote (font family, font color, etc.) while the box on the right show the HTML code.</p>
+<figure><a href="/img/browser.png">
+    <img src="/img/browser.png"
+         alt="Some alt text"/> </a><figcaption>
+            <p>Image of Chrome Developer tools for this page. To access the tools go to <code>View</code> &gt; <code>Developer</code> &gt; <code>Developer Tools</code> or on a Mac hit <code>command</code>+<code>option</code>+<code>i</code>.</p>
+        </figcaption>
+</figure>
+
+<p>The other reason we want several browsers is for testing our sites. Before you ever deploy a site on the web, you test them using a browser on your local machine. I always test my web sites in Chrome, Firefox, and Safari to make sure everything looks good. I found out today that one of my sites looks like crap in Microsoft Edge. So now I test using four browsers.</p>
+<p><p style="color: #006DDB; font-size:1.3em;text-align: center;border-radius:5px; width:300px;margin-left: auto;margin-right: auto;">Assignment <i class="fa fa-edit" aria-hidden="true"></i> </p>
+</p>
+<p>If you don’t have them already, download and install <a href="https://www.google.com/chrome/">Google Chrome</a> and either <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://www.mozilla.org/en-US/firefox/developer/">Firefox Developer Edition</a>. Open the Developer tools and start poking around (see the figure above for instructions). Finally try to <strong>view the source code</strong> using the developer tools. This is where the raw HTML code for the site is hiding.</p>
+<blockquote>
+<p>If you want to practice working with the dev tools of your new browser AND learn more HTML/CSS in the process, check out the <a href="/page/tutorials/#html--css"><em>Interneting is Hard</em></a> tutorial in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).</p>
+</blockquote>
+</div>
+<div id="the-r-environment" class="section level2">
+<h2>The R Environment</h2>
+<div id="r" class="section level3">
+<h3>R</h3>
+<p>R is both a software language and an environment for statistical computing and graphics. At some point, you will need to embrace a programming environment to analyze your data and summarize your findings using figures, tables, etc. R is certainly not the only way to do this; however, coupled with the ability to package everything in a website, I believe this environment offers a valuable suite of tools for your scientific needs. The benefits of R include; <strong>a</strong>) it is free and open source, <strong>b</strong>) its capabilities are extended through user-created packages, <strong>c</strong>) it has a huge community of users (which means it is well supported), <strong>d</strong>) it is powerful and flexible. We need R to run RStudio.</p>
+</div>
+<div id="rstudio" class="section level3">
+<h3>RStudio</h3>
+<p>RStudio is an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environment (IDE)</a> for the R language. Take a moment to familiarize yourself with the idea of an IDE. The text editors described above are also IDEs. RStudio is a syntax-highlighting editor that supports <strong>direct code execution</strong>, and tools for plotting, history, debugging and workspace management. We will use RStudio to create websites and interactive data products.</p>
+</div>
+<div id="r-markdown" class="section level3">
+<h3>R Markdown</h3>
+<p>R Markdown is a file format for making dynamic documents with R. R Markdown combines the syntax of Markdown with the language and an environment of R. R Markdown documents are written in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>—-a “lightweight” <a href="https://en.wikipedia.org/wiki/Markup_language">markup language</a> (like HTML), that uses a relatively simple syntax to facilitate the transformation of human-readable text files into .html or .pdf documents. What this means is that rather than writing HTML and CSS code to make a website, you write your content in Markdown, which is then translated (by RStudio in this case) to web content. R code is embedded within code chunks that RStudio can identify as code. RStudio/R then runs the code and renders the output within the HTML file.</p>
+<p><p style="color: #006DDB; font-size:1.3em;text-align: center;border-radius:5px; width:300px;margin-left: auto;margin-right: auto;">Assignment <i class="fa fa-edit" aria-hidden="true"></i> </p>
+</p>
+<blockquote>
+<p>It is important to follow the next steps in order. You must install R before RStudio or any R packages.</p>
+</blockquote>
+<div id="install-r" class="section level4">
+<h4>Install R</h4>
+<ol style="list-style-type: decimal">
+<li>Go to <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a></li>
+<li>At the top of the page under <em>Getting Started</em> click on the <a href="http://cran.r-project.org/mirrors.html">download R</a> link.</li>
+<li>Select a mirror site to download R. It doesn’t matter which one. A mirror site is an exact duplicate of the main site and is there to relieve web traffic.</li>
+<li>If possible, you want to download and install a precompiled binary distribution. Select your OS at the top of the page under <strong>Download and Install R</strong>.</li>
+<li>If you have a Mac OS X just click on the <code>.pkg</code> file to download and install. Other OS require additional steps.</li>
+<li>Test your install. Open R and type <code>sessionInfo()</code>. If you don’t get an error, then the install is good.</li>
+</ol>
+</div>
+<div id="install-rstudio" class="section level4">
+<h4>Install RStudio</h4>
+<ol style="list-style-type: decimal">
+<li>Go to <a href="https://rstudio.com/" class="uri">https://rstudio.com/</a> and hit <a href="https://rstudio.com/products/rstudio/download/">Download</a>.</li>
+<li>Scroll down and hit the <strong>Download</strong> button under RStudio Desktop Free.</li>
+<li>Choose you operating system and install RStudio.</li>
+</ol>
+</div>
+<div id="install-r-packages" class="section level4">
+<h4>Install R Packages</h4>
+<p>R packages can be found in several places including GitHub and The Comprehensive R Archive Network, or CRAN. On CRAN alone there are over 15,000 <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">packages</a> available. You will need a few packages to get going with your web project and you will install more as the need arises.</p>
+<p>Before you install any packages, run the <code>library(&lt;PACKAGE_NAME&gt;)</code> command first. If you do not get an error that means the package is already installed.</p>
+<p>Here is a list of packages to start with:</p>
+<ul>
+<li><code>library(rmarkdown)</code> if you see <code>Error in library(rmarkdown) : there is no package called ‘rmarkdown’</code> then run <code>install.packages('rmarkdown')</code>. Depending on your R install, you may have to wrap the package name in single or double quotes when installing. Just play around with it.</li>
+<li><code>library(knitr)</code> or <code>install.packages('knitr')</code> if you get an error.</li>
+<li><code>library(DT)</code> or <code>install.packages('DT')</code></li>
+<li><code>library(ggplot2)</code> or <code>install.packages('ggplot2')</code></li>
+</ul>
+<p>If you have problems with any of these steps, we will help. Open up RStudio and start looking around. You can personalize the appearance of the IDE by going to <code>RStudio</code> &gt; <code>Preferences</code>. You can also download a cheat sheet <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf">here</a> that contains some additional information on the RStudio IDE.</p>
+<p><p style="color: #006DDB; font-size:1.3em;text-align: center;border-radius:5px; width:300px;margin-left: auto;margin-right: auto;">Assignment <i class="fa fa-edit" aria-hidden="true"></i> </p>
+</p>
+</div>
+<div id="tutorials-readings" class="section level4">
+<h4>Tutorials &amp; Readings</h4>
+<p>Please go through the following material.</p>
+<div id="r-markdown-1" class="section level5">
+<h5>R Markdown</h5>
+<ul>
+<li>Start with the <a href="https://rmarkdown.rstudio.com/authoring_quick_tour.html">R Markdown Quick Tour</a>.</li>
+<li>Then go through the <a href="https://rmarkdown.rstudio.com/lesson-1.html">introductory lessons</a>. These are really short.</li>
+<li>Our main resource for the course is <a href="https://bookdown.org/yihui/rmarkdown/">The Definitive R Markdown Guide</a>.</li>
+</ul>
+<p>As the authors state in the Preface, <em>This book may serve you better as a reference book than a textbook. It contains a large number of technical details, and we do not expect you to read it from beginning to end, since you may easily feel overwhelmed. Instead, think about your background and what you want to do first, and go to the relevant chapters or sections.</em> <strong>Read Chapters 2 &amp; 3</strong></p>
+<p>Now grab a few cheat sheets for your reference (available as pdfs). Go through these so you can start getting familiar with the syntax and utility of the tools.</p>
+<p><a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf">RStudio IDE Cheatsheet</a>. This sheet gives an overview of the RStudio IDE.
+<a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">R Markdown Cheatsheet</a>, A general R Markdown reference.
+<a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">R Markdown Reference Guide</a>. A more detailed R Markdown reference. Pay specific attention to the section on <em>Chunk Options</em>. Chuck options are how we specify the way our R code is processed.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="github" class="section level2">
+<h2>GitHub</h2>
+<p>To understand GitHub, we first need to know a little about <code>git</code>, the open-source version control system that GitHub is built on. What does that mean? Think about the last paper or grant you worked on. You open a Word document, start typing, and at some point you have a draft. Now you send that draft to a co-author and they make a bunch of edits using <em>track changes</em> and send it back to you. Maybe they cut some text, make some corrections, add a table. You really like some of the text they cut from the original draft. You can’t leave that text in the new draft but you don’t want to delete the original draft. So, you save them both and now you have two versions, both of which contain slightly different information. Each time your draft goes through a revision you have a new version, and at some point, you have no idea what the difference are between each version. Out of control.</p>
+<p>Now imagine that instead of a single document, you have an entire R Markdown website full of dozens of files, each with hundreds of lines of code and text. A single change in the code can wreck the whole site. Like the document example above, you could save every single version, no matter how subtle the difference. But I think we can all agree that would be insane.</p>
+<p>Enter version control with git and hosting with GitHub. <a href="https://en.wikipedia.org/wiki/Git">Git</a> is a version-control system for tracking changes in source code and <a href="https://en.wikipedia.org/wiki/GitHub">GitHub</a> is a web-based hosting service (or <em>hub</em>) for the versions. You can use git without GitHub, but you cannot use GitHub without git. Let me show you what this looks like in practice.</p>
+<p>You have a project on your computer, a website for example. You fill pour a cup of coffee and start coding away on your website. At some point you stop because it’s 2am and you can’t see straight. So, you fire up a terminal and use a few git commands to send the project to its repository (repo for short) on GitHub. Now you have two identical copies of your project, a <em>local</em> copy and a copy on GitHub. The next day you wake up with a new idea and start coding away again. Now the local copy is different from the repo copy. You again send the project to GitHub but this time the changes are recorded.</p>
+<p>Check out this image from one of my project repos on GitHub. Any document page you vist on GitHub will look like this. In the upper left is the repo name (<em>projectdigest</em>) and the name of the file, in this case <em>0_pw_intro.Rmd</em>. Based on the <code>.Rmd</code> extension we know this is an R Markdown file. In the bottom right of the screen shot there is a <em>history</em> button.</p>
+<figure><a href="/img/lesson-1/git-1.png">
+    <img src="/img/lesson-1/git-1.png"
+         alt="Some alt text"/> </a><figcaption>
+            <p>GitHub page for an R Markdown document.</p>
+        </figcaption>
+</figure>
+
+<p>Click on that and you see the full history of that file. Every time you make changes to your local copy and send those changes to GitHub are recorded on the history page. These cahnges are called <em>Commits</em>. Each commit has a unique identifier generated by git and any comments that you attach to the commit. One thing to notice is that my commit comments are completely useless because they are vague. You want to include comments that have a specific meaning. What does <em>Update</em> tell me? Nothing at all since everything is technically an update. Make sure your commit descriptions are descriptive :)</p>
+<figure><a href="/img/lesson-1/git-2.png">
+    <img src="/img/lesson-1/git-2.png"
+         alt="Some alt text"/> </a><figcaption>
+            <p>The commit history page.</p>
+        </figcaption>
+</figure>
+
+<p>Clicking on one of unique IDs takes you to the page that documents the changes made during that commit.</p>
+<figure><a href="/img/lesson-1/git-3.png">
+    <img src="/img/lesson-1/git-3.png"
+         alt="Some alt text"/> </a><figcaption>
+            <p>Documentation of some changes that occured to <code>0_pw_intro.Rmd</code> during a commit.</p>
+        </figcaption>
+</figure>
+
+<p>It looks like I changed 12 files during this commit. Remember, we are interested in the changes to <em>0_pw_intro.Rmd</em> but those changes were part of a larger commit where 11 other files also changed. Each of those files and all their changes are described on this page. Looking more closely at the image, you can see I deleted a block of HTML code (in red) and added some new code (in green).</p>
+<p>GitHub adds many features not available in git. GitHub is a graphical user interface (GUI) while git is a command-line interface (CLI). GitHub also offers a service called <a href="https://pages.github.com/">GitHub Pages</a>. GitHub Pages allows you to host a website from a GitHub repository. This is how we will host our web products. But for now don’t worry the details, we will get into git and GitHub in subsequent lessons.</p>
+<p><p style="color: #006DDB; font-size:1.3em;text-align: center;border-radius:5px; width:300px;margin-left: auto;margin-right: auto;">Assignment <i class="fa fa-edit" aria-hidden="true"></i> </p>
+</p>
+<p>For now, I want you to sign up for a <a href="https://github.com/">GitHub</a> account. Once you have an account, go to the page from the example above and repeat the steps I outlined. You can find that page <a href="https://github.com/projectdigest/web/blob/master/build/0_pw_intro.Rmd">here</a>. FYI you don’t need an account to access the page. You will be spending a lot of time using these tools–we will learn how to use git/GitHub in parallel with our work on R Markdown. Learning how to use git/GitHub can be a little daunting at first, primarily because the terminology is sometimes not very intuitive. But it is an invaluable tool for our work.</p>
+</div>
+<div id="concluding-remarks" class="section level2">
+<h2>Concluding Remarks</h2>
+<p>I wanted to leave you with a few final thoughts. I made my first commit to GitHub a little over a year ago with my first web product, a single page R Markdown HTML document. I am a microbial ecologist, and I was collaborating with four regular ecologists on a project about fish and microbes. Anyway, long story short, they were having a hard time understanding the microbial data, or I was not doing a good job of explaining it. So I made an HTML page outlining every step of my analysis, including all the code and results that I emailed to my collaborators. My collaborators were so excited that they started sending me additional material to add to the page.</p>
+<p>As the amount of material paper accumulated, the single page turned into a project website. I made a GitHub repo for the site and used GitHub Pages to distribute site over the web. The I did my best to document everything we did in that study. When we submitted the paper, I included the project website as a place where people could find information not included in the main paper or supplementry material. During the revision process, I was able to quickly address reviewer comments because I could pull material directly from the website without having to dig around in the depths of my computer.</p>
+<p>The paper was published today :) and here is what it says in the <em>Data accessibilty</em> section.</p>
+<figure><a href="https://projectdigest.github.io/">
+    <img src="/img/lesson-1/fish.png"
+         alt="Some alt text"/> </a><figcaption>
+            <p>Screen shot of the <em>Data accessibilty</em> section from the <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2367">publication</a>.</p>
+        </figcaption>
+</figure>
+
+<p>Click on the image to check out the project website. Here you will find access points to the raw data, the website code on GitHub, workflows that include R code, and many other bits of information. The site is nothing fancy but the entire project is now archived on the web.</p>
+<p>I learned by doing and that is my goal for you in this course. I also use R Markdown for presentations, my CV, and professional letters. Along the way, I have gained a lot of experience using other languages like HTML, CSS, and Hugo for my projects.</p>
+<p>And that’s it for this lesson. See you on Slack.</p>
+<p class="edit-page">
+  <a href="https://github.com/stri-con/data-curation/blob/master/content/post/lesson-1.Rmd">
+    <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
+  </a>
+</p>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.js'></script>
+<script>
+    anchors.add();
+</script>
+
+</div>
+
+      </div>
+    
+</div>
+
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/data-curation/tags/r-markdown/">R Markdown</a>, 
+            
+                <a href="/data-curation/tags/plot/">plot</a>, 
+            
+                <a href="/data-curation/tags/regression/">regression</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+
+        
+
+        
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Lessons" href="/data-curation/">Lessons</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; metacrobe 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Modified from the Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">itslef Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/data-curation/js/jquery-1.11.3.min.js"></script>
+        <script src="/data-curation/js/jquery.fitvids.js"></script>
+
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+
+        <script src="/data-curation/js/scripts.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    </body>
+</html>
+

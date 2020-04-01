@@ -7,10 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Sun, 29 Mar 2020 02:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/data-curation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lesson 1: Building Your Working 🧱️ Environment</title>
+      <link>/data-curation/2020/04/01/lesson-1/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/04/01/lesson-1/</guid>
+      <description>We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already.</description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>/data-curation/page/tutorials/</link>
+      <pubDate>Wed, 01 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/tutorials/</guid>
+      <description>As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you probably won&amp;rsquo;t use. I decided to make this Tutorials page with optional material for anyone who wants to expand their knowledge beyond the immediate goals of the course.
+HTML &amp;amp; CSS Websites are built on HTML, CSS, and JavaScript. For any site, HTML defines the content and structure; CSS provides the style and layout; JavaScript programs the behavior.</description>
+    </item>
+    
+    <item>
+      <title>The Importance of Open Science</title>
+      <link>/data-curation/2020/03/31/rationale/</link>
+      <pubDate>Tue, 31 Mar 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/2020/03/31/rationale/</guid>
+      <description>I wanted to share a few thoughts on what I see as key benefits to the community in creating data driven, open source, web products that capture and communicate your science. Bear with me for a minute. Well technically 4 minutes.
+Accessibility &amp;amp; Inclusivity Many journals and journal articles sit behind pay walls that a lot of people can’t access. That sucks, and while people are revolting against this paradigm, for now this is the reality.</description>
+    </item>
     
     <item>
       <title>About the Course</title>
@@ -19,7 +48,7 @@
       
       <guid>/data-curation/page/about/</guid>
       <description>Estimated reading time: 5 minutes, 12 seconds.
-Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curation at STRI-Panama. This site (written mainly in R Markdown) will be our guidebook as we make our way through the topics. Our main goals with the course are to a) create interactive, data-driven web products in R Markdown, b) host those products on GitHub, and c) use tools like figshare for hosting data and data products.</description>
+Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curation. This site (written mainly in R Markdown) will be our guidebook as we make our way through the topics. Our main goals with the course are to a) create interactive, data-driven web products in R Markdown, b) host those products on GitHub, and c) use tools like figshare for hosting data and data products.</description>
     </item>
     
     <item>
@@ -35,21 +64,12 @@ Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curatio
     <item>
       <title>Resources</title>
       <link>/data-curation/page/resources/</link>
-      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
       
       <guid>/data-curation/page/resources/</guid>
-      <description>Coming Soon We (you and I) will add tools to this page as we go along. Until then, here is a puppy.
-Photo credit Dog789, licenced under CC BY-SA. Original file.
-  Edit this page  </description>
-    </item>
-    
-    <item>
-      <title>My awesome project</title>
-      <link>/data-curation/project/my-awesome-project/</link>
-      <pubDate>Tue, 18 Nov 2014 02:13:50 +0000</pubDate>
-      
-      <guid>/data-curation/project/my-awesome-project/</guid>
-      <description>About project Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
+      <description>Coming Soon We (you and I) will add tools to this page as we go along. Until then, here&amp;rsquo;s a puppy.
+  puppy   Photo credit Dog789, licenced under CC BY-SA. Original file.
+ Edit this page  </description>
     </item>
     
   </channel>

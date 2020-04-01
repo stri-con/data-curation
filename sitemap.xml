@@ -3,17 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/data-curation/page/about/</loc>
-    <lastmod>2020-03-29T02:13:50+00:00</lastmod>
+    <loc>/data-curation/2020/04/01/lesson-1/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/</loc>
-    <lastmod>2020-03-29T02:13:50+00:00</lastmod>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/plot/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/post/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/r-markdown/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/regression/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/page/</loc>
+    <lastmod>2020-04-01T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/page/tutorials/</loc>
+    <lastmod>2020-04-01T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/2020/03/31/rationale/</loc>
+    <lastmod>2020-03-31T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/page/about/</loc>
     <lastmod>2020-03-29T02:13:50+00:00</lastmod>
   </url>
   
@@ -23,43 +63,8 @@
   </url>
   
   <url>
-    <loc>/data-curation/tags/plot/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/post/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/r-markdown/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/regression/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/data-curation/page/resources/</loc>
-    <lastmod>2015-04-03T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/project/my-awesome-project/</loc>
-    <lastmod>2014-11-18T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/project/</loc>
-    <lastmod>2014-11-18T02:13:50+00:00</lastmod>
+    <lastmod>2020-03-28T02:13:50+00:00</lastmod>
   </url>
   
 </urlset>

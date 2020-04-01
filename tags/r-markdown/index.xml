@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/data-curation/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lesson 1: Building Your Working 🧱️ Environment</title>
+      <link>/data-curation/2020/04/01/lesson-1/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/04/01/lesson-1/</guid>
+      <description>We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already.</description>
+    </item>
     
     <item>
       <title>Lesson 0: An Example R Markdown Document</title>
