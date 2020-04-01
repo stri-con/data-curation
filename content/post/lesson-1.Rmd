@@ -1,0 +1,236 @@
+---
+title: "Lesson 1: Building Your Working 🧱️ Environment"
+author: "Jarrod"
+date: 2020-04-01T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(DT)
+library(Rcpp)
+library(ggplot2)
+library(dplyr)
+library(blogdown)
+```
+
+We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. If you are interested in developing your skills in HTML and CSS, you can check the awseome tutorial I linked on the [Tutorials](/page/tutorials/) page up top in the navigation bar.  Let's begin.
+
+In this lesson you will install the tools that we need for the course. Once you have them installed, I would like you to dig around for a bit so that you get familiar with the interfaces and functionalities. Specific instructions can be found in each section below.
+
+1) [Map out a project idea for the course](#course-projects-1).
+2) [Join the Slack Workspace & participate](#slack-1).
+3) [Install & test text editors](#text-editors-1).
+4) [Install Chrome and/or Firefox then look at the dev tools](#browsers-1).
+5) [Install R, R Studio, & R packages. Dig around](#the-r-environment-1).
+6) [Install Github. Dig around](#github-1).
+
+At the end, I offer some concluding remarks by sharing a brief story about how I got started using R Markdown for web products.
+
+## Course Goals & Overview
+
+As I mentioned, our goals for this course are to build data-driven web products and host those products on GitHub. The project or projects you work on is up to you. If you don't have any ideas yet, that's ok. Each lesson will be built around adding functionality to your project. You will start with something simple and, hopefully, by the end have something badass. Some of you may have more experience with some of these tools than I do. That’s great–-you can help me and help your classmates. If you think something I say is wrong, please tell me. I would rather do something the right way than be right about the wrong way I am doing something.
+
+The other thing I want to mention is that I assure you this in not a web development course. As you go through this lesson it may *feel* like that is where we are heading, but I promise it is not. Markdown is built on top of HTML and CSS so we will encounter these from time to time. I am interested in functional sites that contain useful content, with maybe a little bit of flair. I have found that even a superficial knowledge of web development and design goes a long way in building good R Markdown sites.
+
+## Course Projects
+
+It is totally up to you what kind of project you work on; the sky is the limit. Some of you may have a firm idea of what you want to do, others may not. This is going to be a work in progress so don't worry if your idea is a little unclear. We will all help you come up with a cool project idea. Here is your first assignment.
+
+{{% todo %}}
+
+Conceptualize a web project. It doens't matter if you make an outline, draw a [mind map](https://en.wikipedia.org/wiki/Mind_map), use a [Trello board](https://trello.com/), whatever you like.  Your assignment is to sketch out the concept; **a**) what information or story you want to present and **b**) how do you want to present it.
+
+```{r, echo=FALSE}
+blogdown::shortcode("figure", src ='"/img/mind_map.png"', link='"/img/mind_map.png"', alt = "Some alt text", caption = "Tennis Mind Map by http://mindmapping.bg ([source](http://mindmapping.bg/mindmaps/examples/handmade/#!prettyPhoto)). Licenced under [CC BY-SA 2.5](https://commons.wikimedia.org/w/index.php?curid=27851268). The Wikimedia Commons source page for the image can be found [here]((https://commons.wikimedia.org/wiki/File:Tennis-mindmap.png)).")
+```
+
+Think about the content and organization of your project. Do you have images or tables? Do want to make figures and run code? Do you want to embed videos? Make a turtorial? Each piece of this puzzle will require specific tools and the more we can figure out now the easier it will be down the road.
+
+## Slack
+
+By now you should have received an invitation to join our [Slack Workspace](stri-panama.slack.com). If you did not, please let me know. We set up this workspace to help facilitate community discussion and help maintain collaborative scientific pursuits during these truly strange times. We are using Slack as the primary communication platorm for the online courses. From this point on, we will use Slack for all course communications and interactions. If you need to get in touch with me privately, you can use Slack for that too. You will find more detailed instructions on how to use the platform when you log in. You should be directed to the `#welcome` channel, which contains information to help you get started.
+
+Slack is vital tool for this course. Since we can't leave our homes and my internet being what it is, at least for now Slack is our virtual seminar room. As the course moves forward we will try something like Zoom. If I gave grades in course, Slack participation would account for 20%. So please be preparred to interact. You should use Slack to ask and answer questions, propose learning objectives, discuss projects, recommend tools, etc.
+
+{{% todo %}}
+
+1) Read the pinned post on the `#welcome` channel and perform the tasks listed at the bottom.
+2) Join the the channel for our course, `#course-curation`. On the `#course-curation` channel you will find a post by me about Introductions.
+3) Add your answers to these questions in the **thread** off that post. If you don't know what a thread is go back to #1 and repeat :) This will help me and everyone else learn a bit more about your expertise. Please rate your skills  on a scale of 1 to 5 (1 =  no skills, 5 = skills). For example:
+
+<ul>
+<li> Main area of research: Ethnobotany</li>
+<li> R skills: 3</li>
+<li> R Markdown skills: 2</li>
+<li> HTML/CSS/JS: 5</li>
+<li> Command line tools: 4</li>
+<li> Spanish: 5</li>
+<li> English: 5</li>
+</ul>
+
+## Text Editors
+
+The next thing you need is a good text editor. I will offer you some recommendations and general guidelines. The key thing to look for is a good **source code editor**. This means  that if you tell the editor what language you are writing in (e.g., Markdown), the software will apply special syntax highlighting so you can easily distinguish types of code from regular text. A good editor will also have automatic code formatting,  so you don't have to keep writing the same code over and over.
+
+```{r, echo=FALSE}
+blogdown::shortcode("figure", src ='"/img/syntax.png"', alt = "Some alt text", link='"/img/syntax.png"', caption = "Syntax highlighting of the page in Atom. Notice how headers, bold text, and hyperlinks are formatted differently.")
+```
+
+R Studio has a good text editing window that I mainly use for testing and writing R code, but it can be clunky for most other types of coding. I write my regular text and code in [Atom](https://atom.io/), a free, open-source, **cross-platform** text and source code editor. Atom works on any operating system. When I need to manipulate large text files, I use [BBEdit](https://www.barebones.com/products/bbedit/). BBEdit is fine  as a source code editor but what makes this an amazing tool is that it integrates [`grep`](https://en.wikipedia.org/wiki/Grep) functionality. Grep allows you to quickly run complex find-and-replace commands that remove or leave characters of any type. Grep is also a command-line tool but having Grep functionality in a text editor is awesome. Sadly, I think it is only for Mac :( BBEdit has a nice [Grep Tutorial](https://anybrowser.org/bbedit/grep.html) that is worth checking out. My last recommendation is [Sublime Text](https://www.sublimetext.com/). Like Atom, Sublime is a cross-platform text and source code editor. It is technically not free, but the trial period never ends. So if you use it a lot, buy a copy. Their homepage has a nice little movie that shows some of the capabilities that I mentioned above. Please have a look.
+
+{{% todo %}}
+
+Get a good text editor or two. I want you to start playing around with these tools. If you search the internet for "Best text editors" there are a ton of articles. Here are a couple of articles to get you started. Windows specific [Best Text Editor For Windows In 2019](https://www.techtimes.com/brandspin/240045/20190325/top-5-best-text-editor-windows-2019.htm) and general [Best text editors in 2020](https://www.techradar.com/best/best-text-editors). Once you have a good editor, head to the bottom of this page and click the *Edit this page* link. The link should take you directly to the source code on GitHub. Copy the code and paste it into your text editor so you can see what the syntax formatting looks like. Make sure to change the language to Markdown. In most text editors there is a button on the bottom of the window where you can make a selection.
+
+> If you want to practice working in your new source code editor AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/page/tutorials/#html--css) tutorial in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
+
+## Browsers
+
+The next item on our list is a [web browser](https://en.wikipedia.org/wiki/Web_browser) with **good developer tools**. Not all web browsers are created equal in this sense so it’s good to have a few installed on your computer. Developer tools serve many purposes and are powerful allies for web designers. For our purposes, these tools will help us explore the underlying code of a site. Take a look at the window below. The box on the left is showing the CSS formatting for a blockquote (font family, font color, etc.) while the box on the right show the HTML code.
+
+```{r, echo=FALSE}
+blogdown::shortcode("figure", src ='"/img/browser.png"', link='"/img/browser.png"', alt = "Some alt text", caption = "Image of Chrome Developer tools for this page. To access the tools go to `View` > `Developer` > `Developer Tools` or on a Mac hit `command`+`option`+`i`.")
+```
+
+The other reason we want several browsers is for testing our sites. Before you ever deploy a site on the web, you test them using a browser on your local machine. I always test my web sites in Chrome, Firefox, and Safari to make sure everything looks good. I found out today that one of my sites looks like crap in Microsoft Edge. So now I test using four browsers.
+
+
+{{% todo %}}
+
+If you don't have them already, download and install [Google Chrome](https://www.google.com/chrome/) and either [Firefox](https://www.mozilla.org/en-US/firefox/new/) or [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/). Open the Developer tools and start poking around (see the figure above for instructions). Finally try to **view the source code** using the developer tools. This is where the raw HTML code for the site is hiding.
+
+> If you want to practice working with the dev tools of your new browser AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/page/tutorials/#html--css) tutorial in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
+
+## The R Environment
+
+### R
+
+R is both a software language and an environment for statistical computing and graphics. At some point, you will need to embrace a programming environment to analyze your data and summarize your findings using figures, tables, etc. R is certainly not the only way to do this; however, coupled with the ability to package everything in a website, I believe this environment offers a valuable suite of tools for your scientific needs. The benefits of R include; **a**) it is free and open source, **b**) its capabilities are extended through user-created packages, **c**) it has a huge community of users (which means it is well supported), **d**) it is powerful and flexible. We need R to run RStudio.
+
+### RStudio
+
+RStudio is an [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) for the R language. Take a moment to familiarize yourself with the idea of an IDE. The text editors described above are also IDEs.  RStudio is a syntax-highlighting editor that supports **direct code execution**, and tools for plotting, history, debugging and workspace management. We will use RStudio to create websites and interactive data products.
+
+### R Markdown
+
+R Markdown is a file format for making dynamic documents with R. R Markdown combines the syntax of Markdown with the language and an environment of R. R Markdown documents are written in [Markdown](https://en.wikipedia.org/wiki/Markdown)—-a “lightweight” [markup language](https://en.wikipedia.org/wiki/Markup_language) (like HTML), that uses a relatively simple syntax to facilitate the transformation of human-readable text files into .html or .pdf documents. What this means is that rather than writing HTML and CSS code to make a website, you write your content in Markdown, which is then translated (by RStudio in this case) to web content. R code is embedded within code chunks that RStudio can identify as code. RStudio/R then runs the code and renders the output within the HTML file.
+
+{{% todo %}}
+
+> It is important to follow the next steps in order. You must install R before RStudio or any R packages.
+
+#### Install R
+
+1) Go to https://www.r-project.org/
+2) At the top of the page under *Getting Started* click on the [download R](http://cran.r-project.org/mirrors.html) link.
+3) Select a mirror site to download R. It doesn't matter which one. A mirror site is an exact duplicate of the main site and is there to relieve web traffic.
+4) If possible, you want to download and install a precompiled binary distribution. Select your OS at the top of the page under **Download and Install R**.
+5) If you have a Mac OS X just click on the `.pkg` file to download and install. Other OS require additional steps.
+6) Test your install. Open R and type `sessionInfo()`. If you don't get an error, then the install is good.
+
+#### Install RStudio
+
+1) Go to https://rstudio.com/ and hit [Download](https://rstudio.com/products/rstudio/download/).
+2) Scroll down and hit the **Download** button under RStudio Desktop Free.
+3) Choose you operating system and install RStudio.
+
+#### Install R Packages
+
+R packages can be found in  several places including GitHub and The Comprehensive R Archive Network, or CRAN. On CRAN alone there are over 15,000 [packages](https://cran.r-project.org/web/packages/available_packages_by_name.html) available. You will need a few packages to get going with your web project and you will  install  more as the need arises.
+
+Before you install any packages, run the `library(<PACKAGE_NAME>)` command first. If you do not get an error that means the package is already installed.
+
+Here is a list of packages to start with:
+
+* `library(rmarkdown)` if you see `Error in library(rmarkdown) : there is no package called ‘rmarkdown’` then run `install.packages('rmarkdown')`. Depending on your R install, you may have to wrap the package name in single or double quotes when installing. Just play around with it.
+* `library(knitr)` or `install.packages('knitr')` if you get an error.
+* `library(DT)` or `install.packages('DT')`
+* `library(ggplot2)`  or `install.packages('ggplot2')`
+
+If you have problems with any of these steps, we will help.  Open up RStudio and start looking around. You can personalize the appearance of the IDE by going to `RStudio` > `Preferences`. You can also download a cheat sheet [here](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf) that contains some additional information on the RStudio IDE.
+
+{{% todo %}}
+
+#### Tutorials & Readings
+
+Please go through the following material.
+
+##### R Markdown
+
+* Start with the [R Markdown Quick Tour](https://rmarkdown.rstudio.com/authoring_quick_tour.html).
+* Then go through the [introductory lessons](https://rmarkdown.rstudio.com/lesson-1.html). These are really short.
+* Our main resource for the course is [The Definitive R Markdown Guide](https://bookdown.org/yihui/rmarkdown/).
+
+As the authors state in the Preface, *This book may serve you better as a reference book than a textbook. It contains a large number of technical details, and we do not expect you to read it from beginning to end, since you may easily feel overwhelmed. Instead, think about your background and what you want to do first, and go to the relevant chapters or sections.* **Read Chapters 2 & 3**
+
+Now grab a few cheat sheets for your reference (available as pdfs). Go through these so you can start getting familiar with the syntax and utility of the tools.
+
+[RStudio IDE Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf). This sheet gives an overview of the RStudio IDE.
+[R Markdown Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf), A general R Markdown reference.
+[R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf). A more detailed R Markdown reference. Pay specific attention to the section on *Chunk Options*. Chuck options are how we specify the way our R code is processed.
+
+## GitHub
+
+To understand  GitHub, we first need to know a little about `git`, the open-source version control system that GitHub is built on. What does that mean? Think about  the last paper or grant you worked on. You open a Word document, start typing, and at some point you have a draft. Now you send that draft to a co-author and they make a bunch of edits using *track changes* and send it back to you. Maybe they cut some text, make some corrections, add a table. You really like some of the text they cut from the original draft. You can't leave that text in the new draft but you don't want to delete the original draft. So, you save them both and now you have two versions, both of which contain slightly different information. Each time your draft goes through a revision you have a new version, and at some point, you have no idea what the difference are between each version. Out of control.
+
+Now imagine that instead of a single document, you have an entire R Markdown website full of dozens of files, each with hundreds of lines of  code and text. A single change in the code can wreck the whole site. Like the document example above, you could save every single version, no matter how subtle the difference. But I think we can all agree that would be insane.
+
+Enter version control with git and hosting with GitHub. [Git](https://en.wikipedia.org/wiki/Git) is a version-control system for tracking changes in source code and [GitHub](https://en.wikipedia.org/wiki/GitHub) is a web-based hosting service (or *hub*) for the versions.  You can use git without GitHub, but you cannot use GitHub without git. Let me show you what this looks like in practice.
+
+
+You have a project on your computer, a website for example. You fill pour a cup of coffee and start coding away on your website. At some point you stop because it's 2am and you can't see straight. So, you fire up a terminal and use a few git commands to send the project to its repository (repo for short)  on GitHub. Now you have two identical copies of your project, a *local* copy and a copy on GitHub. The next day you wake up with a new idea and  start coding away again. Now the local copy is different from the repo copy.  You again send the project to GitHub but this time the changes are recorded.
+
+Check out this image from one of my project repos on GitHub. Any document page you vist on GitHub will look like this. In the upper left is the repo name (*projectdigest*) and the name of the file, in this case *0_pw_intro.Rmd*. Based on the `.Rmd` extension we know this is an R Markdown file. In the bottom right of the screen shot there is a *history* button.
+
+```{r, echo=FALSE}
+blogdown::shortcode("figure", src ='"/img/lesson-1/git-1.png"', link='"/img/lesson-1/git-1.png"', alt = "Some alt text", caption = "GitHub page for an R Markdown document. ")
+```
+
+Click on that and you see  the full history of that file. Every time you make changes to your local copy and send those changes to GitHub are recorded on the history page. These cahnges are called *Commits*. Each commit has a unique identifier generated by git and any comments that you  attach to the commit. One thing to notice is that my commit comments are completely useless because they are vague. You want to include comments that have a specific meaning. What does *Update* tell me? Nothing at all since everything is technically an update. Make sure your commit descriptions are descriptive :)
+
+
+```{r, echo=FALSE}
+blogdown::shortcode("figure", src ='"/img/lesson-1/git-2.png"', link='"/img/lesson-1/git-2.png"', alt = "Some alt text", caption = "The commit history page. ")
+```
+
+Clicking on one of unique IDs takes you to the page that documents the changes made during that commit.
+
+```{r, echo=FALSE}
+blogdown::shortcode("figure", src ='"/img/lesson-1/git-3.png"', link='"/img/lesson-1/git-3.png"', alt = "Some alt text", caption = "Documentation of some changes that occured to `0_pw_intro.Rmd` during a commit.")
+```
+
+It looks like I changed 12 files during this commit. Remember, we are interested in the changes to *0_pw_intro.Rmd* but those changes were part of a larger commit where 11 other files also changed. Each of those files and all their changes are described on this page. Looking more closely at the image, you can see I deleted a block of HTML code (in red) and added some new code (in green).
+
+GitHub adds many features not available in git. GitHub is a graphical user interface (GUI) while git is a command-line interface (CLI). GitHub also offers a service called [GitHub Pages](https://pages.github.com/). GitHub Pages allows you to host a website from  a GitHub repository. This is how we will host our web products. But for now don't worry the details, we will get into git and GitHub in subsequent lessons.
+
+{{% todo %}}
+
+For now, I want you to sign up for a [GitHub](https://github.com/) account. Once you have an account, go to the page from the example above and repeat the steps I outlined. You can find that page [here](https://github.com/projectdigest/web/blob/master/build/0_pw_intro.Rmd). FYI you don't need an account to access the page.  You will be spending a lot of time using these tools--we will learn how to use git/GitHub in parallel with  our work on R Markdown. Learning how to use git/GitHub can be a little daunting at first, primarily because the terminology is sometimes not very intuitive. But it is an invaluable tool for our work.
+
+## Concluding Remarks
+
+I wanted to leave you with a few final thoughts. I made my first commit to GitHub a little over a year ago with my first web product, a single page R Markdown HTML document. I am a microbial ecologist, and I was collaborating with four regular ecologists on a project about fish and microbes. Anyway, long story short, they were having a hard time understanding the microbial data, or I was not doing a good job of explaining it. So I made an HTML page  outlining every  step of my  analysis, including all the code and results that I emailed to my collaborators. My collaborators were so excited that they started sending me additional material to add to the page.
+
+As the amount of material  paper accumulated, the single page turned into a project website. I made a GitHub repo for the site and used GitHub Pages to distribute site over the web. The I did my best to document everything we did in that study. When we submitted the paper, I included the project website as a place where people could find information not included in the main paper or supplementry material. During the revision process, I was able to quickly address reviewer comments because I could pull material directly from the website without having to dig around in the depths of my computer.
+
+The paper was published today :) and here is what it says in the *Data accessibilty* section.
+
+```{r, echo=FALSE}
+blogdown::shortcode("figure", src ='"/img/lesson-1/fish.png"', link='"https://projectdigest.github.io/"', alt = "Some alt text", caption = "Screen shot of the *Data accessibilty* section from the [publication](https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2367).")
+```
+
+Click on the image to check out the project website. Here you will  find access points to the raw data, the website code on GitHub, workflows that include R code, and many other bits of information. The site is nothing fancy but the entire project is now archived on the web.
+
+I learned by doing and that is my goal for you in this course. I also use R Markdown for presentations,  my CV, and  professional letters. Along the way, I have gained a lot of experience using other languages like  HTML, CSS, and Hugo for my projects.
+
+And that's it for this lesson. See you on Slack.
+
+```{r, echo=FALSE}
+blogdown::shortcode('edit', 'https://github.com/stri-con/data-curation/blob/master/content/post/lesson-1.Rmd')
+```
+
+```{r, echo=FALSE}
+blogdown::shortcode('anchor')
+```

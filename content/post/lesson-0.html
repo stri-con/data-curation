@@ -8,7 +8,7 @@ tags: ["R Markdown", "plot", "regression"]
 
 
 
-<p>In this mini lesson I’d like to demonstrate <strong>a</strong>) some Markdown syntax, <strong>b</strong>) how you run and format R code, and <strong>c</strong>) how to render R figures. If you read the <a href="/page/about/">Course Description</a> you have already seen examples of <a href="https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6">embedded</a> tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products.</p>
+<p>In this mini lesson I’d like to demonstrate <strong>a</strong>) some Markdown syntax, <strong>b</strong>) how you run and format R code, and <strong>c</strong>) how to render R figures. If you read the Course Description you have already seen examples of <a href="https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6">embedded</a> tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products.</p>
 <blockquote>
 <p>R Markdown integrates the concepts of <a href="https://en.wikipedia.org/wiki/Literate_programming">literate programming</a> and <a href="https://en.wikipedia.org/wiki/Reproducibility">reproducible research</a>, which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.</p>
 </blockquote>
@@ -101,16 +101,16 @@ Carlos Lee
 <pre><code>$$
 \begin{cases}
 \dot{x}  = \sigma(y-x)  \\
-\dot{y} = \rho x - y - xz  \\  
-\dot{z} = -\beta z + xy  
+\dot{y} = \rho x - y - xz  \\
+\dot{z} = -\beta z + xy
 \end{cases}
 $$</code></pre>
 <p>becomes these elegant equations.</p>
 <p><span class="math display">\[
 \begin{cases}
 \dot{x}  = \sigma(y-x)  \\
-\dot{y} = \rho x - y - xz  \\  
-\dot{z} = -\beta z + xy  
+\dot{y} = \rho x - y - xz  \\
+\dot{z} = -\beta z + xy
 \end{cases}
 \]</span></p>
 <p>Nice. You can also use simple <code>inline</code> expressions where equations like this <code>$e^{i\pi} + 1 = 0$</code> looks like this <span class="math inline">\(e^{i\pi} + 1 = 0\)</span> or this equation <code>$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$</code> is rendered like this <span class="math inline">\(f(k) = {n \choose k} p^{k} (1-p)^{n-k}\)</span>.</p>
@@ -128,8 +128,7 @@ $$</code></pre>
 <li>Begin with three back ticks (on a mac this is the upper left key), then open curly bracket, then the name of the language (in this case <code>r</code>), followed by a closed curly bracket, and finally a line break. This tells R Studio this is R code.</li>
 <li>An optional but best practice step is to also include a <strong>unique chunk name</strong> and <strong>chunk options</strong>. We will discuss both of these in later lessons.</li>
 <li>On subsequent lines you write the R code like normal.</li>
-<li>Within the chunk you can add comments by beginning a line with a hash tag. R Studio will not interpret this as code.<br />
-</li>
+<li>Within the chunk you can add comments by beginning a line with a hash tag. R Studio will not interpret this as code.</li>
 <li>Add a final line break. End with three back ticks.</li>
 </ol>
 <p>Here is what the example looks like in code chunk format.</p>
@@ -163,7 +162,7 @@ qplot(speed, dist, data=cars) + geom_smooth()
 <p><span class="math display">\[
 \begin{cases}
 x_{i + 1} = sin(ay_i) - cos(bx_i) \\
-y_{i + 1} = sin(cx_i) - cos(dy_i)  
+y_{i + 1} = sin(cx_i) - cos(dy_i)
 \end{cases}
 \]</span></p>
 <p>With these variables:</p>
@@ -186,8 +185,8 @@ opt &lt;- theme(legend.position  = &quot;none&quot;,
             panel.grid       = element_blank(),
             axis.title       = element_blank(),
             axis.text        = element_blank())
- 
-cppFunction(&#39;DataFrame createTrajectory(int n, double x0, double y0, 
+
+cppFunction(&#39;DataFrame createTrajectory(int n, double x0, double y0,
             double a, double b, double c, double d) {
             // create the columns
             NumericVector x(n);
@@ -202,10 +201,10 @@ cppFunction(&#39;DataFrame createTrajectory(int n, double x0, double y0,
             return DataFrame::create(_[&quot;x&quot;]= x, _[&quot;y&quot;]= y);
             }
             &#39;)
- 
-# Parameters: 
+
+# Parameters:
 a = -1.164
-b = 1.41 
+b = 1.41
 c = -1.42
 d = -1.6
 
@@ -214,18 +213,15 @@ df &lt;- createTrajectory(10000000, 0, 0, a, b, c, d)
 </details>
 <p><br/></p>
 <p>And now we plot the results and save a <code>png</code> copy just in case. With so many iterates this will take a minute or two to run. During the course, we will discuss the option <em>caching</em> code that takes a long time to run.</p>
-<pre class="r"><code>ggplot(df, aes(x, y)) + 
-  geom_point(color=&quot;#007da2&quot;, shape=46, alpha=.01) + 
-  opt + 
+<pre class="r"><code>ggplot(df, aes(x, y)) +
+  geom_point(color=&quot;#007da2&quot;, shape=46, alpha=.01) +
+  opt +
   theme(panel.background = element_rect(fill = &#39;#ffffff&#39;))</code></pre>
 <p><img src="/data-curation/post/lesson-0_files/figure-html/clifford_plot-1.png" width="672" /></p>
 <p>Amazing what a couple of simple trigonometric functions iterated 10,000,000 times can do.</p>
-<p>If you have regular old R installed, try running the scipt which is available here: <a href="../../../../files/lesson-0-clifford.R">Clifford code</a>. There is a small description on the top. You may need to install some libraries.</p>
+<p>If you have regular old R installed, try running the scipt which is available to download here: <a href="../../../../files/lesson-0-clifford.R">Clifford code</a>. There is a small description on the top. You may need to install some libraries.</p>
 <p>And that’s it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others will be added as needed. I will also post a general course outline soon.</p>
 <p>As we move forward keep your <i class="fa fa-eye"></i> out for the <i class="fa fa-pencil" aria-hidden="true"></i> icon. This is where you can find a link to the raw code for the page on GitHub. The little button on the top of the page (the one that looks like a cat) will take you to the main GitHub repo for this site.</p>
-<p class="edit-page">
-<a href="https://github.com/stri-con/data-curation/blob/master/content/post/lesson-0.Rmd">
-<i class="fas fa-pen pr-2"></i> <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
-</a>
-</p>
+{{% edit "https://github.com/stri-con/data-curation/blob/master/content/post/lesson-0.Rmd" %}}
+{{% anchor %}}
 </div>

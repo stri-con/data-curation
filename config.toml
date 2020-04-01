@@ -67,10 +67,10 @@ unsafe= true
     url = "/page/about/"
     weight = 2
 
-#[[menu.main]]
-#    name = "Topics Calendar"
-#    url = "/page/topics/"
-#    weight = 3
+[[menu.main]]
+    name = "Tutorials"
+    url = "/page/tutorials/"
+    weight = 3
 
 [[menu.main]]
     name = "Course Resources"

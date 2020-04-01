@@ -1,21 +1,17 @@
 ---
-author: Sean Connolly
-date: "2015-04-03T02:13:50Z"
+author: Jarrod
+date: "2020-03-28T02:13:50Z"
 description:
 title: Resources
 ---
 
 ## Coming Soon
 
-We (you and I) will add tools to this page as we go along. Until then, here is a puppy.
+We (you and I) will add tools to this page as we go along. Until then, here's a puppy.
 
-![puppy](../../img/puppy.jpg)
+{{< figure src="../../img/puppy.jpg" title="puppy" height="350px">}}
 
 Photo credit Dog789, licenced under <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>. <a href="https://upload.wikimedia.org/wikipedia/commons/c/c1/Dog_black_and_white_puppy.jpg">Original file</a>.
 
 
-<p class="edit-page">
-  <a href="https://github.com/stri-con/data-curation/blob/master/content/page/resources.md">
-    <i class="fas fa-pen pr-2"></i>  <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
-  </a>
-</p>
+{{< edit "https://github.com/stri-con/data-curation/blob/master/content/page/resources.md">}}

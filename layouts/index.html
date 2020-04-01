@@ -2,7 +2,7 @@
 
 <div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
     {{ partial "intro.html" . }}
-    <p>Welcome to the LockDown 2020 Continuing Education course on Data Curation at STRI-Panama. This site is made using many of the tools we will learn about in this course and will be our guidebook as we make our way through the various topics. I will post lessons on this page once per week. If this is your first time here please read the <a href="page/about/">Course Description</a> page for an overview and introduction.</p>
+    <p>Welcome to the LockDown 2020 Continuing Education course on Data Curation. This site is made using many of the tools we will learn about in this course and will be our guidebook as we make our way through the various topics. I will post lessons on this page once per week. If this is your first time here please read the <a href="page/about/">Course Description</a> page for an overview and introduction.</p>
 
     <ol class="post-list">
         {{ $pag := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}

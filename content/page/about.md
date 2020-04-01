@@ -9,7 +9,7 @@ Estimated reading time: 5 minutes, 12 seconds.
 
 ## Welcome
 
-Welcome to the LockDown 2020 Continuing Education course on Data Curation at STRI-Panama. This site (written mainly in R Markdown) will be our guidebook as we make our way through the topics. Our main goals with the course are to **a**) create interactive, data-driven web products in R Markdown, **b**) host those products on GitHub, and **c**)  use tools like figshare for hosting data and data products. Along the way, we will  learn about version control in GitHub and how to use Slack for collaborating and interacting. We will also come up with other ideas for topics to explore. At times, this may be a little frustrating, but I promise with some hard work (and probably a few tears) you will have the tools to create a range of useful and beautiful documents including single HTML or PDF files, multi-page web sites, books, and presentations.
+Welcome to the LockDown 2020 Continuing Education course on Data Curation. This site (written mainly in R Markdown) will be our guidebook as we make our way through the topics. Our main goals with the course are to **a**) create interactive, data-driven web products in R Markdown, **b**) host those products on GitHub, and **c**)  use tools like figshare for hosting data and data products. Along the way, we will  learn about version control in GitHub and how to use Slack for collaborating and interacting. We will also come up with other ideas for topics to explore. At times, this may be a little frustrating, but I promise with some hard work (and probably a few tears) you will have the tools to create a range of useful and beautiful documents including single HTML or PDF files, multi-page web sites, books, and presentations.
 
 ### What is a web product?
 
@@ -38,8 +38,5 @@ My philosophy here is that I teach the way I learn. My goal is to create a venue
 And that's it for now. After reading this please let me know if you are (still) interested in the course and I will send you a Slack invitation. Also, please read [the first post](../../2020/03/28/lesson-0/) to get a better idea of some of the things you can do with these tools.
 
 
-<p class="edit-page">
-  <a href="https://github.com/stri-con/data-curation/blob/master/content/page/about.md">
-    <i class="fas fa-pen pr-2"></i>  <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
-  </a>
-</p>
+
+{{< edit "https://github.com/stri-con/data-curation/blob/master/content/page/about.md">}}
