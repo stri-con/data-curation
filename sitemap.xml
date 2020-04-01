@@ -13,27 +13,7 @@
   </url>
   
   <url>
-    <loc>/data-curation/tags/plot/</loc>
-    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/data-curation/post/</loc>
-    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/r-markdown/</loc>
-    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/regression/</loc>
-    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/</loc>
     <lastmod>2020-04-01T21:13:14-05:00</lastmod>
   </url>
   
@@ -59,6 +39,26 @@
   
   <url>
     <loc>/data-curation/2020/03/28/lesson-0/</loc>
+    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/plot/</loc>
+    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/r-markdown/</loc>
+    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/regression/</loc>
+    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/</loc>
     <lastmod>2020-03-28T21:13:14-05:00</lastmod>
   </url>
   
