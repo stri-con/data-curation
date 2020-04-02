@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+**Please erase what you do not use :) **
+
 **Describe the bug**
 A clear and concise description of what the bug is. A good exercise is to find the location in the code even if you do not know how to fix it.
 
