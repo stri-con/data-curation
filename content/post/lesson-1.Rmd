@@ -18,7 +18,6 @@ library(htmltools)
 
 We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. If you are interested in developing your skills in HTML and CSS, you can check  a fantastic tutorial I linked on the [Tutorials](/data-curation/page/tutorials/). You can access that page up top in the navigation bar.  Let's begin.
 
-
 In this lesson you will install the tools that we need for the course. Once you have them installed, I would like you to dig around for a bit so that you get familiar with the interfaces and functionalities. Specific instructions can be found in each section below.
 
 1) [Map out a project idea for the course](#course-projects-1).
@@ -45,7 +44,7 @@ It is totally up to you what kind of project you work on; the sky is the limit. 
 Conceptualize a web project. It doens't matter if you make an outline, draw a [mind map](https://en.wikipedia.org/wiki/Mind_map), use a [Trello board](https://trello.com/), whatever you like.  Your assignment is to sketch out the concept; **a**) what information or story you want to present and **b**) how do you want to present it.
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"../../../../img/mind_map.png"', link='"../../../../img/mind_map.png"', alt = "Some alt text", caption = "Tennis Mind Map by http://mindmapping.bg ([source](http://mindmapping.bg/mindmaps/examples/handmade/#!prettyPhoto)). Licenced under [CC BY-SA 2.5](https://commons.wikimedia.org/w/index.php?curid=27851268). The Wikimedia Commons source page for the image can be found [here]((https://commons.wikimedia.org/wiki/File:Tennis-mindmap.png)).")
+blogdown::shortcode("figure", src ='"/data-curation/img/lesson-1/mind_map.png"', link='"/data-curation/img/lesson-1/mind_map.png"', alt = "Some alt text", caption = "Tennis Mind Map by http://mindmapping.bg ([source](http://mindmapping.bg/mindmaps/examples/handmade/#!prettyPhoto)). Licenced under [CC BY-SA 2.5](https://commons.wikimedia.org/w/index.php?curid=27851268). The Wikimedia Commons source page for the image can be found [here]((https://commons.wikimedia.org/wiki/File:Tennis-mindmap.png)).")
 ```
 
 Think about the content and organization of your project. Do you have images or tables? Do want to make figures and run code? Do you want to embed videos? Make a turtorial? Each piece of this puzzle will require specific tools and the more we can figure out now the easier it will be down the road.
@@ -79,14 +78,20 @@ Slack is vital tool for this course. Since we can't leave our homes and my inter
 The next thing you need is a good text editor. I will offer you some recommendations and general guidelines. The key thing to look for is a good **source code editor**. This means  that if you tell the editor what language you are writing in (e.g., Markdown), the software will apply special syntax highlighting so you can easily distinguish types of code from regular text. A good editor will also have automatic code formatting,  so you don't have to keep writing the same code over and over.
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"../../../../img/syntax.png"', alt = "Some alt text", link='"../../../../img/syntax.png"', caption = "Syntax highlighting of the page in Atom. Notice how headers, bold text, and hyperlinks are formatted differently.")
+blogdown::shortcode("figure", src ='"/data-curation/img/lesson-1/syntax.png"', alt = "Some alt text", link='"/data-curation/img/lesson-1/syntax.png"', caption = "Syntax highlighting of the page in Atom. Notice how headers, bold text, and hyperlinks are formatted differently.")
 ```
 
 R Studio has a good text editing window that I mainly use for testing and writing R code, but it can be clunky for most other types of coding. I write my regular text and code in [Atom](https://atom.io/), a free, open-source, **cross-platform** text and source code editor. Atom works on any operating system. When I need to manipulate large text files, I use [BBEdit](https://www.barebones.com/products/bbedit/). BBEdit is fine  as a source code editor but what makes this an amazing tool is that it integrates [`grep`](https://en.wikipedia.org/wiki/Grep) functionality. Grep allows you to quickly run complex find-and-replace commands that remove or leave characters of any type. Grep is also a command-line tool but having Grep functionality in a text editor is awesome. Sadly, I think it is only for Mac :( BBEdit has a nice [Grep Tutorial](https://anybrowser.org/bbedit/grep.html) that is worth checking out. My last recommendation is [Sublime Text](https://www.sublimetext.com/). Like Atom, Sublime is a cross-platform text and source code editor. It is technically not free, but the trial period never ends. So if you use it a lot, buy a copy. Their homepage has a nice little movie that shows some of the capabilities that I mentioned above. Please have a look.
 
 {{% todo %}}
 
-Get a good text editor or two. I want you to start playing around with these tools. If you search the internet for "Best text editors" there are a ton of articles. Here are a couple of articles to get you started. Windows specific [Best Text Editor For Windows In 2019](https://www.techtimes.com/brandspin/240045/20190325/top-5-best-text-editor-windows-2019.htm) and general [Best text editors in 2020](https://www.techradar.com/best/best-text-editors). Once you have a good editor, head to the bottom of this page and click the *Edit this page* link. The link should take you directly to the source code on GitHub. Copy the code and paste it into your text editor so you can see what the syntax formatting looks like. Make sure to change the language to Markdown. In most text editors there is a button on the bottom of the window where you can make a selection.
+Get a good text editor or two. I want you to start playing around with these tools. If you search the internet for "Best text editors" there are a ton of articles. Here are a couple of articles to get you started. Windows specific [Best Text Editor For Windows In 2019](https://www.techtimes.com/brandspin/240045/20190325/top-5-best-text-editor-windows-2019.htm) and general [Best text editors in 2020](https://www.techradar.com/best/best-text-editors).
+
+Once you have a good editor, head to [this page](https://github.com/istmobiome/istmobiome.github.io/blob/master/DIGEST/Phyloseq_workflow.Rmd). The link should take you directly to the source code for a single page R Markdown document on GitHub. Copy the code and paste it into your text editor  or right click on **Raw** and select *Save Link as*, and give it a name like `test.Rmd`. The `.Rmd` extension will be recognized by RStudio so open the file in RStudio as well. Make sure to change the language to Markdown in your text editor. In most text editors there is a button on the bottom of the window where you can make a selection.
+
+The content of the file is not important. What I would like you to do is look at the syntax formatting. Notice the text that is colored differently. The file is mainly a mixture of R code and Markdown. Depending on the text editor the R code may not color very well. If you open the file in RStudio you can see the code beter.
+
+Now look at the [actual web version](https://istmobiome.github.io/DIGEST/Phyloseq_workflow.html) of this file. Compare the two. Look at how any colored text from the raw file is formatted in the HTML version. 
 
 > If you want to practice working in your new source code editor AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/data-curation/page/tutorials/#html--css) tutorial by Oliver James linked in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
 
@@ -95,7 +100,7 @@ Get a good text editor or two. I want you to start playing around with these too
 The next item on our list is a [web browser](https://en.wikipedia.org/wiki/Web_browser) with **good developer tools**. Not all web browsers are created equal in this sense so it’s good to have a few installed on your computer. Developer tools serve many purposes and are powerful allies for web designers. For our purposes, these tools will help us explore the underlying code of a site. Take a look at the window below. The box on the left is showing the CSS formatting for a blockquote (font family, font color, etc.) while the box on the right show the HTML code.
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"../../../../img/browser.png"', link='"../../../../img/browser.png"', alt = "Some alt text", caption = "Image of Chrome Developer tools for this page. To access the tools go to `View` > `Developer` > `Developer Tools` or on a Mac hit `command`+`option`+`i`.")
+blogdown::shortcode("figure", src ='"/data-curation/img/lesson-1/browser.png"', link='"/data-curation/img/lesson-1/browser.png"', alt = "Some alt text", caption = "Image of Chrome Developer tools for this page. To access the tools go to `View` > `Developer` > `Developer Tools` or on a Mac hit `command`+`option`+`i`.")
 ```
 
 The other reason we want several browsers is for testing our sites. Before you ever deploy a site on the web, you test them using a browser on your local machine. I always test my web sites in Chrome, Firefox, and Safari to make sure everything looks good. I found out today that one of my sites looks like crap in Microsoft Edge. So now I test using four browsers.
@@ -189,20 +194,20 @@ You have a project on your computer, a website for example. You fill pour a cup 
 Check out this image from one of my project repos on GitHub. Any document page you vist on GitHub will look like this. In the upper left is the repo name (*projectdigest*) and the name of the file, in this case *0_pw_intro.Rmd*. Based on the `.Rmd` extension we know this is an R Markdown file. In the bottom right of the screen shot there is a *history* button.
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"../../../../img/lesson-1/git-1.png"', link='"../../../../img/lesson-1/git-1.png"', alt = "Some alt text", caption = "GitHub page for an R Markdown document. ")
+blogdown::shortcode("figure", src ='"/data-curation/img/lesson-1/git-1.png"', link='"/data-curation/img/lesson-1/git-1.png"', alt = "Some alt text", caption = "GitHub page for an R Markdown document. ")
 ```
 
 Click on that and you see  the full history of that file. Every time you make changes to your local copy and send those changes to GitHub are recorded on the history page. These cahnges are called *Commits*. Each commit has a unique identifier generated by git and any comments that you  attach to the commit. One thing to notice is that my commit comments are completely useless because they are vague. You want to include comments that have a specific meaning. What does *Update* tell me? Nothing at all since everything is technically an update. Make sure your commit descriptions are descriptive :)
 
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"../../../../img/lesson-1/git-2.png"', link='"../../../../img/lesson-1/git-2.png"', alt = "Some alt text", caption = "The commit history page. ")
+blogdown::shortcode("figure", src ='"./data-curation/img/lesson-1/lesson-1/git-2.png"', link='"/data-curation/img/lesson-1/git-2.png"', alt = "Some alt text", caption = "The commit history page. ")
 ```
 
 Clicking on one of unique IDs takes you to the page that documents the changes made during that commit.
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"../../../../img/lesson-1/git-3.png"', link='"../../../../img/lesson-1/git-3.png"', alt = "Some alt text", caption = "Documentation of some changes that occured to `0_pw_intro.Rmd` during a commit.")
+blogdown::shortcode("figure", src ='"/data-curation/img/lesson-1/git-3.png"', link='"/data-curation/img/lesson-1/git-3.png"', alt = "Some alt text", caption = "Documentation of some changes that occured to `0_pw_intro.Rmd` during a commit.")
 ```
 
 It looks like I changed 12 files during this commit. Remember, we are interested in the changes to *0_pw_intro.Rmd* but those changes were part of a larger commit where 11 other files also changed. Each of those files and all their changes are described on this page. Looking more closely at the image, you can see I deleted a block of HTML code (in red) and added some new code (in green).
@@ -224,7 +229,7 @@ As the amount of material  paper accumulated, the single page turned into a proj
 The paper was published today :) and here is what it says in the *Data accessibilty* section.
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"../../../../img/lesson-1/fish.png"', link='"https://projectdigest.github.io/"', alt = "Some alt text", caption = "Screen shot of the *Data accessibilty* section from the [publication](https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2367).")
+blogdown::shortcode("figure", src ='"/data-curation/img/lesson-1/fish.png"', link='"https://projectdigest.github.io/"', alt = "Some alt text", caption = "Screen shot of the *Data accessibilty* section from the [publication](https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2367).")
 ```
 
 Click on the image to check out the project website. Here you will  find access points to the raw data, the website code on GitHub, workflows that include R code, and many other bits of information. The site is nothing fancy but the entire project is now archived on the web.
