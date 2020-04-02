@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+**Please erase what you do not use :) **
+
 Please answer any applicable questions:
 
 **Is your feature request related to a problem? Please describe.**
