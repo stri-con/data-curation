@@ -16,7 +16,7 @@ library(blogdown)
 library(htmltools)
 ```
 
-We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. If you are interested in developing your skills in HTML and CSS, you can check the a fantastic tutorial I linked on the Tutorials. You can access that page up top in the navigation bar.  Let's begin.
+We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. If you are interested in developing your skills in HTML and CSS, you can check  a fantastic tutorial I linked on the [Tutorials](/data-curation/page/tutorials/). You can access that page up top in the navigation bar.  Let's begin.
 
 
 In this lesson you will install the tools that we need for the course. Once you have them installed, I would like you to dig around for a bit so that you get familiar with the interfaces and functionalities. Specific instructions can be found in each section below.
@@ -88,7 +88,7 @@ R Studio has a good text editing window that I mainly use for testing and writin
 
 Get a good text editor or two. I want you to start playing around with these tools. If you search the internet for "Best text editors" there are a ton of articles. Here are a couple of articles to get you started. Windows specific [Best Text Editor For Windows In 2019](https://www.techtimes.com/brandspin/240045/20190325/top-5-best-text-editor-windows-2019.htm) and general [Best text editors in 2020](https://www.techradar.com/best/best-text-editors). Once you have a good editor, head to the bottom of this page and click the *Edit this page* link. The link should take you directly to the source code on GitHub. Copy the code and paste it into your text editor so you can see what the syntax formatting looks like. Make sure to change the language to Markdown. In most text editors there is a button on the bottom of the window where you can make a selection.
 
-> If you want to practice working in your new source code editor AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/page/tutorials/#html--css) tutorial in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
+> If you want to practice working in your new source code editor AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/data-curation/page/tutorials/#html--css) tutorial by Oliver James linked in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
 
 ## Browsers
 
@@ -105,7 +105,7 @@ The other reason we want several browsers is for testing our sites. Before you e
 
 If you don't have them already, download and install [Google Chrome](https://www.google.com/chrome/) and either [Firefox](https://www.mozilla.org/en-US/firefox/new/) or [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/). Open the Developer tools and start poking around (see the figure above for instructions). Finally try to **view the source code** using the developer tools. This is where the raw HTML code for the site is hiding.
 
-> If you want to practice working with the dev tools of your new browser AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/page/tutorials/#html--css) tutorial in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
+> If you want to practice working with the dev tools of your new browser AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/data-curation/page/tutorials/#html--css) tutorial by Oliver James linked in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
 
 ## The R Environment
 

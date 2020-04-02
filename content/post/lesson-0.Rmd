@@ -181,7 +181,7 @@ In the examples below, you will notice that some of the R code shows the code ch
 
 Great. Now let's look at something a little more interesting.
 
-I really like iteration, chaos, and fractals. So I was pretty jazzed to find this [R code](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) by Fronkonstin for plotting [Clifford Attractors](http://paulbourke.net/fractals/clifford/), a type of [strange attractor](https://en.wikipedia.org/wiki/Attractor) discovered/invented by [Cliff Pickover](https://en.wikipedia.org/wiki/Clifford_A._Pickover). Clifford Attractors are made by iterating two trigonometric functions (initial conditions $x = 0$ & $y = 0$) with four variables ($a, b, c, d$). The code will generate 10,000,000 points (iterates) and render the results as a pretty sweet graphic.
+I really like iteration, chaos, and fractals. So I was pretty jazzed to find this [R code](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) by Fronkonstin for plotting [Clifford Attractors](http://paulbourke.net/fractals/clifford/), a type of [strange attractor](https://en.wikipedia.org/wiki/Attractor#Strange_attractor) discovered/invented by [Cliff Pickover](https://en.wikipedia.org/wiki/Clifford_A._Pickover). Clifford Attractors are made by iterating two trigonometric functions (initial conditions $x = 0$ & $y = 0$) with four variables ($a, b, c, d$). The code will generate 10,000,000 points (iterates) and render the results as a pretty sweet graphic.
 
 Here is the equation I used in the script below:
 
