@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 02:13:50 +0000</lastBuildDate>
     
 	<atom:link href="/data-curation/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Solving Problems</title>
+      <link>/data-curation/2020/04/03/help/</link>
+      <pubDate>Fri, 03 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/2020/04/03/help/</guid>
+      <description>To make a successful coding project or website you need to know where and how to get help. In future posts, I will cover approaches specific to certain tools. In this post, I want to share some general tips and tricks about getting and asking for help. I touch on the idea of best practices to use so that your question is answered in the most efficient and effective way possible.</description>
+    </item>
     
     <item>
       <title>Lesson 1: Building Your Working 🧱️ Environment</title>
