@@ -17,15 +17,15 @@ Knowing how to use the CLI is important for a lot of [reasons](https://www.dataq
 
 Ok, here is where I get into trouble. Since I do not have a Windows machine and have so little experience with Windows CLI (DOS), I cannot vet any tutorial the same way I would for other operating systems. I would really appreciate Windows users recommending some good tutorials. I think the syntax and commands are [the same or very similar](https://www.w3schools.com/whatis/whatis_cli.asp).
 
-One word of advice. The command `rm` stands for **remove**. It is similar to moving a file to the trash except `rm` *deletes* the file. It is extremely difficult (impossible?) to undo `rm` so it is good practice to always include the `-i` flag when running this command. Adding this flag forces, you to confirm that you want to delete the file. If I want to remove a file called `file.txt` I would run the command like this: `rm -i file.txt`. Once I hit enter, I receive a message that say `remove file.txt?`. I must answer `y` or `n` or the command will not run. Many important files and directories on your computer are **write protected** meaning that you must enter a password to delete them. Most of the time you will be ok. But running `rm` incorrectly, without the `-i` flag, in the wrong place on your computer, can be **catastrophic**. Please be careful with your new powers.
+One word of advice. The command `rm` stands for **remove**. It is similar to moving a file to the trash except `rm` *deletes* the file. It is extremely difficult (impossible?) to undo `rm` so it is good practice to always include the `-i` flag when running this command. Adding this flag forces, you to confirm that you want to delete the file. If I want to remove a file called `file.txt` I would run the command like this: `rm -i file.txt`. Once I hit enter, I receive a message that asks `remove file.txt?`. I must answer `y` or `n` or the command will not run. Many important files and directories on your computer are **write protected**, meaning that you must enter a password to delete them. Most of the time you will be ok. But running `rm` incorrectly, without the `-i` flag, in the wrong place on your computer, can be **catastrophic**. Please be careful with your new powers.
 
 ### Beginner Tutorials
 
-If you have never used CLI before, please go through the [Command Line Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) and then the tutorial on how to [Configure Your Command Line](https://www.vikingcodeschool.com/web-development-basics/configure-your-command-line). You can also have a look at Chapter 1 of [Conquering the Command Line](http://conqueringthecommandline.com/book/basics).
-
-If you prefer video, check out this great ~20 minute [tutorial](https://www.youtube.com/watch?v=BFMyUgF6I8Y) from freeCodeCamp.org. If you are willing to spend a little more time (~1hr) [this tutorial](https://www.youtube.com/watch?v=oxuRxtrO2Ag) from [Joe Collins](https://www.youtube.com/channel/UCTfabOKD7Yty6sDF4POBVqA) is amazing.
-
-I would also like you to look at this totally rad tool called [Explain Shell](https://explainshell.com/). I found it today when researching this article. Just type in a command and hit Explain.
+* If you have never used CLI before, please go through the [Command Line Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) and then the tutorial on how to [Configure Your Command Line](https://www.vikingcodeschool.com/web-development-basics/configure-your-command-line).
+* You can also have a look at Chapter 1 of [Conquering the Command Line](http://conqueringthecommandline.com/book/basics).
+* If you prefer video, check out this great ~20 minute [tutorial](https://www.youtube.com/watch?v=BFMyUgF6I8Y) from freeCodeCamp.org.
+* If you are willing to spend a little more time (~1hr) [this tutorial](https://www.youtube.com/watch?v=oxuRxtrO2Ag) from [Joe Collins](https://www.youtube.com/channel/UCTfabOKD7Yty6sDF4POBVqA) is amazing.
+* I would also like you to look at this amazing tool called [Explain Shell](https://explainshell.com/). I found it today when researching this article. Just type in a command and hit Explain.
 
 ###  Advanced Users
 

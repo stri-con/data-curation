@@ -201,7 +201,7 @@ Click on that and you see  the full history of that file. Every time you make ch
 
 
 ```{r, echo=FALSE}
-blogdown::shortcode("figure", src ='"./data-curation/img/lesson-1/lesson-1/git-2.png"', link='"/data-curation/img/lesson-1/git-2.png"', alt = "Some alt text", caption = "The commit history page. ")
+blogdown::shortcode("figure", src ='"/data-curation/img/lesson-1/git-2.png"', link='"/data-curation/img/lesson-1/git-2.png"', alt = "Some alt text", caption = "The commit history page. ")
 ```
 
 Clicking on one of unique IDs takes you to the page that documents the changes made during that commit.
