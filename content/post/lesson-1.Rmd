@@ -85,7 +85,7 @@ R Studio has a good text editing window that I mainly use for testing and writin
 
 {{% todo %}}
 
-Get a good text editor or two. I want you to start playing around with these tools. If you search the internet for "Best text editors" there are a ton of articles. Here are a couple of articles to get you started. Windows specific [Best Text Editor For Windows In 2019](https://www.techtimes.com/brandspin/240045/20190325/top-5-best-text-editor-windows-2019.htm) and general [Best text editors in 2020](https://www.techradar.com/best/best-text-editors).
+Get a good text editor or two. I want you to start playing around with these tools. If you search the internet for "Best text editors" there are a ton of articles. Here are a couple of articles to get you started. Windows specific [Best Text Editor For Windows In 2019](https://www.techtimes.com/brandspin/240045/20190325/top-5-best-text-editor-windows-2019.htm) and general [Best text editors in 2020](https://www.techradar.com/best/best-text-editors). Also check out this article on [14 Best Web Development IDE in 2020](https://tms-outsource.com/blog/posts/web-development-ide/).
 
 Once you have a good editor, head to [this page](https://github.com/istmobiome/istmobiome.github.io/blob/master/DIGEST/Phyloseq_workflow.Rmd). The link should take you directly to the source code for a single page R Markdown document on GitHub. Copy the code and paste it into your text editor  or right click on **Raw** and select *Save Link as*, and give it a name like `test.Rmd`. The `.Rmd` extension will be recognized by RStudio so open the file in RStudio as well. Make sure to change the language to Markdown in your text editor. In most text editors there is a button on the bottom of the window where you can make a selection.
 

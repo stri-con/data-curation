@@ -13,5 +13,10 @@ We (you and I) will add tools to this page as we go along. Until then, here's a 
 
 Photo credit Dog789, licenced under <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>. <a href="https://upload.wikimedia.org/wikipedia/commons/c/c1/Dog_black_and_white_puppy.jpg">Original file</a>.
 
+[LaTeX mathematics cheat sheet](https://davidhamann.de/2017/06/12/latex-cheat-sheet/)
+http://paulbourke.net/
+http://paulbourke.net/fractals/peterdejong/
+
+
 
 {{< edit "https://github.com/stri-con/data-curation/blob/master/content/page/resources.md">}}

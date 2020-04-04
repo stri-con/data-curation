@@ -2,7 +2,7 @@
 author: Jarrod
 date: "2020-04-03T02:13:50Z"
 description: Where to Look & How to Ask
-title: Solving Problems
+title: Problem Solving
 ---
 
 To make a successful coding project or website you need to know where *and* how to get help. In future posts, I will cover approaches specific to certain tools. In this post, I want to share some **general** tips and tricks about getting and asking for help. I touch on the idea of *best practices* to use so that your question is answered in the most efficient and effective way possible. Topics for this post are:
