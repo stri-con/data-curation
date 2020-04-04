@@ -37,10 +37,8 @@ Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curatio
       <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
       
       <guid>/data-curation/page/resources/</guid>
-      <description>Coming Soon We (you and I) will add tools to this page as we go along. Until then, here&amp;rsquo;s a puppy.
-  puppy   Photo credit Dog789, licenced under CC BY-SA. Original file.
-LaTeX mathematics cheat sheet http://paulbourke.net/ http://paulbourke.net/fractals/peterdejong/
- Edit this page  </description>
+      <description>This page contains quick access to valuable resources. I have categorized them based on language, tool etc.
+YAML  The YAML Fieldguide. List of YAML arguements &amp;amp; explaination for all types of documents.  Markdown  Markdown Tables Generator. Tired of typing all of those hyphens and pipes? Basic Markdown Syntax Reference Extended Markdown Syntax Reference.  Command Line Interface  Explain Shell. By Idan Kamara. Write a command to see the help text that matches each argument.</description>
     </item>
     
   </channel>

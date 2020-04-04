@@ -229,3 +229,6 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
 /*https://www.bryanbraun.com/anchorjs/#basic-usage*/
 .anchorjs-link::after {font-size: 100%;background-color: transparent;content: "\1F517";}
 figcaption{font-size: 0.8em;}
+ul {
+  list-style-type: circle;
+}
