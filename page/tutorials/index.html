@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tutorials &middot; STRI-CON</title>
+        <title>Self-Paced Tutorials &middot; STRI-CON</title>
         <meta name="description" content="Developing your Skills">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.67.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Tutorials">
+        <meta property="og:title" content="Self-Paced Tutorials">
 <meta property="og:description" content="Developing your Skills">
 <meta property="og:type" content="article">
 <meta property="og:url" content="/data-curation/page/tutorials/">
@@ -31,7 +31,7 @@
                     <div class="site-title-wrapper">
                         
                             <h1 class="site-title">
-                                <a title="Lessons" href="/data-curation/">Lessons</a>
+                                <a title="Lessons &amp; Readings" href="/data-curation/">Lessons &amp; Readings</a>
                             </h1>
                         
                         <a class="button-square" href="/data-curation/index.xml"><i class="fa fa-rss"></i></a>
@@ -61,7 +61,7 @@
     </li>
 
     <li class="site-nav-item">
-        <a title="Tutorials" href="/data-curation/page/tutorials/">Tutorials</a>
+        <a title="Self-Paced Tutorials" href="/data-curation/page/tutorials/">Self-Paced Tutorials</a>
     </li>
 
     <li class="site-nav-item">
@@ -78,7 +78,7 @@
 <div class="container">
     <article class="post-container">
         <header class="post-header">
-    <h1 class="post-title">Tutorials</h1>
+    <h1 class="post-title">Self-Paced Tutorials</h1>
     
         <p class="post-description">Developing your Skills</p>
     
@@ -89,10 +89,22 @@
 
     
       <div itemid="articleBody">
-        <p>As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you probably won&rsquo;t use. I decided to make this <em>Tutorials</em> page with optional material for anyone who wants to expand their knowledge beyond the immediate goals of the course.</p>
+        <p>As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don&rsquo;t think you need. <del>I decided to make this Tutorials page with optional material for anyone who wants to expand their knowledge beyond the immediate goals of the course.</del> <a href="https://github.com/stri-con/data-curation/commit/8f29d8ea71775ed4d6ad26ca6ffc51e713a4b306#diff-229378f5e56ea68007086e49f4b0465d">Originally</a> I considered everything on this page to be <em>optional</em>, however I changed my mind. As I thought more about the structure of the course, I concluded that I would be doing you all a disservice if I made tools like HTML and CSS optional. So, I am now flip flopping and changing this to a <strong>mandatory, self-paced tutorials</strong> page :) These tools are integral to our learning objectives so please try to forget what I said before.</p>
+<p>Future lessons will incorporate the skills described on this page, so it is time to start practicing. If there is demand for it, I am happy to turn any of these topics into separate lessons&ndash;just let me know. For now, you will work through tutorials available on the Web. These are the same tutorials I used but if you find other ones that you like please tell me or post to Slack and I will update this page.</p>
+<h2 id="command-line-interface">Command Line Interface<a href="#command-line-interface" class="hanchor" ariaLabel="Anchor"> 🔗&#xFE0E;</a> </h2>
+<p>A command line interface (CLI) is a text-based user interface (UI) used to view and manage computer files. This is in contrast to the graphical user interface (GUI) that most of us are accustomed to. All of the pointing, clicking, copying, and pasting you do with your computer&rsquo;s GUI can be done in the command line. Think of the CLI as the layer just below the GUI.</p>
+<p>Knowing how to use the CLI is important for a lot of <a href="https://www.dataquest.io/blog/why-learn-the-command-line/">reasons</a> (#1 does not apply to this course). For one, using git and GitHub from the command line is far easier and more useful than the git GUI programs.</p>
+<p>Ok, here is where I get into trouble. Since I do not have a Windows machine and have so little experience with Windows CLI (DOS), I cannot vet any tutorial the same way I would for other operating systems. I would really appreciate Windows users recommending some good tutorials. I think the syntax and commands are <a href="https://www.w3schools.com/whatis/whatis_cli.asp">the same or very similar</a>.</p>
+<p>One word of advice. The command <code>rm</code> stands for <strong>remove</strong>. It is similar to moving a file to the trash except <code>rm</code> <em>deletes</em> the file. It is extremely difficult (impossible?) to undo <code>rm</code> so it is good practice to always include the <code>-i</code> flag when running this command. Adding this flag forces, you to confirm that you want to delete the file. If I want to remove a file called <code>file.txt</code> I would run the command like this: <code>rm -i file.txt</code>. Once I hit enter, I receive a message that say <code>remove file.txt?</code>. I must answer <code>y</code> or <code>n</code> or the command will not run. Many important files and directories on your computer are <strong>write protected</strong> meaning that you must enter a password to delete them. Most of the time you will be ok. But running <code>rm</code> incorrectly, without the <code>-i</code> flag, in the wrong place on your computer, can be <strong>catastrophic</strong>. Please be careful with your new powers.</p>
+<h3 id="beginner-tutorials">Beginner Tutorials<a href="#beginner-tutorials" class="hanchor" ariaLabel="Anchor"> 🔗&#xFE0E;</a> </h3>
+<p>If you have never used CLI before, please go through the <a href="https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course">Command Line Crash Course</a> and then the tutorial on how to <a href="https://www.vikingcodeschool.com/web-development-basics/configure-your-command-line">Configure Your Command Line</a>. You can also have a look at Chapter 1 of <a href="http://conqueringthecommandline.com/book/basics">Conquering the Command Line</a>.</p>
+<p>If you prefer video, check out this great ~20 minute <a href="https://www.youtube.com/watch?v=BFMyUgF6I8Y">tutorial</a> from freeCodeCamp.org. If you are willing to spend a little more time (~1hr) <a href="https://www.youtube.com/watch?v=oxuRxtrO2Ag">this tutorial</a> from <a href="https://www.youtube.com/channel/UCTfabOKD7Yty6sDF4POBVqA">Joe Collins</a> is amazing.</p>
+<p>I would also like you to look at this totally rad tool called <a href="https://explainshell.com/">Explain Shell</a>. I found it today when researching this article. Just type in a command and hit Explain.</p>
+<h3 id="advanced-users">Advanced Users<a href="#advanced-users" class="hanchor" ariaLabel="Anchor"> 🔗&#xFE0E;</a> </h3>
+<p>Coming Soon.</p>
 <h2 id="html--css">HTML &amp; CSS<a href="#html--css" class="hanchor" ariaLabel="Anchor"> 🔗&#xFE0E;</a> </h2>
 <p>Websites are built on HTML, CSS, and JavaScript. For any site, HTML defines the content and structure; CSS provides the style and layout; JavaScript programs the behavior.</p>
-<p>If you want to develop your HTML/CSS skills, you can start by working through these tutorials. At this point in the course, learning HTML/CSS is <em>optional</em> but if there is enough demand for more, I can incorporate these languages more formerly. If you have no interest in learning these languages that is totally fine. You do not need them to use R Markdown. I do believe however that a little knowledge of HTML and CSS goes a long way. As I mentioned, if you go far enough with R Markdown, you will encounter its limitations. I encourage you check out some of these tutorials (right now there is only 1 :)</p>
+<p>If you want to develop your HTML/CSS skills, you can start by working through these tutorials. At this point in the course, learning HTML/CSS is <del><em>optional</em></del> self-paced, but if there is enough demand for more, I can incorporate these languages more formerly. If you have no interest in learning these languages that is totally fine. You do not need them to use R Markdown. I do believe however that a little knowledge of HTML and CSS goes a long way. As I mentioned, if you go far enough with R Markdown, you will encounter its limitations. I encourage you check out some of these tutorials (right now there is only 1 :)</p>
 <h3 id="interneting-is-hard">Interneting is Hard<a href="#interneting-is-hard" class="hanchor" ariaLabel="Anchor"> 🔗&#xFE0E;</a> </h3>
 <p>I have explored a lot of tutorials for HTML/CSS and this is my favorite. There are 14 lessons that cover  many important skills. The tutorials are simple and straightforward. It is also a good opportunity to start working in your fancy new source code editor and testing out the dev tool functions of your browser.</p>
 <h3 id="but-is-doesnt-have-to-be">But is doesn&rsquo;t have to be<a href="#but-is-doesnt-have-to-be" class="hanchor" ariaLabel="Anchor"> 🔗&#xFE0E;</a> </h3>
@@ -118,7 +130,7 @@
             <div class="container">
                 <div class="site-title-wrapper">
                     <h1 class="site-title">
-                        <a title="Lessons" href="/data-curation/">Lessons</a>
+                        <a title="Lessons &amp; Readings" href="/data-curation/">Lessons &amp; Readings</a>
                     </h1>
                     <a class="button-square button-jump-top js-jump-top" href="#">
                         <i class="fa fa-angle-up"></i>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lessons</title>
+    <title>Lessons &amp; Readings</title>
     <link>/data-curation/</link>
-    <description>Recent content on Lessons</description>
+    <description>Recent content on Lessons &amp; Readings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Solving Problems</title>
+      <title>Problem Solving</title>
       <link>/data-curation/2020/04/03/help/</link>
       <pubDate>Fri, 03 Apr 2020 02:13:50 +0000</pubDate>
       
@@ -31,13 +31,12 @@
     </item>
     
     <item>
-      <title>Tutorials</title>
+      <title>Self-Paced Tutorials</title>
       <link>/data-curation/page/tutorials/</link>
       <pubDate>Wed, 01 Apr 2020 02:13:50 +0000</pubDate>
       
       <guid>/data-curation/page/tutorials/</guid>
-      <description>As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you probably won&amp;rsquo;t use. I decided to make this Tutorials page with optional material for anyone who wants to expand their knowledge beyond the immediate goals of the course.
-HTML &amp;amp; CSS Websites are built on HTML, CSS, and JavaScript. For any site, HTML defines the content and structure; CSS provides the style and layout; JavaScript programs the behavior.</description>
+      <description>As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don&amp;rsquo;t think you need. I decided to make this Tutorials page with optional material for anyone who wants to expand their knowledge beyond the immediate goals of the course. Originally I considered everything on this page to be optional, however I changed my mind.</description>
     </item>
     
     <item>
@@ -78,6 +77,7 @@ Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curatio
       <guid>/data-curation/page/resources/</guid>
       <description>Coming Soon We (you and I) will add tools to this page as we go along. Until then, here&amp;rsquo;s a puppy.
   puppy   Photo credit Dog789, licenced under CC BY-SA. Original file.
+LaTeX mathematics cheat sheet http://paulbourke.net/ http://paulbourke.net/fractals/peterdejong/
  Edit this page  </description>
     </item>
     

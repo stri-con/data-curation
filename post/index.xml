@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Lessons</title>
+    <title>Posts on Lessons &amp; Readings</title>
     <link>/data-curation/post/</link>
-    <description>Recent content in Posts on Lessons</description>
+    <description>Recent content in Posts on Lessons &amp; Readings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Solving Problems</title>
+      <title>Problem Solving</title>
       <link>/data-curation/2020/04/03/help/</link>
       <pubDate>Fri, 03 Apr 2020 02:13:50 +0000</pubDate>
       
