@@ -65,12 +65,12 @@ h5 { font-size: 16px; margin-bottom: 15px; }
 h6 { font-size: 14px; margin-bottom: 12px; }
 p { line-height: 1.8; margin: 0 0 30px; }
 a { color: #006ddb; text-decoration: none; }
-ul, ol { line-height: 1.4; margin: 0 0 20px; }
+ul, ol { line-height: 1.4; margin: 0 0 10px; padding: 0 20px 0 40px; }
 ul ul, ul ol, ol ul, ol ol { margin: 10px 0 0 20px; }
 ul li, ol li { margin: 0 0 6px; }
 ul li:last-of-type, ol li:last-of-type { margin-bottom: 0; }
 blockquote { border-left: 2px dotted #006ddb; margin: 40px 0; padding: 5px 30px; }
-blockquote p { font-size: 1.2em;color: #3C3B3B; display: block; font-style: normal; margin: 0; width: 100%; }
+blockquote p { font-size: 1.1em;color: #3C3B3B; display: block; font-style: normal; margin: 0; width: 100%; }
 /* Added this, from here....*/
 p.edit-page > p:first-child::before {margin-top: 1rem; font-size: 1rem;}
 .edit-page {hyphens: auto; word-wrap: break-word; padding: 11px 0 12px; width: 100%;}
@@ -86,8 +86,8 @@ pre.r {border-left: 7px solid #006DDB;}
 pre code { padding: 0; }
 code { padding: 2px 4px; font-size: 90%; color: #006ddb; background-color: #f1f0ea; border-radius: 4px; }
 hr { border: none; border-bottom: 1px dotted #303030; margin: 45px 0; }
-table { margin-bottom: 40px; width: 100%; }
-table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th { background-color: #f7f7f3; }
+table { margin-bottom: 20px; margin-top: 20px; width: 100%; }
+table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th { background-color: #006DDB1A; }
 table th { padding: 0 10px 10px; text-align: left; }
 table td { padding: 10px; }
 table tr { border-bottom: 1px dotted #aeadad; }

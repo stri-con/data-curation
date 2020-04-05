@@ -20,12 +20,15 @@ We have a wide range of experience levels in this course, so the first lesson is
 
 In this lesson you will install the tools that we need for the course. Once you have them installed, I would like you to dig around for a bit so that you get familiar with the interfaces and functionalities. Specific instructions can be found in each section below.
 
+{{% opennote %}}
+The topics for this post are:
 1) [Map out a project idea for the course](#course-projects-1).
 2) [Join the Slack Workspace & participate](#slack-1).
 3) [Install & test text editors](#text-editors-1).
 4) [Install Chrome and/or Firefox then look at the dev tools](#browsers-1).
 5) [Install R, R Studio, & R packages. Dig around](#the-r-environment-1).
-6) [Install Github. Dig around](#github-1).
+6) [Join Github. Dig around](#github-1).
+{{% /opennote %}}
 
 At the end, I offer some concluding remarks by sharing a brief story about how I got started using R Markdown for web products.
 
@@ -91,7 +94,7 @@ Once you have a good editor, head to [this page](https://github.com/istmobiome/i
 
 The content of the file is not important. What I would like you to do is look at the syntax formatting. Notice the text that is colored differently. The file is mainly a mixture of R code and Markdown. Depending on the text editor the R code may not color very well. If you open the file in RStudio you can see the code beter.
 
-Now look at the [actual web version](https://istmobiome.github.io/DIGEST/Phyloseq_workflow.html) of this file. Compare the two. Look at how any colored text from the raw file is formatted in the HTML version. 
+Now look at the [actual web version](https://istmobiome.github.io/DIGEST/Phyloseq_workflow.html) of this file. Compare the two. Look at how any colored text from the raw file is formatted in the HTML version.
 
 > If you want to practice working in your new source code editor AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/data-curation/page/tutorials/#html--css) tutorial by Oliver James linked in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
 
@@ -176,9 +179,9 @@ As the authors state in the Preface, *This book may serve you better as a refere
 
 Now grab a few cheat sheets for your reference (available as pdfs). Go through these so you can start getting familiar with the syntax and utility of the tools.
 
-[RStudio IDE Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf). This sheet gives an overview of the RStudio IDE.
-[R Markdown Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf), A general R Markdown reference.
-[R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf). A more detailed R Markdown reference. Pay specific attention to the section on *Chunk Options*. Chuck options are how we specify the way our R code is processed.
+* [RStudio IDE Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf). This sheet gives an overview of the RStudio IDE.
+* [R Markdown Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf), A general R Markdown reference.
+* [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf). A more detailed R Markdown reference. Pay specific attention to the section on *Chunk Options*. Chuck options are how we specify the way our R code is processed.
 
 ## GitHub
 

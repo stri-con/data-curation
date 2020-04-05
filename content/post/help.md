@@ -2,19 +2,19 @@
 author: Jarrod
 date: "2020-04-03T02:13:50Z"
 description: Where to Look & How to Ask
-title: Problem Solving
+title: "Lesson 1A: Problem Solving"
 ---
 
-To make a successful coding project or website you need to know where *and* how to get help. In future posts, I will cover approaches specific to certain tools. In this post, I want to share some **general** tips and tricks about getting and asking for help. I touch on the idea of *best practices* to use so that your question is answered in the most efficient and effective way possible. Topics for this post are:
+To make a successful coding project or website you need to know where *and* how to get help. In future posts, I will cover approaches specific to certain tools. In this post, I want to share some **general** tips and tricks about getting and asking for help. I touch on the idea of *best practices* to use so that your question is answered in the most efficient and effective way possible.
 
-1) [The Open Source Community](#the-open-source-community) For context.
-2) [What you need help with](#what-is-your-goal).
-
-Then I get into three general platorms for finding help.
-
-3) [The Web](#the-web).
-4) [Hosting Services like GitHub](#hosting-services).
-5) [StackOverflow](#stackoverflow).
+{{% opennote %}}
+The topics for this post are:
+1) [An overview The Open Source Community for context](#the-open-source-community).
+2) [Figure out What you need help with](#what-is-your-goal).
+3) [Always start with a good search on The Web](#the-web).
+4) [Hosting Services like GitHub for bugs & feature requests](#hosting-services).
+5) [Use StackOverflow if you need to how to do something](#stackoverflow).
+{{% /opennote %}}
 
 Before we begin, I want to be perfectly clear about something.
 
@@ -50,6 +50,8 @@ Your answer will help you figure out the best place to look for help, what quest
 
  1) **Be specific**: The key to a successful web search is to be specific. Use the name of a package or software when possible. If appropriate, include your operating system, the software's version, the coding language, etc.
  2) **Quotes for exact terms**:  Quotes force an exact match, Like  ["*R Markdown*"](http://www.google.com/search?q="R+Markdown") vs [*R Markdown*](http://www.google.com/search?q=R+Markdown). There is a 75% reduction in the number of results when I put R Markdown in quotes.
+
+> When you get an error message you don’t understand: Copy-paste it into Google. Seriously, it works most of the time.
 
  ### Operators
 
