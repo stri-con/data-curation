@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2020 02:13:50 +0000</lastBuildDate>
     
 	<atom:link href="/data-curation/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Course Topics</title>
+      <link>/data-curation/page/topics/</link>
+      <pubDate>Sat, 04 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/topics/</guid>
+      <description> This page contains an outline of topics we will cover in this course and will updated often. As always, suggestions are welcome.   Please continue to work on your skills in CSS, HTML, and CLI. See the Self-Paced Tutorials for more information.
+   Lesson Topic Skills     L0 R Markdown example    L1 Setup IDE, Dev Tools, GitHub, RStudio   L1 Problem Solving Web search, GitHub, StackOverflow   L2 R Markdown Page YAML, Markdown, R Code chunks, inline R Code    R Markdown Page Tables, Figures    GitHub Submitting Issues &amp;amp; Requests, Pull Requests    Git &amp;amp; GitHub Git from the CLI, Creating &amp;amp; cloning a Repo, Push changes    Customization CSS style sheets, inline HTML code    R Markdown Site Take what you&amp;rsquo;ve learned and make a site    Archiving Data Figshare      Edit this page  </description>
+    </item>
     
     <item>
       <title>Lesson 0: An Example R Markdown Document</title>
@@ -20,6 +30,16 @@
       <guid>/data-curation/2020/03/28/lesson-0/</guid>
       <description>In this mini lesson I’d like to demonstrate a) some Markdown syntax, b) how you run and format R code, and c) how to render R figures. If you read the Course Description you have already seen examples of embedded tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products.
  R Markdown integrates the concepts of literate programming and reproducible research, which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>/data-curation/page/resources/</link>
+      <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/resources/</guid>
+      <description>This page contains quick access to valuable resources, categorized by language or tool including R Markdown, YAML, Markdown, Command Line Interface, CSS &amp;amp; HTML, MathJax.   R Markdown  R Markdown: The Definitive Guide. Title says it all. You should use this. A lot.
+  R Markdown Cookbook. Another must have. RStudio IDE Cheatsheet. An overview of the RStudio IDE. R Markdown Cheatsheet. A general R Markdown reference.</description>
     </item>
     
   </channel>

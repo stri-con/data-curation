@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 02:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2020 02:13:50 +0000</lastBuildDate>
     
 	<atom:link href="/data-curation/page/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Course Topics</title>
+      <link>/data-curation/page/topics/</link>
+      <pubDate>Sat, 04 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/topics/</guid>
+      <description> This page contains an outline of topics we will cover in this course and will updated often. As always, suggestions are welcome.   Please continue to work on your skills in CSS, HTML, and CLI. See the Self-Paced Tutorials for more information.
+   Lesson Topic Skills     L0 R Markdown example    L1 Setup IDE, Dev Tools, GitHub, RStudio   L1 Problem Solving Web search, GitHub, StackOverflow   L2 R Markdown Page YAML, Markdown, R Code chunks, inline R Code    R Markdown Page Tables, Figures    GitHub Submitting Issues &amp;amp; Requests, Pull Requests    Git &amp;amp; GitHub Git from the CLI, Creating &amp;amp; cloning a Repo, Push changes    Customization CSS style sheets, inline HTML code    R Markdown Site Take what you&amp;rsquo;ve learned and make a site    Archiving Data Figshare      Edit this page  </description>
+    </item>
     
     <item>
       <title>Self-Paced Tutorials</title>
@@ -18,7 +28,8 @@
       <pubDate>Wed, 01 Apr 2020 02:13:50 +0000</pubDate>
       
       <guid>/data-curation/page/tutorials/</guid>
-      <description>As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don&amp;rsquo;t think you need. I decided to make this Tutorials page with optional material for anyone who wants to expand their knowledge beyond the immediate goals of the course. Originally I considered everything on this page to be optional, however I changed my mind.</description>
+      <description>Jump to: CLI tutorials, HTML/CSS Tutorials.
+ As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don&amp;rsquo;t think you need. Originally I considered everything on this page to be optional, however I changed my mind. As I thought more about the structure of the course, I concluded that I would be doing you all a disservice if I made tools like HTML and CSS optional.</description>
     </item>
     
     <item>
@@ -37,8 +48,8 @@ Welcome Welcome to the LockDown 2020 Continuing Education course on Data Curatio
       <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
       
       <guid>/data-curation/page/resources/</guid>
-      <description>This page contains quick access to valuable resources. I have categorized them based on language, tool etc.
-YAML  The YAML Fieldguide. List of YAML arguements &amp;amp; explaination for all types of documents.  Markdown  Markdown Tables Generator. Tired of typing all of those hyphens and pipes? Basic Markdown Syntax Reference Extended Markdown Syntax Reference.  Command Line Interface  Explain Shell. By Idan Kamara. Write a command to see the help text that matches each argument.</description>
+      <description>This page contains quick access to valuable resources, categorized by language or tool including R Markdown, YAML, Markdown, Command Line Interface, CSS &amp;amp; HTML, MathJax.   R Markdown  R Markdown: The Definitive Guide. Title says it all. You should use this. A lot.
+  R Markdown Cookbook. Another must have. RStudio IDE Cheatsheet. An overview of the RStudio IDE. R Markdown Cheatsheet. A general R Markdown reference.</description>
     </item>
     
   </channel>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web search on Lessons &amp; Readings</title>
+    <link>/data-curation/tags/web-search/</link>
+    <description>Recent content in Web search on Lessons &amp; Readings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>STRI-CON</copyright>
+    <lastBuildDate>Fri, 03 Apr 2020 02:13:50 +0000</lastBuildDate>
+    
+	<atom:link href="/data-curation/tags/web-search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lesson 1A: Problem Solving</title>
+      <link>/data-curation/2020/04/03/help/</link>
+      <pubDate>Fri, 03 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/2020/04/03/help/</guid>
+      <description>To make a successful coding project or website you need to know where and how to get help. In future posts, I will cover approaches specific to certain tools. In this post, I want to share some general tips and tricks about getting and asking for help. I touch on the idea of best practices to use so that your question is answered in the most efficient and effective way possible.</description>
+    </item>
+    
+  </channel>
+</rss>

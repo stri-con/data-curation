@@ -7,35 +7,152 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2020 02:13:50 +0000</lastBuildDate>
     
 	<atom:link href="/data-curation/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>plot</title>
-      <link>/data-curation/tags/plot/</link>
-      <pubDate>Sat, 28 Mar 2020 21:13:14 -0500</pubDate>
+      <title>Git</title>
+      <link>/data-curation/tags/git/</link>
+      <pubDate>Sat, 04 Apr 2020 02:13:50 +0000</pubDate>
       
-      <guid>/data-curation/tags/plot/</guid>
+      <guid>/data-curation/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>/data-curation/tags/github/</link>
+      <pubDate>Sat, 04 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/data-curation/tags/r/</link>
+      <pubDate>Sat, 04 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
       <link>/data-curation/tags/r-markdown/</link>
-      <pubDate>Sat, 28 Mar 2020 21:13:14 -0500</pubDate>
+      <pubDate>Sat, 04 Apr 2020 02:13:50 +0000</pubDate>
       
       <guid>/data-curation/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>regression</title>
-      <link>/data-curation/tags/regression/</link>
+      <title>StackOverflow</title>
+      <link>/data-curation/tags/stackoverflow/</link>
+      <pubDate>Fri, 03 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/stackoverflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web search</title>
+      <link>/data-curation/tags/web-search/</link>
+      <pubDate>Fri, 03 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/web-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDE</title>
+      <link>/data-curation/tags/ide/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/tags/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plots</title>
+      <link>/data-curation/tags/plots/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/tags/plots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Studio</title>
+      <link>/data-curation/tags/r-studio/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/tags/r-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slack</title>
+      <link>/data-curation/tags/slack/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/tags/slack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CLI</title>
+      <link>/data-curation/tags/cli/</link>
+      <pubDate>Wed, 01 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>/data-curation/tags/css/</link>
+      <pubDate>Wed, 01 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>/data-curation/tags/html/</link>
+      <pubDate>Wed, 01 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>/data-curation/tags/markdown/</link>
       <pubDate>Sat, 28 Mar 2020 21:13:14 -0500</pubDate>
       
-      <guid>/data-curation/tags/regression/</guid>
+      <guid>/data-curation/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MathJax</title>
+      <link>/data-curation/tags/mathjax/</link>
+      <pubDate>Sat, 28 Mar 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/tags/mathjax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>YAML</title>
+      <link>/data-curation/tags/yaml/</link>
+      <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/tags/yaml/</guid>
       <description></description>
     </item>
     

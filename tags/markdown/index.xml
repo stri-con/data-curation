@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Lessons &amp; Readings</title>
+    <link>/data-curation/tags/markdown/</link>
+    <description>Recent content in Markdown on Lessons &amp; Readings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>STRI-CON</copyright>
+    <lastBuildDate>Sat, 28 Mar 2020 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/data-curation/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lesson 0: An Example R Markdown Document</title>
+      <link>/data-curation/2020/03/28/lesson-0/</link>
+      <pubDate>Sat, 28 Mar 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/03/28/lesson-0/</guid>
+      <description>In this mini lesson I’d like to demonstrate a) some Markdown syntax, b) how you run and format R code, and c) how to render R figures. If you read the Course Description you have already seen examples of embedded tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products.
+ R Markdown integrates the concepts of literate programming and reproducible research, which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>/data-curation/page/resources/</link>
+      <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/resources/</guid>
+      <description>This page contains quick access to valuable resources, categorized by language or tool including R Markdown, YAML, Markdown, Command Line Interface, CSS &amp;amp; HTML, MathJax.   R Markdown  R Markdown: The Definitive Guide. Title says it all. You should use this. A lot.
+  R Markdown Cookbook. Another must have. RStudio IDE Cheatsheet. An overview of the RStudio IDE. R Markdown Cheatsheet. A general R Markdown reference.</description>
+    </item>
+    
+  </channel>
+</rss>

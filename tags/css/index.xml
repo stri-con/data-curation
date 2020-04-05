@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on Lessons &amp; Readings</title>
+    <link>/data-curation/tags/css/</link>
+    <description>Recent content in CSS on Lessons &amp; Readings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>STRI-CON</copyright>
+    <lastBuildDate>Wed, 01 Apr 2020 02:13:50 +0000</lastBuildDate>
+    
+	<atom:link href="/data-curation/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Self-Paced Tutorials</title>
+      <link>/data-curation/page/tutorials/</link>
+      <pubDate>Wed, 01 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/tutorials/</guid>
+      <description>Jump to: CLI tutorials, HTML/CSS Tutorials.
+ As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don&amp;rsquo;t think you need. Originally I considered everything on this page to be optional, however I changed my mind. As I thought more about the structure of the course, I concluded that I would be doing you all a disservice if I made tools like HTML and CSS optional.</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>/data-curation/page/resources/</link>
+      <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/resources/</guid>
+      <description>This page contains quick access to valuable resources, categorized by language or tool including R Markdown, YAML, Markdown, Command Line Interface, CSS &amp;amp; HTML, MathJax.   R Markdown  R Markdown: The Definitive Guide. Title says it all. You should use this. A lot.
+  R Markdown Cookbook. Another must have. RStudio IDE Cheatsheet. An overview of the RStudio IDE. R Markdown Cheatsheet. A general R Markdown reference.</description>
+    </item>
+    
+  </channel>
+</rss>

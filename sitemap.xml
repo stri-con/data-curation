@@ -3,7 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/data-curation/page/topics/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/git/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/github/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/data-curation/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/page/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/r/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/r-markdown/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/</loc>
+    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/2020/04/03/help/</loc>
     <lastmod>2020-04-03T02:13:50+00:00</lastmod>
   </url>
   
@@ -13,8 +53,18 @@
   </url>
   
   <url>
-    <loc>/data-curation/2020/04/03/help/</loc>
+    <loc>/data-curation/tags/stackoverflow/</loc>
     <lastmod>2020-04-03T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/web-search/</loc>
+    <lastmod>2020-04-03T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/ide/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -23,7 +73,32 @@
   </url>
   
   <url>
-    <loc>/data-curation/page/</loc>
+    <loc>/data-curation/tags/plots/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/r-studio/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/slack/</loc>
+    <lastmod>2020-04-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/cli/</loc>
+    <lastmod>2020-04-01T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/css/</loc>
+    <lastmod>2020-04-01T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/html/</loc>
     <lastmod>2020-04-01T02:13:50+00:00</lastmod>
   </url>
   
@@ -48,27 +123,22 @@
   </url>
   
   <url>
-    <loc>/data-curation/tags/plot/</loc>
+    <loc>/data-curation/tags/markdown/</loc>
     <lastmod>2020-03-28T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/data-curation/tags/r-markdown/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/regression/</loc>
-    <lastmod>2020-03-28T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/tags/</loc>
+    <loc>/data-curation/tags/mathjax/</loc>
     <lastmod>2020-03-28T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/page/resources/</loc>
+    <lastmod>2020-03-28T02:13:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/yaml/</loc>
     <lastmod>2020-03-28T02:13:50+00:00</lastmod>
   </url>
   

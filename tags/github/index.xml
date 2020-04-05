@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Lessons &amp; Readings</title>
+    <link>/data-curation/tags/github/</link>
+    <description>Recent content in GitHub on Lessons &amp; Readings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>STRI-CON</copyright>
+    <lastBuildDate>Sat, 04 Apr 2020 02:13:50 +0000</lastBuildDate>
+    
+	<atom:link href="/data-curation/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Course Topics</title>
+      <link>/data-curation/page/topics/</link>
+      <pubDate>Sat, 04 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/page/topics/</guid>
+      <description> This page contains an outline of topics we will cover in this course and will updated often. As always, suggestions are welcome.   Please continue to work on your skills in CSS, HTML, and CLI. See the Self-Paced Tutorials for more information.
+   Lesson Topic Skills     L0 R Markdown example    L1 Setup IDE, Dev Tools, GitHub, RStudio   L1 Problem Solving Web search, GitHub, StackOverflow   L2 R Markdown Page YAML, Markdown, R Code chunks, inline R Code    R Markdown Page Tables, Figures    GitHub Submitting Issues &amp;amp; Requests, Pull Requests    Git &amp;amp; GitHub Git from the CLI, Creating &amp;amp; cloning a Repo, Push changes    Customization CSS style sheets, inline HTML code    R Markdown Site Take what you&amp;rsquo;ve learned and make a site    Archiving Data Figshare      Edit this page  </description>
+    </item>
+    
+    <item>
+      <title>Lesson 1A: Problem Solving</title>
+      <link>/data-curation/2020/04/03/help/</link>
+      <pubDate>Fri, 03 Apr 2020 02:13:50 +0000</pubDate>
+      
+      <guid>/data-curation/2020/04/03/help/</guid>
+      <description>To make a successful coding project or website you need to know where and how to get help. In future posts, I will cover approaches specific to certain tools. In this post, I want to share some general tips and tricks about getting and asking for help. I touch on the idea of best practices to use so that your question is answered in the most efficient and effective way possible.</description>
+    </item>
+    
+    <item>
+      <title>Lesson 1: Building Your Working 🧱️ Environment</title>
+      <link>/data-curation/2020/04/01/lesson-1/</link>
+      <pubDate>Wed, 01 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/04/01/lesson-1/</guid>
+      <description>We have a wide range of experience levels in this course, so the first lesson is devoted to setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already.</description>
+    </item>
+    
+  </channel>
+</rss>
