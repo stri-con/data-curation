@@ -9,6 +9,14 @@ tags: ["R Markdown", "YAML", "Markdown", "HTML", "CSS", "CLI", "MathJax"]
 This page contains quick access to valuable resources, categorized by language or tool including [R Markdown](#r-markdown), [YAML](#yaml), [Markdown](#markdown), [Command Line Interface](#command-line-interface), [CSS & HTML](#css--html), [MathJax](#mathjax).
 {{% /opennote %}}
 
+## General
+
+[Learn X in Y minutes](https://learnxinyminutes.com/). Where `X` is a programming language. Tutorials available English, Spanish, and many other languages. Use the *Highlight your language:* button in the upper right corner to filter. Tutorials includes:
+* [R English (EN)](https://learnxinyminutes.com/docs/r/), [R Espanol (ES)](https://learnxinyminutes.com/docs/es-es/r-es/).
+* [Markdown EN](https://learnxinyminutes.com/docs/markdown/), [Markdown ES](https://learnxinyminutes.com/docs/es-es/markdown-es/).
+* [CSS EN](https://learnxinyminutes.com/docs/css/), No ES CSS available.
+* [HTML EN](https://learnxinyminutes.com/docs/html/), [HTML ES](https://learnxinyminutes.com/docs/es-es/html-es/).
+
 ## R Markdown
 
 >  [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/). Title says it all. You should use this. A lot.
