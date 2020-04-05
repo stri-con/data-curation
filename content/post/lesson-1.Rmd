@@ -3,7 +3,7 @@ title: "Lesson 1: Building Your Working 🧱️ Environment"
 author: "Jarrod"
 date: 2020-04-01T21:13:14-05:00
 categories: ["R"]
-#tags: ["R Markdown", "plot", "regression"]
+tags: ["R Studio", "Slack", "IDE", "plots", "GitHub"]
 ---
 
 ```{r setup, include=FALSE}

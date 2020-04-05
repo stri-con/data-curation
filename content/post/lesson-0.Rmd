@@ -3,7 +3,7 @@ title: "Lesson 0: An Example R Markdown Document"
 author: "Jarrod"
 date: 2020-03-28T21:13:14-05:00
 categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+tags: ["R Markdown", "Markdown", "R", "plots", "MathJax"]
 ---
 
 ```{r setup, include=FALSE}
@@ -14,7 +14,7 @@ library(ggplot2)
 library(dplyr)
 ```
 
-In this mini lesson I'd like to demonstrate **a**) some Markdown syntax, **b**) how you run and format R code, and **c**)  how to render R figures. If you read the Course Description you have already seen examples of [embedded](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products. 
+In this mini lesson I'd like to demonstrate **a**) some Markdown syntax, **b**) how you run and format R code, and **c**)  how to render R figures. If you read the Course Description you have already seen examples of [embedded](https://istmobiome.github.io/DIGEST/Supplementary.html#table_s6) tables. Remember, our primary goal is to create R Markdown documents that capture code, data, and data products.
 
 > R Markdown  integrates the concepts of [literate programming](https://en.wikipedia.org/wiki/Literate_programming) and [reproducible research](https://en.wikipedia.org/wiki/Reproducibility), which, in addition to explaining or documenting itself, also allows others (including an original investigator) to reproduce a data analysis or other research result.
 
@@ -297,7 +297,7 @@ dev.off()
 
 Amazing what a couple of simple trigonometric functions iterated 10,000,000 times can do.
 
-If you have regular old R installed, try running the scipt which is available to download here: [Clifford code](../../../../files/lesson-0-clifford.R). There is a small description on the top. You may need to install some libraries.
+If you have regular old R installed, try running the scipt which is available to download here: [Clifford code](/data-curation/files/lesson-0-clifford.R). There is a small description on the top. You may need to install some libraries.
 
 And that's it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others  will be added as needed. I will also post a general course outline soon.
 

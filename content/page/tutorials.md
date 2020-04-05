@@ -3,11 +3,13 @@ author: Jarrod J Scott
 date: "2020-04-01T02:13:50Z"
 description: Developing your Skills
 title: Self-Paced Tutorials
+tags: ["CLI", "HTML", "CSS"]
+
 ---
 
 > Jump to: [CLI tutorials](#command-line-interface), [HTML/CSS Tutorials](#html--css).
 
-As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don't think you need. [Originally](https://github.com/stri-con/data-curation/commit/8f29d8ea71775ed4d6ad26ca6ffc51e713a4b306#diff-229378f5e56ea68007086e49f4b0465d) I considered everything on this page to be *optional*, however I changed my mind. As I thought more about the structure of the course, I concluded that I would be doing you all a disservice if I made tools like HTML and CSS optional. So, I am now flip flopping and changing this page to **mandatory, self-paced tutorials**. These tools are integral to our learning objectives and your work going forward, so please try to forget what I said before. 
+As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don't think you need. [Originally](https://github.com/stri-con/data-curation/commit/8f29d8ea71775ed4d6ad26ca6ffc51e713a4b306#diff-229378f5e56ea68007086e49f4b0465d) I considered everything on this page to be *optional*, however I changed my mind. As I thought more about the structure of the course, I concluded that I would be doing you all a disservice if I made tools like HTML and CSS optional. So, I am now flip flopping and changing this page to **mandatory, self-paced tutorials**. These tools are integral to our learning objectives and your work going forward, so please try to forget what I said before.
 
 In future lessons you will incorporate these skills, so it is time to start practicing. If there is demand for it, I am happy to turn any of these topics into separate lessons--just let me know. For now, work through the tutorials available on the Web. These are the same tutorials I used, but if you find other ones that you, like please tell me or post to Slack and I will update this page.
 

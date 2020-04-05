@@ -4,6 +4,8 @@ date: "2020-04-04T02:13:50Z"
 description:
 title: Course Topics
 draft: true
+tags: ["R Markdown", "Git", "GitHub"]
+
 ---
 
 {{% opennote %}}

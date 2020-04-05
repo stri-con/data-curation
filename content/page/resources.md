@@ -3,6 +3,7 @@ author: Jarrod
 date: "2020-03-28T02:13:50Z"
 description: Quick Links to some Useful Tools
 title: Resources
+tags: ["R Markdown", "YAML", "Markdown", "HTML", "CSS", "CLI", "MathJax"]
 ---
 {{% opennote %}}
 This page contains quick access to valuable resources, categorized by language or tool including [R Markdown](#r-markdown), [YAML](#yaml), [Markdown](#markdown), [Command Line Interface](#command-line-interface), [CSS & HTML](#css--html), [MathJax](#mathjax).
@@ -12,10 +13,10 @@ This page contains quick access to valuable resources, categorized by language o
 
 >  [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/). Title says it all. You should use this. A lot.
 * [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/). Another *must have*.
-* [RStudio IDE Cheatsheet](/data-curation/page/files/rstudio-ide.pdf). An overview of the RStudio IDE.
-* [R Markdown Cheatsheet](/data-curation/page/files/rmarkdown-2.0.pdf). A general R Markdown reference.
-* [Another R Markdown Cheatsheet](/data-curation/page/files/rmarkdown-cheatsheet.pdf). One more? There are a lot of cheatsheets.
-* [R Markdown Reference Guide](/data-curation/page/files/rmarkdown-reference.pdf). Good section on *Chunk Options*.
+* [RStudio IDE Cheatsheet](/data-curation/files/rstudio-ide.pdf). An overview of the RStudio IDE.
+* [R Markdown Cheatsheet](/data-curation/files/rmarkdown-2.0.pdf). A general R Markdown reference.
+* [Another R Markdown Cheatsheet](/data-curation/files/rmarkdown-cheatsheet.pdf). One more? There are a lot of cheatsheets.
+* [R Markdown Reference Guide](/data-curation/files/rmarkdown-reference.pdf). Good section on *Chunk Options*.
 
 ## YAML
 
@@ -53,7 +54,7 @@ Both w3schools and MDN web docs have extensive information about CSS and HTML. T
 
 Even though this page has some resources, I think the puppy can stay.
 
-{{< figure src="../../img/puppy.jpg" title="puppy" height="350px">}}
+{{< figure src="/data-curation/img/puppy.jpg" title="puppy" height="350px">}}
 
 Photo credit Dog789, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a>. <a href="https://upload.wikimedia.org/wikipedia/commons/c/c1/Dog_black_and_white_puppy.jpg">Original file</a>.
 
