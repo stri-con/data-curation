@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/data-curation/</loc>
+    <lastmod>2020-04-08T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/page/</loc>
+    <lastmod>2020-04-08T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/page/testing/</loc>
+    <lastmod>2020-04-08T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/data-curation/page/topics/</loc>
     <lastmod>2020-04-04T02:13:50+00:00</lastmod>
   </url>
@@ -14,16 +29,6 @@
   
   <url>
     <loc>/data-curation/tags/github/</loc>
-    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/</loc>
-    <lastmod>2020-04-04T02:13:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/data-curation/page/</loc>
     <lastmod>2020-04-04T02:13:50+00:00</lastmod>
   </url>
   
