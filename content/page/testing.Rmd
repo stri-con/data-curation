@@ -1,0 +1,17 @@
+---
+title: "Test Page"
+author: "Jarrod"
+date: 2020-04-08T21:13:14-05:00
+draft: false
+---
+
+Nothing to see here. This is for testing only. I should use a different GH branch. 
+
+<div id="image_map">
+<map name="map_example">
+<area arget="_blank" alt="R" title="R" href="https://www.r-project.org/about.html" coords="151,21,1029,666" shape="rect">
+<area href="https://www.markdownguide.org/" target="_blank" alt="Markdown" shape=poly coords="0,100, 100,100, 100,160, 0,160">
+<area href="https://bookdown.org/yihui/rmarkdown/" target="_blank" alt="R Markdown" shape=poly coords="150,50, 100,100, 100,160, 0,160">
+</map>
+<img src="/data-curation/img/lesson-2/flow.png" alt="image map example" usemap="#map_example">
+</div>

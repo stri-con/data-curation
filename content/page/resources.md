@@ -41,9 +41,14 @@ There are many similarities with the R Markdown references above.
 * [Extended Markdown Syntax Reference](https://www.markdownguide.org/extended-syntax/) also from *[The Markdown Guide](https://www.markdownguide.org/)*.
 * [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables). Tired of typing all of those hyphens and pipes?
 
-## Command Line Interface
+## Command Line Interpreter
 
 * [Explain Shell](https://explainshell.com/). By Idan Kamara. Write a command to see the help text that matches each argument. Awesome.
+
+### For Windows
+
+* [Cmder](https://cmder.net/). A portable console emulator for **Windows** that allows you to run UNIX-style bash commands. Download the **Full** version and you will also get git.
+* [git for Windows](https://gitforwindows.org/) comes with Git BASH, an emulator used to run Git from the command line.
 
 ## CSS & HTML
 
