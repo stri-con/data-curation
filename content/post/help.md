@@ -78,7 +78,7 @@ Most open-source software products (and now a lot of websites) live in repositor
 
 Unless the owner states it explicitly,  GitHub repos are **not** (I repeat not :) for asking questions about *how* to do something. Repos are for *reporting* bugs and errors or for *requesting* features. There are exceptions but, by and large, this is the standard. And for good reason.
 
-[`Knitr`](https://yihui.org/knitr/) is **the tool** that allows us to generate dynamic reports in R Studio  (more on `knitr` when we get started on the projects). `Knitr` is written and maintained by [Yihui Xie](https://github.com/yihui), one of my open source heroes. We will use a lot of tools created by Yihui Xie for our projects. Ok, let’s take a look at the `knitr` Issues portal.
+[`Knitr`](https://yihui.org/knitr/) is **the tool** that allows us to generate dynamic reports in R Studio  (more on `knitr` when we get started on the projects). `Knitr` is written and maintained by [Yihui Xie](https://github.com/yihui), one of my open source heroes. We will use a lot of tools created by Yihui Xie for our projects. Ok, let’s take a look at the `knitr` Issues portal on GitHub.
 
 {{< figure  src ="/data-curation/img/help/issues.png" link = "https://github.com/yihui/knitr/issues?q=is%3Aissue+is%3Aclosed"  alt = "Some alt text" caption = "The `knitr` issue page." >}}
 
@@ -88,7 +88,7 @@ This is why it is important to be careful when you post. I do not want to discou
 
 {{% read %}}
 
-In the meantime, please take a look at this [GitHub Issue Guide](https://yihui.org/issue/) article by Yihui and check out some of the linked articles. I also set up submitting templates for *Bug reports* and *Feature requests* on the repo for the course website. You can find the [link here](https://github.com/stri-con/data-curation/issues/new/choose). Click on the **Get Started** buttons to see the template, which is written in Markdown. Feel free to copy and paste into a text editor to see the formatting :) In future lessons you will be submitting Issues and Feature requests to this repo.
+In the meantime, please take a look at this [GitHub Issue Guide](https://yihui.org/issue/) article by Yihui and check out some of the pages linked in the article. I also set up submitting templates for *Bug reports* and *Feature requests* on the repo for the course website. You can find the [link here](https://github.com/stri-con/data-curation/issues/new/choose). Click on the **Get Started** buttons to see the template, which is written in Markdown. Feel free to copy and paste into a text editor to see the formatting :) In future lessons you will be submitting Issues and Feature requests to this repo.
 
 ## StackOverflow
 
