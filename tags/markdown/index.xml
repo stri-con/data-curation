@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/data-curation/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lesson 2: Single Page R Markdown 📃 Document</title>
+      <link>/data-curation/2020/04/09/lesson-2/</link>
+      <pubDate>Thu, 09 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/04/09/lesson-2/</guid>
+      <description>R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more. Markdown allows documents to be simple and portable while R integration gives you the benefit of creating dynamic documents that contain your results (e.g., tables, graphics, and inline values). Results can be computed and rendered dynamically from R code and are more likely to be reproducible.
+Learning Objectives In this section of the course, you will create a single page R Markdown document and then turn that document into an HTML page.</description>
+    </item>
     
     <item>
       <title>Lesson 0: An Example R Markdown Document</title>

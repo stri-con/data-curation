@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lesson 2: Single Page R Markdown 📃 Document &middot; STRI-CON</title>
+        <meta name="description" content="R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more. Markdown allows documents to be simple and portable while R integration gives you the benefit of creating dynamic documents that contain your results (e.g., tables, graphics, and inline values). Results can be computed and rendered dynamically from R code and are more likely to be reproducible.
+Learning Objectives In this section of the course, you will create a single page R Markdown document and then turn that document into an HTML page.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.67.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Lesson 2: Single Page R Markdown 📃 Document">
+<meta property="og:description" content="R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more. Markdown allows documents to be simple and portable while R integration gives you the benefit of creating dynamic documents that contain your results (e.g., tables, graphics, and inline values). Results can be computed and rendered dynamically from R code and are more likely to be reproducible.
+Learning Objectives In this section of the course, you will create a single page R Markdown document and then turn that document into an HTML page.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/data-curation/2020/04/09/lesson-2/">
+        <link rel="stylesheet" href="/data-curation/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Lessons &amp; Readings" href="/data-curation/">Lessons &amp; Readings</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/data-curation/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/stri-con/data-curation" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="HOME" href="/data-curation/">HOME</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Description" href="/data-curation/page/about/">Course Description</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Topics" href="/data-curation/page/topics/">Course Topics</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Self-Paced Tutorials" href="/data-curation/page/tutorials/">Self-Paced Tutorials</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Resources" href="/data-curation/page/resources/">Course Resources</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Lesson 2: Single Page R Markdown 📃 Document</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2020-04-09" itemprop="datePublished">Thu, Apr 9, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://google.com/&#43;XXX" itemprop="url" rel="author">Jarrod</a>
+            </span>
+        </span>
+    </p>
+    
+        <p class="post-reading post-line">
+            <span>Estimated reading time: 27 min</span>
+        </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+      <div itemid="articleBody">
+        
+
+
+<p>R Markdown is a versatile framework for creating a range of <a href="https://rmarkdown.rstudio.com/gallery.html">high-quality documents</a> including HTML, PDF, presentations, books, websites, and more. Markdown allows documents to be simple and portable while R integration gives you the benefit of creating dynamic documents that contain your results (e.g., tables, graphics, and inline values). Results can be computed and rendered dynamically from R code and are more likely to be reproducible.</p>
+<div id="learning-objectives" class="section level2">
+<h2>Learning Objectives</h2>
+<p>In this section of the course, you will create a single page R Markdown document and then turn that document into an HTML page. The lesson itself (this document) is designed to lay down the conceptual and mechanical framework you need to get started. Your job is to understand this material because it is the basis for everything that comes after. I included many links to additional resources, so if a concept is unclear, spend some time going through the links I provided. If you do not understand something, please ask. Chance are pretty good that you are not alone.</p>
+<p>After you go through this lesson (and understand the concepts :), you will start working on your single page document. In parallel, I will release my own single page document with assignments and challenges. That way we can work on our documents together and I can demonstrate how to accomplish certain tasks. The entire session is designed to last two weeks.</p>
+</div>
+<div id="self-paced-tutorials" class="section level2">
+<h2>Self-Paced Tutorials</h2>
+<p>You should also be working on the self-paced tutorials. The <a href="/data-curation/page/tutorials/#command-line-interface">command line interface tutorials</a> are included to get you accustomed to the command line environment. In addition to simply being an invaluable skill, you will use the command line when we work on git and GitHub integration. You need to have some basic navigational skills including how to list files and hidden files as well as how to edit, rename, move, delete, and create, files. Over the next two weeks, you should complete the following tutorials: <a href="https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course">A Command Line Crash Course</a> and <a href="http://conqueringthecommandline.com/book/basics">Basics and Navigation</a>. I listed two videos on the <a href="/data-curation/page/tutorials/#beginner-tutorials">Resources Page</a> that are recommended viewing.</p>
+<p>I included a tutorial for <a href="/data-curation/page/tutorials/#html--css">HTML &amp; CSS</a> because at some point you will run into a situation that requires a basic knowledge of these languages. Please complete the following lessons over the next two weeks from <em>Interneting is Hard</em>: <a href="https://www.internetingishard.com/html-and-css/introduction/">Introduction</a> and <a href="https://www.internetingishard.com/html-and-css/basic-web-pages/">Basic Web Pages</a>.</p>
+<p><div id="opennote" class="container"style="color:#141414;font-size:1.1em;background-color:#f5f5f5;border-color:#7c7c7cFF;border-radius:7px;margin:0rem 0 2rem 0;padding:1.5rem 0 1rem 0;border-width:1px;border-color:#141414;border-style:solid;">
+       <ol>
+         This lesson will cover the following:</p>
+<ol>
+<li><a href="#rendering-a-document-1">how an HTML page is generated from an R Markdown document</a>;</li>
+<li><a href="#structure-of-an-r-markdown-document-1">the structure of an R Markdown document</a> and</li>
+<li>its three main components—<a href="#the-yaml-header-1">the YAML header</a>, <a href="#markdown-formatted-text-1">Markdown text</a>, &amp; <a href="#r-code-chunks-1">R code chunks</a>; and finally</li>
+<li>how to run <a href="#inline-r-code-1">Inline R Code</a>.</li>
+</ol>
+       </ol>
+</div>
+</p>
+</div>
+<div id="rendering-a-document" class="section level2">
+<h2>Rendering a Document</h2>
+<p>Before we start, I want to give you a little overview of how an HTML document is created from Markdown-formatted text and R code. The process is called <strong>rendering</strong>—where the input file(s) are transformed to a specified output format, like HTML.</p>
+<p>When you render an R Markdown document you use a program called <code>knitr</code>. Knitr <em>executes all the R code</em>, knits the results together with the Markdown text, and creates a new Markdown document. The new Markdown document is then processed by PanDoc, which converts the Markdown syntax into HTML and CSS code. PanDoc is like a <em>swiss-army knife</em> for Markdown—it can covert many types of Markdown documents into a variety of other formats. Don’t worry, all of these steps happen behind the scenes. As long as you have a properly formatted R Markdown document, these tools will take care of the rest.</p>
+<div id="image_map">
+<map name="map_example">
+<area target="_blank" alt="R" title="R" href="https://www.r-project.org/about.html" coords="28,15,42,3,60,0,74,1,86,5,95,14,101,26,99,37,92,46,95,57,86,63,60,63,44,53,34,48,25,43,19,29" shape="poly">
+<area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="6,93,101,152" shape="rect">
+<area target="_blank" alt="R Markdown" title="R Markdown" href="https://bookdown.org/yihui/rmarkdown/" coords="176,53,215,30,257,53,257,95,215,120,176,98" shape="poly">
+<area target="_blank" alt="knitr" title="knitr" href="https://yihui.org/knitr/" coords="306,50,345,27,384,50,386,99,348,123,304,97" shape="poly">
+<area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="437,47,535,107" shape="rect">
+<area target="_blank" alt="PanDoc" title="PanDoc" href="https://pandoc.org/" coords="577,49,613,39,659,35,695,49,678,109,639,100,600,113" shape="poly">
+<area target="_blank" alt="HTML5" title="HTML5" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" coords="733,46,798,48,791,113,765,122,739,115" shape="poly">
+</map>
+<img src="/data-curation/img/lesson-2/flow.png" alt="image map example" usemap="#map_example">
+<figcaption>
+The rendering process—creating an HTML document from R code &amp; Markdown using the R Markdown package. EXTENDED FUNCTION. This is an image map—an HTML technique that allows you to create clickable areas on an image. I coded this so that each logo contains a different hyperlink. Try it out. <a href = "https://gist.github.com/jarrodscott/31b8f7ab985a291c53538a97a1c3dcdc">Click here </a> if you are interested in the source code.
+</figcaption>
+</div>
+<p>Familiarize yourself with knitr and PanDoc. Even though they are doing the work for you, understanding what each does and how they do it will help you troubleshoot problems. Links are provided in the image above.</p>
+</div>
+<div id="structure-of-an-r-markdown-document" class="section level2">
+<h2>Structure of an R Markdown Document</h2>
+<p>A basic, single page, R Markdown document is created from just three elements: the <strong>YAML</strong> header, <strong>Markdown</strong>-formatted text, and <strong>R code chunks</strong>. Technically, you do not even need R code; many of the pages on this site have no R code at all. But for our purposes, we will incorporate R code as a <em>necessary ingredient</em> so that you can experience the potential of R Markdown. Even if you don’t know much R, I want you to use R code in your document. Later in the lesson, I briefly introduce built-in datasets that you can use, and I am happy to provide you with any additional advice you may need. Many of your classmates are expert R coders, so please ask for help on the <code>#data-curation</code> Slack channel.</p>
+<p>Additional customization of an R Markdown document can be achieved with user-defined CSS and/or HTML code, both of which will be the subject of a future lesson. For this lesson, we focus on the three core elements—YAML, Markdown, and R code chunks.</p>
+</div>
+<div id="the-yaml-header" class="section level2">
+<h2>The YAML header</h2>
+<p>At the top of an R Markdown document you must include YAML metadata as the header. <a href="https://yaml.org/">YAML</a> (a meaningless acronym that stands for YAML Ain’t Markup Language) is human readable—meaning that the syntax is easy to read and write. YAML metadata is used to configure the settings and parameters of a document or program. Since it is used by PanDoc, the YAML metadata technically comes into play during the final step of the pipeline. But since it is usually at the top of a document, I will cover YAML first.</p>
+<p>We control how PanDoc configures our rendered document by populating the metadata with different <em>options</em>. For examples, we can specify the type of document we want PanDoc to construct—HTML, PDF, Word, etc. We can also include a table of contents (toc) or specify a <em>theme</em>. Themes allow you to set the look of the document—the font style, coloring, etc. Each theme comes prepackage with its own CSS and HTML code that PanDoc applies to the final document. We will cover themes more extensively during the tutorial part of the lesson. I’ve listed some of the theme options in the <a href="/data-curation/page/resources/#yaml">YAML section</a> of the Resources page.</p>
+<p>All YAML header options are tied to <em>built in functions</em>. What this means is that we need to know what the YAML options are and what each one does. A YAML option = <em>an argument + a property</em>. For example, if we want to add a date to our document, we include the <code>date</code> <strong>argument</strong> and then pass a <strong>property</strong> to that argument. However, something like <code>agouti</code> is not a YAML argument and nothing will happen if you try to use it. If you want to control a component that is <em>not</em> a built-in function, you must include additional instructions like custom CSS and HTML code. This is not too difficult, but it is a topic for another day. A side note—on the Web, you may see <strong>argument</strong> referred to as a <em>key</em> and <strong>property</strong> referred to as a <em>value</em>. I am not aware of a strict naming convention, but I will do my best to be consistent and use the <strong>argument</strong>/<strong>property</strong> construct.</p>
+<p>For a single page document like the one you will create in this lesson, the YAML metadata must be enclosed in <a href="https://en.wikipedia.org/wiki/Delimiter">delimiters</a>. We will use delimiters a lot, so make sure you <a href="https://en.wikipedia.org/wiki/Delimiter">understand the concept</a>. For YAML headers, we use three consecutive dashes (<code>---</code>) without spaces. The delimiters must be on their own lines and you must add the YAML metadata between the two delimiters. Like so…</p>
+<pre><code>---
+Some YAML metadata
+---</code></pre>
+<div id="yaml-options" class="section level3">
+<h3>YAML Options</h3>
+<blockquote>
+<p>The structure of a YAML <em>option</em> is <code>argument: property</code> where <em>argument</em> is a built-in function and <em>property</em> is the information you pass to the argument.</p>
+</blockquote>
+<p>There are many arguments you can include in your YAML header, some of which are general and others that only apply to specific document types. Please spend some time looking at <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html">The YAML Fieldguide</a>, in particular the sections called <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#basic-yaml">Basic YAML</a> and <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#r-markdown-websites">R Markdown Websites</a>. Most of the YAML arguments we can use for our project are listed in these two sections. Each entry contains the argument name, a description of what it does and how to use it, and a link to a help page. The help pages contain additional details and examples.</p>
+<p>Open R Studio and go to <code>File &gt; New File &gt; R Markdown</code>. A window like this should pop up where you can fill in the details. It is not important what you put here since you can change it at any time. What <em>is important</em> is that <strong>Document</strong> and <strong>HTML</strong> are both selected. Hit <code>Ok</code>.</p>
+<figure>
+    <img src="/data-curation/img/lesson-2/create-rmd.png"
+         alt="Doc Window" width="600" height="499"/> <figcaption>
+            <p>New R Markdown document window.</p>
+        </figcaption>
+</figure>
+
+<p>Once you hit <code>Ok</code>, a new R Markdown document is created and opened in the Environment window of RStudio. Let’s take a look, but for now just focus on the top of the page.</p>
+<pre><code>---
+title: &quot;DC Lesson 2 Single Page Document&quot;
+author: &quot;Jarrod&quot;
+date: &quot;4/7/2020&quot;
+output: html_document
+---</code></pre>
+<p>This is the YAML header of the R Markdown document you just created. As you can see, the format is simple. R Markdown took the information I provided in the set-up window and populated the header with some basic YAML metadata. Each line has a YAML argument followed by a colon <code>:</code> and then a property. Any information you put in the YAML header must be in this form; however, you can include comments by using a hashtag (<code>#</code>) at the beginning of a line.</p>
+<p>Notice that some of the properties, like the name of the <code>author</code> or the <code>title</code> of the document, are in quotes, while the property for the <code>output</code> is not in quotes. Why is this the case? Good question. For the sake of explanation, let me categorize properties into two classes—<em>variables</em> and <em>operators</em>.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Variables</strong>: A variable can be any string you want (a string is just a sequence of characters). For example, I could set the property of the <code>author</code> argument like this <code>author:&quot;Iamtheauthorofthispaperhearmeroar&quot;</code>. For arguments like <code>author</code>, <code>title</code>, etc., PanDoc doesn’t care what property you set. It knows these arguments can take pretty much any string you pass it.</li>
+<li><strong>Operators</strong>: Think of an operator like a choice. The <code>output</code> argument here is set to <code>output: html_document</code>. The property <code>html_document</code> is one of the <a href="https://rmarkdown.rstudio.com/lesson-9.html/#documents">choices</a> you have for this argument. If you enter a property that is not in the list of choices, you will get an error, and your document will not render. Like <code>output: cold_beer</code> may work in some situations but not in our YAML header.</li>
+</ol>
+<p>The convention is that <em>variable</em> properties are enclosed in quotes and <em>operator</em> properties are not. The argument itself is never quoted.</p>
+<p>Now that I told you all of this, I also need to tell you that <em>most</em> of the time, quotes for variable properties are optional. However, putting variable properties in quotes allows you to include special or reserved characters in your string. For example, let’s say you want to set the <code>author</code> property to your Twitter handle, <code>@cool_coder</code> (I think this handle is available :). The <code>@</code> sign at the beginning of a string has a special meaning for PanDoc. If you do not put this string in quotes, you will get an error and your document will not render. By writing the option like this—<code>author: &quot;@cool_coder&quot;</code>—with the property in quotes, you can use the <code>@</code> sign and everything works fine. There is a lot of confusion on the Web about when to include quotes and when not to. My <em>best practice</em> advice is to always use quotes with variable properties. Symfony has a pretty good <a href="https://symfony.com/doc/current/components/yaml/yaml_format.html#strings">breakdown</a> of quote usage in variable strings.</p>
+<p>Go ahead and customize your YAML header with a name and title. Now hit the <code>knit</code> button just above the text editor window. There is a little dropdown menu that lets you select the type of document to produce, but since you have already specified <code>output: html_document</code>, you can just hit the button. RStudio will prompt you to save the document. <strong>Do not</strong> add a file extension. RStudio just needs a <em>root</em> name.</p>
+<div id="file-naming" class="section level4">
+<h4>File naming</h4>
+<blockquote>
+<p>A note on file naming <em>best practices</em>. You can save yourself a lot of trouble by following a few simple rules when naming files.</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><strong>Never</strong> use special characters in your file name (e.g., <code>* # : \ / &lt; &gt; | &quot; ? [ ] ; = + &amp; £ $</code>, and so on). Letters and numbers <strong>only</strong>. A lot of software will reject files that contain these symbols. Periods <code>.</code> should only be used for a file extension, like <code>document.html</code>.</li>
+<li><strong>Do not</strong> use spaces. If you need to separate words, use a dash (<code>-</code>) or an underscore (<code>_</code>). This is an exception to rule #1.</li>
+<li>Capitals are ok, but they can make autofill a pain. This is a matter of personal preference.</li>
+<li>Make the name meaningful. This is important when dealing with a lot of files, like for a website. But do not make the names super long either. Long file names mean long URLs, which can increase the likelihood of errors.</li>
+</ol>
+<p>Once you hit save, RStudio will render the document following the process <a href="#rendering-a-document-1">I described above</a>. Do you see any errors in the Console window? No? Good. What about a new <code>.html</code> document in the working directory? Yes? Also good. Double-click that file and it should open in your default browser. Does it look something like this?</p>
+<figure>
+    <img src="/data-curation/img/lesson-2/single-page.png"
+         alt="Doc Window"/> 
+</figure>
+
+<p>If so, congratulations. You just created your first web document. I admit, it is a little boring at the moment, but this is all it takes to make a basic page. There is one more aspect of YAML headers that I want to touch on before moving on.</p>
+</div>
+<div id="nested-yaml-options" class="section level4">
+<h4>Nested YAML options</h4>
+<p>I have discussed the <em>structure and components</em> of YAML headers, specifically delimiters for demarcating YAML metadata, hashtags <code>#</code> for including comments, and <code>argument: property</code> for setting options. To complete our initial explanation of a YAML header, we need to talk about <em>nested options</em>.</p>
+<p>Think about an unordered list for a minute.</p>
+<ul style="line-height: 0.9;">
+<li>
+Item A
+</li>
+<li>
+Item B
+</li>
+<li>
+Item C
+</li>
+</ul>
+<p>The list has three elements and each line begins with a new element. Let’s also take a look at the Markdown code for the list.</p>
+<pre><code>* Item A
+* Item B
+* Item C</code></pre>
+<p>The structure of this list is similar to the YAML header in our document.</p>
+<pre><code>title: &quot;DC Lesson 2 Single Page Document&quot;
+author: &quot;Jarrod&quot;
+date: &quot;4/7/2020&quot;
+output: html_document</code></pre>
+<p>Ok, now let’s construct a <em>nested</em> list. A nested list is a composed of <em>parent</em> elements that have their own list of elements called <em>children</em>—lists within a list. In this example, A and B are parent elements because each has their own list. C on the other hand, has no child element.</p>
+<ul style="line-height: 0.9;">
+<li>
+Parent A
+<ul style="line-height: 0.9;">
+<li>
+Child A1
+</li>
+<li>
+Child A2
+</li>
+</ul>
+</li>
+<li>
+Parent B
+<ul style="line-height: 0.9;">
+<li>
+Child B1
+</li>
+</ul>
+</li>
+<li>
+Item C
+</li>
+</ul>
+<p>If we compare the Markdown code of the nested list to the normal list, we see an important difference. The child elements of the nested list are all <em>indented</em>. We need indentation to construct a nested list and we get indented code by using spaces at the beginning of child lines.</p>
+<pre><code>* Parent A
+   + Child A1
+   + Child A2
+* Parent B
+   + Child B1
+* Item C</code></pre>
+<p>If we want more control over the structure of our document, we need to incorporate <em>nested elements</em> in the YAML header. The first thing you need to know about nested elements is that YAML <strong>doesn’t allow</strong> tabs for indentation, meaning you <strong>must</strong> use one or more spaces for indentation.</p>
+<p>Ok, now go back to the YAML header of our document and add the argument <code>theme</code> and the property <code>journal</code> so we can specify the look of the final product. Remember, the format is <code>argument: property</code></p>
+<pre><code>title: &quot;DC Lesson 2: Single Page Document&quot;
+author: &quot;@cool_coder&quot;
+date: &quot;4/7/2020&quot;
+output: html_document
+theme: journal</code></pre>
+<p>I save the file, run knit, and look at the output. Hum. Nothing changed. This is because <code>theme</code> is not a general PanDoc argument like <code>title</code>, <code>author</code>, and <code>date</code>. The <code>theme</code> argument is specific to the property of the <code>output</code> argument. To see what I mean, please find <em>theme</em> in the PanDoc options section (Page 5) of the <a href="/data-curation/files/rmarkdown-reference.pdf">R Markdown Reference Guide</a>. What you will see is that <code>theme</code> can only be set for two document types (HTML &amp; Beamer).</p>
+<figure><a href="/data-curation/img/lesson-2/theme.png">
+    <img src="/data-curation/img/lesson-2/theme.png"
+         alt="Doc Window"/> </a><figcaption>
+            <p>Truncated view of the PanDoc options section from the R Markdown Reference Guide.</p>
+        </figcaption>
+</figure>
+
+<p>If you look more broadly at that section you should notice that most options can only be used with specific document types. Please note, you will often see <em>option</em> and <em>argument</em> used interchangeably. This is annoying. Again, I will use the term <em>option</em> to refer to an <em>argument</em> plus it’s <em>property</em>.</p>
+<p>Ok, in order to use <code>theme</code>, we first need to make sure we are using the property for <code>output</code>. Check. Next, we need to make <code>theme</code> as a nested element of the output property <code>html_document</code>. In doing so, <code>html_document</code> becomes both the property of <code>output</code> and the argument of <code>theme</code>. Since we cannot have two arguments on the same line, we need to set <code>html_document</code> as a nested element of the <code>output</code>.</p>
+<pre><code>title: &quot;DC Lesson 2: Single Page Document&quot;
+author: &quot;@cool_coder&quot;
+date: &quot;4/7/2020&quot;
+output:
+  html_document:
+    theme: journal</code></pre>
+<p>I know, this is super confusing. I spent hours just trying to explain it to myself. Think of it this way—start from the bottom of the YAML metadata above and work your way up.</p>
+<ul>
+<li><code>journal</code> is a property of the argument <code>theme</code>.</li>
+<li><code>theme</code> is a property of the argument <code>html_document</code>.</li>
+<li><code>html_document</code> is a property of the argument <code>output</code>.</li>
+<li><code>output</code> is the <em>parent</em> argument.</li>
+</ul>
+<p>In essence, a nested list of options. Anytime we want to add a new option, we need to know what it is, what it does, and whether it is a parent or child. Please make sure you understand these concepts before moving on. A properly formatted YAML header is a key step in creating a document. We will cover YAML headers in greater detail during the exercises. For now, I want to cover the remaining components of the document.</p>
+</div>
+</div>
+</div>
+<div id="markdown-formatted-text" class="section level2">
+<h2>Markdown Formatted Text</h2>
+<p>Now it is time to add some content. Any document you create needs some text or else it is just a bunch of code and not very fun to read. But remember, in R Markdown the text is formatted using Markdown syntax. I already covered the <a href="/data-curation/2020/03/28/lesson-0/#markdown-3">basics of Markdown</a> so I will not spend any more time on it here. Markdown syntax is pretty straightforward. Use the reference guides on the <a href="/data-curation/page/resources/#markdown">Resources Page</a> to get started. Still feeling a little lost? Try this brief but excellent <a href="https://commonmark.org/help/tutorial/index.html">Interactive Markdown Tutorial</a>. Each lesson contains a brief explanation of Markdown syntax. Hit the <strong><em>Try it</em></strong> button to test your skills and see what your solution looks like when it is rendered. There is also an option to see the HTML equivalent of the Markdown text. This is a nice tutorial.</p>
+<p>In your new R Markdown document, add some Markdown-formatted content. If you already have some text, feel free to add it. If not, use a <a href="https://loremipsum.io/">Lorem ipsum generator</a> to make a bunch of plain text that you can add to your page. Your assignment is to use Markdown syntax to format the document. Add headers, links, make some text bold or italic, etc. Structure your document like you would a real page or project. Your goal here is to get comfortable with Markdown and the best way to do that is to practice.</p>
+<blockquote>
+<p>To see any changes you make, you must save the document and run <code>knit</code> again. Make sure you have no errors and refresh your browser.</p>
+</blockquote>
+</div>
+<div id="r-code-chunks" class="section level2">
+<h2>R Code Chunks</h2>
+<p>If you have used R before, you know there are a couple of ways to run code. You can run commands interactively in the console or use batch processing to run a script. You may choose to send the results to a file (like a figure or table) or simply print the results to the screen. If you have never used R, I suggest investing some time learning this amazing tool. There are hundreds of tutorials and courses online, many of which are free. For example, Bill Petti offers a nice <a href="https://billpetti.github.io/Crash_course_in_R/">Crash Course in R</a> that covers some of the basics. You do not need to be an R expert to go through this course, but some understanding of R is very helpful. If you are an R expert, please consider posting resources to the <code>#data-curation</code> channel, and I will add them to the Resources Page.</p>
+<p>Running code in an R Markdown document is very similar in principle to how its run in an R console. Remember, when you render an R Markdown document, knitr first executes all of the R code. But knitr needs to know which text in the document is R code. To differentiate R code from normal text we use <em>code chunks</em>. I will show you what I mean.</p>
+<p>When we open a new R Markdown document, the software is kind enough to include a few examples of Markdown text and R code to help us get started. R comes with several built-in datasets (thanks to the <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html">datasets package</a>), which are generally used as demo data for playing with R functions. In your R or RStudio console, simply type <code>data()</code> to see a list of the built-in datasets. We will use these datasets in an upcoming post on Solving Problems (Part 2) when we discuss <a href="https://stackoverflow.com/help/minimal-reproducible-example">Minimal, Reproducible Examples</a>. You can also use the built-in datasets for this exercise, so please <a href="http://www.sthda.com/english/wiki/r-built-in-data-sets">study up</a>.</p>
+<p>Anyway, if you go back to the <code>.Rmd</code> file that you generated and scroll down a little, you will find an example of R code. R Markdown is using the <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/cars.html"><strong>cars</strong></a> dataset from the <code>datasets</code> package as the example.</p>
+<pre><code>```{r cars}
+summary(cars)
+```</code></pre>
+<p>This is called a <strong>code chunk</strong>. There is another code chunk at the top of the <code>.Rmd</code> page (just below the YAML header) but we will come back to this later because it is a little special.</p>
+<p>I covered the general concept of code chunks in <a href="/data-curation/2020/03/28/lesson-0/#r-markdown-1">Lesson 0</a>, but this piece of the puzzle is important, so I want to discuss it in more detail here. Like our YAML header, an R code chuck is distinguished from the rest of the text with delimiters, in this case three consecutive back ticks without spaces (<code>```</code>). Think of a code chunk like a mini R environment. Knitr essentially pulls the code out of the chunk, runs the code in R, and then puts the results in a new document as Markdown-formatted text. Code chunks can also have options, which are enclosed in curly brackets. We will get back to chunk options in a minute.</p>
+<div id="running-r-code" class="section level3">
+<h3>Running R Code</h3>
+<p>Open the <code>.html</code> file generated when you rendered (or <em>knitted</em>) the R Markdown document and scroll to the part that corresponds to the <code>summary(cars)</code> section. This R command simply calls the <code>summary</code> function against the data frame <code>cars</code>.</p>
+<p>The image on the left is a screenshot from that section of the HTML document. The first thing you should notice is that there are no delimiters or any information about the chunk, just the command <code>summary(cars)</code>. I will explain this in a second. Below that is a box with some data. We certainly didn’t code this data into our R Markdown document—these data are the results of running the command. We asked for a summary of <code>cars</code> and that’s what we got.</p>
+<figure>
+    <img src="/data-curation/img/lesson-2/summary.png"
+         alt="Doc Window"/> <figcaption>
+            <p>Left, code chunk output from the HTML document. Right, output from the R console.</p>
+        </figcaption>
+</figure>
+
+<p>On the right is a screenshot of my R console. I just copied the command and ran it in R. I hope you can see that aside for some formatting differences, these results are identical. This is because knitr is running the code in R and encoding the results in Markdown, itself translated to HTML by PanDoc. Ninety-five percent of the time, all you need to do is paste your R code into a code chunk and it will be processed like this. Of course, nothing is absolute, and we will encounter some exceptions.</p>
+<div id="where-are-the-chunk-details" class="section level4">
+<h4>Where are the chunk details?</h4>
+<p>You cannot see the chunk details because they are hidden. Chunk details are instructions for knitr on how chunks should be rendered. This information is not important for reproducibility or transparency, so it is hidden. Anytime you do see code chunk information on a page, it is because that chunk is intentionally being rendered <a href="https://rmarkdown.rstudio.com/articles_verbatim.html"><em>verbatim</em></a>. Normally we do this for demonstration purposes only. From now on, I will only show code chunk information as a learning tool. Otherwise it will be hidden, and you will have to dig around on GitHub to find it :)</p>
+</div>
+</div>
+<div id="chunk-structure-options" class="section level3">
+<h3>Chunk Structure &amp; Options</h3>
+<p>Great. Let’s review the structure of a code chunk. Below is an annotated screenshot of a piece of code I wrote to define a simple color palette. If you haven’t worked much with colors, the strings preceded by hash tags (<code>#</code>) are called <a href="https://www.color-hex.com/">hex codes</a>. Hex codes are great for encoding color in many languages including R.</p>
+<figure>
+    <img src="/data-curation/img/lesson-2/chunk.png"
+         alt="Doc Window"/> <figcaption>
+            <p>Example code chunk illustrating the formatting &amp;  different components.</p>
+        </figcaption>
+</figure>
+
+<p>The format of the code chunk is as follows:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Delimiters</strong>: Often called a <em>code fence</em>, delimiters partition your code from the rest of the text. For R Markdown we must use three back ticks.</li>
+</ol>
+<p>If we stopped there and didn’t not add any more information, the final document would only contain the text between the delimiters, formatted like this:</p>
+<pre><code>friend_pal &lt;- c(&quot;#009E73&quot;, &quot;#D55E00&quot;, &quot;#F0E442&quot;,
+                &quot;#CC79A7&quot;, &quot;#56B4E9&quot;, &quot;#E69F00&quot;,
+                &quot;#0072B2&quot;, &quot;#7F7F7F&quot;, &quot;#B6DBFF&quot;,
+                &quot;#000000&quot;)
+
+cols &lt;- function(a) image(1:10, 1, as.matrix(1:10),
+                          col=a, axes=FALSE , xlab=&quot;&quot;, ylab=&quot;&quot;)
+cols(friend_pal)</code></pre>
+<p>Without any other information, knitr recognizes the delimiters and knows its code. But since no other information was provided, knitr does not run the command or generate any results. It simply takes the chunk and turns into Markdown-formatted text. This can be useful if you want to call out a block of code without running anything. But if you want knitr to actually do something with this command, you need to provide more information.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Coding Language</strong>: To run code, the minimum information you need to include is the name of a language enclosed in curly brackets (<code>{ }</code>).</li>
+</ol>
+<p>R Markdown <a href="https://bookdown.org/yihui/rmarkdown/language-engines.html">supports many languages</a> like Python, BASH, and of course R. For example, I can call BASH and run a simple command like I would from the CLI. I can use the <code>ls</code> command to list all the files in a directory and add the <code>l</code> flag to get a long listing for every file, <code>a</code> to include any hidden files, and <code>h</code> to return file sizes in human readable format. Please pay attention to the structure of the chunk.</p>
+<pre><code>```{bash}
+ls -lah
+```</code></pre>
+<pre><code>## total 416
+## drwxr-xr-x  16 rad  staff   512B Apr  9 16:54 .
+## drwxr-xr-x   6 rad  staff   192B Mar 31 11:38 ..
+## -rw-r--r--@  1 rad  staff   6.0K Apr  7 17:24 .DS_Store
+## -rw-r--r--   1 rad  staff     0B Apr  5 10:34 .Rhistory
+## -rw-r--r--@  1 rad  staff    14K Apr  6 20:51 help.md
+## -rw-r--r--@  1 rad  staff    15K Apr  5 09:51 lesson-0.Rmd
+## -rw-r--r--   1 rad  staff    16K Apr  9 16:54 lesson-0.html
+## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_cache
+## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_files
+## -rw-r--r--@  1 rad  staff    27K Apr  7 17:28 lesson-1.Rmd
+## -rw-r--r--   1 rad  staff    29K Apr  9 16:54 lesson-1.html
+## drwxr-xr-x   3 rad  staff    96B Mar 30 08:47 lesson-1_files
+## -rw-r--r--@  1 rad  staff    36K Apr  9 16:53 lesson-2.Rmd
+## -rw-r--r--@  1 rad  staff    40K Apr  9 16:53 lesson-2.html
+## drwxr-xr-x   3 rad  staff    96B Apr  8 20:57 lesson-2_files
+## -rw-r--r--@  1 rad  staff   4.2K Apr  1 08:59 rationale.md</code></pre>
+<p>By specifying a language, knitr was able to interpret the code and run the commands. And as you can see, I got a printout of the results right in the final document. Of course, in our case, we will mainly use the <code>r</code> language option. But you may want to explore the functionality of other languages in your own work.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>Chunk name</strong>: The name <strong>must be unique</strong>, it needs to come right after the language variable, and it must be separated by a space.</li>
+</ol>
+<p>Adding a chuck name is optional but my <em>best practice</em> advice is to always add a name. One reason is that it is easier to track down problems—especially in large documents or websites—when each chunk has a name. Keep the name simple. If you follow the same rules I described above for <a href="#file-naming-1">file naming</a>, you should be ok. Bad chunk names can cause errors when a document is rendered.</p>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Chunk Options</strong>: These control what knitr does with the code chunk. Options are listed after the name and must be separated by a comma (<code>,</code>).</li>
+</ol>
+<p>Chunk options are how you control the way knitr processes your R code. There are a lot of chunk options, and it can get a little confusing. I will present these in more detail during the tutorial portion of this lesson. For now, you should familiarize yourself with the Chunk Options section of the R Markdown Reference Guide linked on the <a href="/data-curation/page/resources/#r-markdown">Resources</a> page and the <a href="https://yihui.org/knitr/options/#chunk_options">section on chunk options</a> in the knitr handbook.</p>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>R code</strong>: As I mentioned above, most of the time you just paste your R code in between the delimiters.</li>
+</ol>
+<p>That said, there will be times when you need to write new code to use functionalities more suited for R Markdown, like interactive tables or figures. For example, if you go back to the <code>.Rmd</code> file and look at the code chuck at the top of the page, it looks like this:</p>
+<pre><code>```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```</code></pre>
+<p>There are a few things to unpack here: First, this chunk is called <code>setup</code>. Second, the chunk has the option <code>include=FALSE</code>. With <code>include=FALSE</code>, the code chunk is evaluated but the output will be completely suppressed. Finally, the command is calling the <code>knitr</code> package and using <code>opts_chunk$set</code> to set a default global options for document, in this case <code>echo = TRUE</code>. The <code>echo</code> option controls whether R commands are visible in the rendered document. By setting this global command, you ensure that all R commands are included in the final document. The only way to escape this behavior is to set <code>echo = FALSE</code> in a chunk. This is exactly what happens if you look further down in the <code>.Rmd</code> file.</p>
+<pre><code>```{r pressure, echo=FALSE}
+plot(pressure)
+```</code></pre>
+<p>Take a look at the HTML page by opening it in a browser and you will not find the command <code>plot(pressure)</code>. Sometimes you just don’t need to see a command. You will test chunk options in more detail during the tutorial portion of this lesson.</p>
+<p>You might be thinking, wouldn’t it be easier to set this <em>global</em> option in the YAML header? It certainly would, but remember YAML is used by PanDoc, and PanDoc only knows Markdown. When we use something like <code>opts_chunk$set</code> we are setting a global option for the R code, which is the domain of knitr. This is the essence of R <em>plus</em> Markdown.</p>
+</div>
+</div>
+<div id="inline-r-code" class="section level2">
+<h2>Inline R Code</h2>
+<p>The last thing I want to show you for this lesson is inline R code. Chunks are great when you have a lot of commands to run and/or you want to control the output. Inline code lets you add the output of a command anywhere in a document. Let’s return to our old friend, the <code>cars</code> dataset for a demonstration of this functionality.</p>
+<p>I know from looking at the <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/cars.html">cars help page</a> that the dataset is a <em>data frame with 50 observations on 2 variables</em> (speed and dist). Now pretend I do not know what the actual data frame looks like, but I am interested to report the dimensions of the dataset and determine the maximum value of <code>dist</code>, and the minimum value of <code>speed</code>.</p>
+<p>I can write a sentence like this using inline R code to extract the information without ever looking at the dataset:</p>
+<p>The <code>cars</code> data frame has <code>`r nrow(cars)`</code> observations on <code>`r length(cars)`</code> variables. The maximum distance is <code>`r max(cars$dist)`</code> and the minimum speed is <code>`r min(cars$speed)`</code>.</p>
+<p>What I did here was create inline, mini code chunks by enclosing each command in <em>single backticks</em>, adding the <code>r</code> language qualifier, and then the command. R Markdown will always display the results of inline code, but not the code itself, and it will apply relevant text formatting to the results. Inline expressions do not take knitr options and inline output is indistinguishable from the surrounding text. Here is what the passage looks like when it is rendered in the final document.</p>
+<blockquote>
+<p>The <code>cars</code> data frame has 50 observations on 2 variables. The maximum distance is 120 and the minimum speed is 4.</p>
+</blockquote>
+</div>
+<div id="ending-remarks" class="section level2">
+<h2>Ending Remarks</h2>
+<p>As I said, please spend some time learning this material and asking questions. I promise, the more you take away from this lesson, the less likely you will be to throw your computer off a bridge during the practical exercises. The practical exercise will be released in a few days. This will be your chance to get your hands dirty writing and testing code, adding and stylizing content, and building your first web product.</p>
+<p class="edit-page">
+  <a href="https://github.com/stri-con/data-curation/blob/master/content/post/lesson-2.Rmd">
+    <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
+  </a>
+</p>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.js'></script>
+<script>
+    anchors.add();
+</script>
+
+</div>
+
+      </div>
+    
+</div>
+
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/data-curation/tags/r-markdown/">R Markdown</a>, 
+            
+                <a href="/data-curation/tags/yaml/">YAML</a>, 
+            
+                <a href="/data-curation/tags/r/">R</a>, 
+            
+                <a href="/data-curation/tags/markdown/">Markdown</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+
+        
+
+        
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Lessons &amp; Readings" href="/data-curation/">Lessons &amp; Readings</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; metacrobe 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span>
+                      Wriiten in <a href="https://rmarkdown.rstudio.com/">R Markdown </a> & created using 
+                      <a href="https://bookdown.org/yihui/blogdown/">blogdown.</a>
+                      </span> <br/>
+                    <span>
+                      Modified from the <a href="https://github.com/roryg/ghostwriter">Ghostwriter </a> theme
+                      by <a href="http://jollygoodthemes.com">JollyGoodThemes</a>
+                      <a href="https://github.com/jbub/ghostwriter">itself </a> Ported
+                      to Hugo By <a href="https://github.com/jbub">jbub</a>
+                    </span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/data-curation/js/jquery-1.11.3.min.js"></script>
+        <script src="/data-curation/js/jquery.fitvids.js"></script>
+
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+
+        <script src="/data-curation/js/scripts.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    </body>
+</html>
+
