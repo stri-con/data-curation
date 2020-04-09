@@ -39,6 +39,7 @@ There are many similarities with the R Markdown references above.
 
 * [Basic Markdown Syntax Reference](https://www.markdownguide.org/basic-syntax/) from *[The Markdown Guide](https://www.markdownguide.org/)*, a free and open-source reference guide.
 * [Extended Markdown Syntax Reference](https://www.markdownguide.org/extended-syntax/) also from *[The Markdown Guide](https://www.markdownguide.org/)*.
+* [Interactive Markdown Tutorial](https://commonmark.org/help/tutorial/index.html) for beginners. 
 * [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables). Tired of typing all of those hyphens and pipes?
 
 ## Command Line Interpreter
