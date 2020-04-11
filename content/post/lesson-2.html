@@ -17,8 +17,13 @@ draft: true
 </div>
 <div id="self-paced-tutorials" class="section level2">
 <h2>Self-Paced Tutorials</h2>
-<p>You should also be working on the self-paced tutorials. The <a href="/data-curation/page/tutorials/#command-line-interface">command line interface tutorials</a> are included to get you accustomed to the command line environment. In addition to simply being an invaluable skill, you will use the command line when we work on git and GitHub integration. You need to have some basic navigational skills including how to list files and hidden files as well as how to edit, rename, move, delete, and create, files. Over the next two weeks, you should complete the following tutorials: <a href="https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course">A Command Line Crash Course</a> and <a href="http://conqueringthecommandline.com/book/basics">Basics and Navigation</a>. I listed two videos on the <a href="/data-curation/page/tutorials/#beginner-tutorials">Resources Page</a> that are recommended viewing.</p>
-<p>I included a tutorial for <a href="/data-curation/page/tutorials/#html--css">HTML &amp; CSS</a> because at some point you will run into a situation that requires a basic knowledge of these languages. Please complete the following lessons over the next two weeks from <em>Interneting is Hard</em>: <a href="https://www.internetingishard.com/html-and-css/introduction/">Introduction</a> and <a href="https://www.internetingishard.com/html-and-css/basic-web-pages/">Basic Web Pages</a>.</p>
+<p>You should also be working on the self-paced tutorials. The <a href="/data-curation/page/tutorials/#command-line-interface">command line interface tutorials</a> are included to get you accustomed to the command line environment. In addition to simply being an invaluable skill, you will use the command line when we work on git and GitHub integration. You need to have some basic navigational skills including how to list files and hidden files as well as how to edit, rename, move, delete, and create, files.</p>
+<p>{{% todo %}}</p>
+<p>Over the next two weeks, you should complete the following tutorials: <a href="https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course">A Command Line Crash Course</a> and <a href="http://conqueringthecommandline.com/book/basics">Basics and Navigation</a>. I listed two videos on the <a href="/data-curation/page/tutorials/#cli-tutorials">Tutorials Page</a> that are recommended viewing.</p>
+<p>I included a tutorial for <a href="/data-curation/page/tutorials/#interneting-is-hard-but-is-doesnt-have-to-be">HTML &amp; CSS</a> because at some point you will run into a situation that requires a basic knowledge of these languages. Please complete the following lessons over the next two weeks from <em>Interneting is Hard</em>: <a href="https://www.internetingishard.com/html-and-css/introduction/">Introduction</a> and <a href="https://www.internetingishard.com/html-and-css/basic-web-pages/">Basic Web Pages</a>.</p>
+</div>
+<div id="lesson-overview" class="section level2">
+<h2>Lesson Overview</h2>
 <p>{{% opennote %}}
 This lesson will cover the following:
 1) <a href="#rendering-a-document-1">how an HTML page is generated from an R Markdown document</a>;
@@ -57,17 +62,20 @@ The rendering process—creating an HTML document from R code &amp; Markdown usi
 <h2>The YAML header</h2>
 <p>At the top of an R Markdown document you must include YAML metadata as the header. <a href="https://yaml.org/">YAML</a> (a meaningless acronym that stands for YAML Ain’t Markup Language) is human readable—meaning that the syntax is easy to read and write. YAML metadata is used to configure the settings and parameters of a document or program. Since it is used by PanDoc, the YAML metadata technically comes into play during the final step of the pipeline. But since it is usually at the top of a document, I will cover YAML first.</p>
 <p>We control how PanDoc configures our rendered document by populating the metadata with different <em>options</em>. For examples, we can specify the type of document we want PanDoc to construct—HTML, PDF, Word, etc. We can also include a table of contents (toc) or specify a <em>theme</em>. Themes allow you to set the look of the document—the font style, coloring, etc. Each theme comes prepackage with its own CSS and HTML code that PanDoc applies to the final document. We will cover themes more extensively during the tutorial part of the lesson. I’ve listed some of the theme options in the <a href="/data-curation/page/resources/#yaml">YAML section</a> of the Resources page.</p>
-<p>All YAML header options are tied to <em>built in functions</em>. What this means is that we need to know what the YAML options are and what each one does. A YAML option = <em>an argument + a property</em>. For example, if we want to add a date to our document, we include the <code>date</code> <strong>argument</strong> and then pass a <strong>property</strong> to that argument. However, something like <code>agouti</code> is not a YAML argument and nothing will happen if you try to use it. If you want to control a component that is <em>not</em> a built-in function, you must include additional instructions like custom CSS and HTML code. This is not too difficult, but it is a topic for another day. A side note—on the Web, you may see <strong>argument</strong> referred to as a <em>key</em> and <strong>property</strong> referred to as a <em>value</em>. I am not aware of a strict naming convention, but I will do my best to be consistent and use the <strong>argument</strong>/<strong>property</strong> construct.</p>
+<p>All YAML header options are tied to <em>built in functions</em>. What this means is that we need to know what the YAML options are and what each one does. A YAML option consists of a pair of values—<em>an argument + a property</em>. For example, if we want to add a date to our document, we include the <code>date</code> <strong>argument</strong> and then pass a <strong>property</strong> to that argument. However, something like <code>agouti</code> is not a YAML argument and nothing will happen if you try to use it. If you want to control a component that is <em>not</em> a built-in function, you must include additional instructions like custom CSS and HTML code. This is not too difficult, but it is a topic for another day. A side note—on the Web, you may see <strong>argument</strong> referred to as a <em>key</em> and <strong>property</strong> referred to as a <em>value</em>. I am not aware of a strict naming convention, but I will do my best to be consistent and use the <strong>argument</strong>/<strong>property</strong> pair.</p>
 <p>For a single page document like the one you will create in this lesson, the YAML metadata must be enclosed in <a href="https://en.wikipedia.org/wiki/Delimiter">delimiters</a>. We will use delimiters a lot, so make sure you <a href="https://en.wikipedia.org/wiki/Delimiter">understand the concept</a>. For YAML headers, we use three consecutive dashes (<code>---</code>) without spaces. The delimiters must be on their own lines and you must add the YAML metadata between the two delimiters. Like so…</p>
 <pre><code>---
 Some YAML metadata
 ---</code></pre>
 <div id="yaml-options" class="section level3">
-<h3>YAML Options</h3>
+<h3>YAML options</h3>
 <blockquote>
-<p>The structure of a YAML <em>option</em> is <code>argument: property</code> where <em>argument</em> is a built-in function and <em>property</em> is the information you pass to the argument.</p>
+<p>The structure of a YAML <em>option</em> is <code>argument: property</code> pair where <em>argument</em> is a built-in function and <em>property</em> is the information you pass to the argument.</p>
 </blockquote>
-<p>There are many arguments you can include in your YAML header, some of which are general and others that only apply to specific document types. Please spend some time looking at <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html">The YAML Fieldguide</a>, in particular the sections called <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#basic-yaml">Basic YAML</a> and <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#r-markdown-websites">R Markdown Websites</a>. Most of the YAML arguments we can use for our project are listed in these two sections. Each entry contains the argument name, a description of what it does and how to use it, and a link to a help page. The help pages contain additional details and examples.</p>
+<p>There are many arguments you can include in your YAML header, some of which are general and others that only apply to specific document types.</p>
+<p>{{% read %}}</p>
+<p>Please spend some time looking at <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html">The YAML Fieldguide</a>, in particular the sections called <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#basic-yaml">Basic YAML</a> and <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#r-markdown-websites">R Markdown Websites</a>. Most of the YAML arguments we can use for our project are listed in these two sections. Each entry contains the argument name, a description of what it does and how to use it, and a link to a help page. The help pages contain additional details and examples.</p>
+<p>{{% todo %}}</p>
 <p>Open R Studio and go to <code>File &gt; New File &gt; R Markdown</code>. A window like this should pop up where you can fill in the details. It is not important what you put here since you can change it at any time. What <em>is important</em> is that <strong>Document</strong> and <strong>HTML</strong> are both selected. Hit <code>Ok</code>.</p>
 {{% figure src="/data-curation/img/lesson-2/create-rmd.png" width="600" height="499" alt="Doc Window" caption="New R Markdown document window." %}}
 <p>Once you hit <code>Ok</code>, a new R Markdown document is created and opened in the Environment window of RStudio. Let’s take a look, but for now just focus on the top of the page.</p>
@@ -85,6 +93,7 @@ output: html_document
 </ol>
 <p>The convention is that <em>variable</em> properties are enclosed in quotes and <em>operator</em> properties are not. The argument itself is never quoted.</p>
 <p>Now that I told you all of this, I also need to tell you that <em>most</em> of the time, quotes for variable properties are optional. However, putting variable properties in quotes allows you to include special or reserved characters in your string. For example, let’s say you want to set the <code>author</code> property to your Twitter handle, <code>@cool_coder</code> (I think this handle is available :). The <code>@</code> sign at the beginning of a string has a special meaning for PanDoc. If you do not put this string in quotes, you will get an error and your document will not render. By writing the option like this—<code>author: &quot;@cool_coder&quot;</code>—with the property in quotes, you can use the <code>@</code> sign and everything works fine. There is a lot of confusion on the Web about when to include quotes and when not to. My <em>best practice</em> advice is to always use quotes with variable properties. Symfony has a pretty good <a href="https://symfony.com/doc/current/components/yaml/yaml_format.html#strings">breakdown</a> of quote usage in variable strings.</p>
+<p>{{% todo %}}</p>
 <p>Go ahead and customize your YAML header with a name and title. Now hit the <code>knit</code> button just above the text editor window. There is a little dropdown menu that lets you select the type of document to produce, but since you have already specified <code>output: html_document</code>, you can just hit the button. RStudio will prompt you to save the document. <strong>Do not</strong> add a file extension. RStudio just needs a <em>root</em> name.</p>
 <div id="file-naming" class="section level4">
 <h4>File naming</h4>
@@ -166,7 +175,7 @@ output: html_document
 theme: journal</code></pre>
 <p>I save the file, run knit, and look at the output. Hum. Nothing changed. This is because <code>theme</code> is not a general PanDoc argument like <code>title</code>, <code>author</code>, and <code>date</code>. The <code>theme</code> argument is specific to the property of the <code>output</code> argument. To see what I mean, please find <em>theme</em> in the PanDoc options section (Page 5) of the <a href="/data-curation/files/rmarkdown-reference.pdf">R Markdown Reference Guide</a>. What you will see is that <code>theme</code> can only be set for two document types (HTML &amp; Beamer).</p>
 {{% figure src="/data-curation/img/lesson-2/theme.png" link="/data-curation/img/lesson-2/theme.png" alt="Doc Window" caption="Truncated view of the PanDoc options section from the R Markdown Reference Guide." %}}
-<p>If you look more broadly at that section you should notice that most options can only be used with specific document types. Please note, you will often see <em>option</em> and <em>argument</em> used interchangeably. This is annoying. Again, I will use the term <em>option</em> to refer to an <em>argument</em> plus it’s <em>property</em>.</p>
+<p>If you look more broadly at this section you should notice that most options can only be used with specific document types. Please note, you will often see <em>option</em> and <em>argument</em> used interchangeably. This is annoying. Again, I will use the term <em>option</em> to refer to an <em>argument</em> plus it’s <em>property</em>.</p>
 <p>Ok, in order to use <code>theme</code>, we first need to make sure we are using the property for <code>output</code>. Check. Next, we need to make <code>theme</code> as a nested element of the output property <code>html_document</code>. In doing so, <code>html_document</code> becomes both the property of <code>output</code> and the argument of <code>theme</code>. Since we cannot have two arguments on the same line, we need to set <code>html_document</code> as a nested element of the <code>output</code>.</p>
 <pre><code>title: &quot;DC Lesson 2: Single Page Document&quot;
 author: &quot;@cool_coder&quot;
@@ -188,6 +197,7 @@ output:
 <div id="markdown-formatted-text" class="section level2">
 <h2>Markdown Formatted Text</h2>
 <p>Now it is time to add some content. Any document you create needs some text or else it is just a bunch of code and not very fun to read. But remember, in R Markdown the text is formatted using Markdown syntax. I already covered the <a href="/data-curation/2020/03/28/lesson-0/#markdown-3">basics of Markdown</a> so I will not spend any more time on it here. Markdown syntax is pretty straightforward. Use the reference guides on the <a href="/data-curation/page/resources/#markdown">Resources Page</a> to get started. Still feeling a little lost? Try this brief but excellent <a href="https://commonmark.org/help/tutorial/index.html">Interactive Markdown Tutorial</a>. Each lesson contains a brief explanation of Markdown syntax. Hit the <strong><em>Try it</em></strong> button to test your skills and see what your solution looks like when it is rendered. There is also an option to see the HTML equivalent of the Markdown text. This is a nice tutorial.</p>
+<p>{{% todo %}}</p>
 <p>In your new R Markdown document, add some Markdown-formatted content. If you already have some text, feel free to add it. If not, use a <a href="https://loremipsum.io/">Lorem ipsum generator</a> to make a bunch of plain text that you can add to your page. Your assignment is to use Markdown syntax to format the document. Add headers, links, make some text bold or italic, etc. Structure your document like you would a real page or project. Your goal here is to get comfortable with Markdown and the best way to do that is to practice.</p>
 <blockquote>
 <p>To see any changes you make, you must save the document and run <code>knit</code> again. Make sure you have no errors and refresh your browser.</p>
@@ -205,7 +215,7 @@ summary(cars)
 <p>This is called a <strong>code chunk</strong>. There is another code chunk at the top of the <code>.Rmd</code> page (just below the YAML header) but we will come back to this later because it is a little special.</p>
 <p>I covered the general concept of code chunks in <a href="/data-curation/2020/03/28/lesson-0/#r-markdown-1">Lesson 0</a>, but this piece of the puzzle is important, so I want to discuss it in more detail here. Like our YAML header, an R code chuck is distinguished from the rest of the text with delimiters, in this case three consecutive back ticks without spaces (<code>```</code>). Think of a code chunk like a mini R environment. Knitr essentially pulls the code out of the chunk, runs the code in R, and then puts the results in a new document as Markdown-formatted text. Code chunks can also have options, which are enclosed in curly brackets. We will get back to chunk options in a minute.</p>
 <div id="running-r-code" class="section level3">
-<h3>Running R Code</h3>
+<h3>Running R code</h3>
 <p>Open the <code>.html</code> file generated when you rendered (or <em>knitted</em>) the R Markdown document and scroll to the part that corresponds to the <code>summary(cars)</code> section. This R command simply calls the <code>summary</code> function against the data frame <code>cars</code>.</p>
 <p>The image on the left is a screenshot from that section of the HTML document. The first thing you should notice is that there are no delimiters or any information about the chunk, just the command <code>summary(cars)</code>. I will explain this in a second. Below that is a box with some data. We certainly didn’t code this data into our R Markdown document—these data are the results of running the command. We asked for a summary of <code>cars</code> and that’s what we got.</p>
 {{% figure src="/data-curation/img/lesson-2/summary.png" alt="Doc Window" caption="Left, code chunk output from the HTML document. Right, output from the R console. " %}}
@@ -216,7 +226,7 @@ summary(cars)
 </div>
 </div>
 <div id="chunk-structure-options" class="section level3">
-<h3>Chunk Structure &amp; Options</h3>
+<h3>Chunk structure &amp; options</h3>
 <p>Great. Let’s review the structure of a code chunk. Below is an annotated screenshot of a piece of code I wrote to define a simple color palette. If you haven’t worked much with colors, the strings preceded by hash tags (<code>#</code>) are called <a href="https://www.color-hex.com/">hex codes</a>. Hex codes are great for encoding color in many languages including R.</p>
 {{% figure src="/data-curation/img/lesson-2/chunk.png" alt="Doc Window" caption="Example code chunk illustrating the formatting &  different components. " %}}
 <p>The format of the code chunk is as follows:</p>
@@ -240,21 +250,21 @@ cols(friend_pal)</code></pre>
 <pre><code>```{bash}
 ls -lah
 ```</code></pre>
-<pre><code>## total 416
-## drwxr-xr-x  16 rad  staff   512B Apr  9 16:54 .
+<pre><code>## total 424
+## drwxr-xr-x  16 rad  staff   512B Apr 11 08:47 .
 ## drwxr-xr-x   6 rad  staff   192B Mar 31 11:38 ..
 ## -rw-r--r--@  1 rad  staff   6.0K Apr  7 17:24 .DS_Store
 ## -rw-r--r--   1 rad  staff     0B Apr  5 10:34 .Rhistory
 ## -rw-r--r--@  1 rad  staff    14K Apr  6 20:51 help.md
-## -rw-r--r--@  1 rad  staff    15K Apr  5 09:51 lesson-0.Rmd
-## -rw-r--r--   1 rad  staff    16K Apr  9 16:54 lesson-0.html
+## -rw-r--r--@  1 rad  staff    15K Apr 11 06:02 lesson-0.Rmd
+## -rw-r--r--   1 rad  staff    16K Apr 11 08:47 lesson-0.html
 ## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_cache
 ## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_files
-## -rw-r--r--@  1 rad  staff    27K Apr  7 17:28 lesson-1.Rmd
-## -rw-r--r--   1 rad  staff    29K Apr  9 16:54 lesson-1.html
+## -rw-r--r--@  1 rad  staff    27K Apr 11 06:19 lesson-1.Rmd
+## -rw-r--r--   1 rad  staff    29K Apr 11 08:47 lesson-1.html
 ## drwxr-xr-x   3 rad  staff    96B Mar 30 08:47 lesson-1_files
-## -rw-r--r--@  1 rad  staff    36K Apr  9 16:53 lesson-2.Rmd
-## -rw-r--r--@  1 rad  staff    40K Apr  9 16:53 lesson-2.html
+## -rw-r--r--@  1 rad  staff    36K Apr 11 08:46 lesson-2.Rmd
+## -rw-r--r--@  1 rad  staff    41K Apr 11 08:46 lesson-2.html
 ## drwxr-xr-x   3 rad  staff    96B Apr  8 20:57 lesson-2_files
 ## -rw-r--r--@  1 rad  staff   4.2K Apr  1 08:59 rationale.md</code></pre>
 <p>By specifying a language, knitr was able to interpret the code and run the commands. And as you can see, I got a printout of the results right in the final document. Of course, in our case, we will mainly use the <code>r</code> language option. But you may want to explore the functionality of other languages in your own work.</p>
@@ -291,6 +301,8 @@ plot(pressure)
 <blockquote>
 <p>The <code>cars</code> data frame has 50 observations on 2 variables. The maximum distance is 120 and the minimum speed is 4.</p>
 </blockquote>
+<p>You can even use inline code for quick calculations and render the results right in the text. The square root of 2 is <code>`r sqrt(2)`</code>
+renders as The square root of 2 is 1.4142136. Running inline r code is super handy.</p>
 </div>
 <div id="ending-remarks" class="section level2">
 <h2>Ending Remarks</h2>

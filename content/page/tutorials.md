@@ -7,11 +7,13 @@ tags: ["CLI", "HTML", "CSS"]
 
 ---
 
-> Jump to: [CLI tutorials](#command-line-interface), [HTML/CSS Tutorials](#html--css).
+> Jump to: [CLI Tutorials](#command-line-interface), [HTML/CSS Tutorials](#html--css), & [Additional Tutorials](#additional-tutorials).
 
-As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don't think you need. [Originally](https://github.com/stri-con/data-curation/commit/8f29d8ea71775ed4d6ad26ca6ffc51e713a4b306#diff-229378f5e56ea68007086e49f4b0465d) I considered everything on this page to be *optional*, however I changed my mind. As I thought more about the structure of the course, I concluded that I would be doing you all a disservice if I made tools like HTML and CSS optional. So, I am now flip flopping and changing this page to **mandatory, self-paced tutorials**. These tools are integral to our learning objectives and your work going forward, so please try to forget what I said before.
+As advertised, this course is about using R Markdown and GitHub. I appreciate that some of you may not want to spend time learning new skills that you don't think you need. [Originally](https://github.com/stri-con/data-curation/commit/8f29d8ea71775ed4d6ad26ca6ffc51e713a4b306#diff-229378f5e56ea68007086e49f4b0465d) I considered everything on this page to be *optional*, however I changed my mind. As I thought more about the structure of the course, I concluded that I would be doing you all a disservice if I made tools like HTML and CSS optional. So, I am now flip flopping and making Command Line Interface and  HTML/CSS  **mandatory, self-paced tutorials**. These tools are integral to our learning objectives and your work going forward, so please try to forget what I said before.
 
 In future lessons you will incorporate these skills, so it is time to start practicing. If there is demand for it, I am happy to turn any of these topics into separate lessons--just let me know. For now, work through the tutorials available on the Web. These are the same tutorials I used, but if you find other ones that you, like please tell me or post to Slack and I will update this page.
+
+For your benefit, I also include a section on [Additional Tutorials]() that cover these toipcs in more depth plus tutorials on other concepts that you may find useful.
 
 ## Command Line Interface
 
@@ -25,17 +27,13 @@ Ok, here is where I get into trouble. Since I do not have a Windows machine and 
 
 Many important files and directories on your computer are **write protected**, meaning that you must enter a password to delete them. Most of the time you will be ok. But running `rm` incorrectly, without the `-i` flag, in the wrong place on your computer, can be **catastrophic**. Please be careful with your new powers.
 
-### Beginner Tutorials
+### CLI Tutorials
 
-* If you have never used CLI before, please go through the [Command Line Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) and then the tutorial on how to [Configure Your Command Line](https://www.vikingcodeschool.com/web-development-basics/configure-your-command-line).
-* You can also have a look at Chapter 1 of [Conquering the Command Line](http://conqueringthecommandline.com/book/basics).
-* If you prefer video, check out this great ~20 minute [tutorial](https://www.youtube.com/watch?v=BFMyUgF6I8Y) from freeCodeCamp.org.
-* If you are willing to spend a little more time (~1hr) [this tutorial](https://www.youtube.com/watch?v=oxuRxtrO2Ag) from [Joe Collins](https://www.youtube.com/channel/UCTfabOKD7Yty6sDF4POBVqA) is amazing.
-* I would also like you to look at this amazing tool called [Explain Shell](https://explainshell.com/). I found it today when researching this article. Just type in a command and hit Explain.
-
-###  Advanced Users
-
-Coming Soon.
+* [Conquering the Command Line](http://conqueringthecommandline.com/book/basics). Excellent and extensive tutorials from Mark Bates.
+* [A Command Line Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) from Viking Code School.
+* [Briana's Bash Tutorial: How to Use the Command Line](https://www.youtube.com/watch?v=BFMyUgF6I8Y). Twenty minute video from freeCodeCamp.org.
+* [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag). Longer video from [Joe Collins](https://www.youtube.com/channel/UCTfabOKD7Yty6sDF4POBVqA). Amazing.
+* [Configure Your Command Line](https://www.vikingcodeschool.com/web-development-basics/configure-your-command-line). Learn how to customize your terminal.
 
 ## HTML & CSS
 
@@ -49,9 +47,38 @@ I have explored a lot of tutorials for HTML/CSS and this is my favorite. There a
 
 [A friendly web development tutorial for complete beginners](https://www.internetingishard.com/html-and-css/).
 
-### Other HTML/CSS Tutorials
+***
 
-Our friends at Mozilla offer some great HTML and CSS tutorials in [English](https://developer.mozilla.org/en-US/docs/Learn) and some in [Spanish](https://developer.mozilla.org/es/docs/Web/Tutoriales).
+## Additional Tutorials
+
+In this section, I will add other tutorials you can explore on your own time for honing your skills. If you find a tutorial you like, please let me know and I will add it to the list.
+
+## General
+
+[Learn X in Y minutes](https://learnxinyminutes.com/). Where `X` is a programming language. Beginner tutorials available English, Spanish, and many other languages. Use the *Highlight your language:* button in the upper right corner to filter. I highlight some in the sections below.
+
+### HTML/CSS
+
+From Learn X in Y minutes, [CSS in English (EN)](https://learnxinyminutes.com/docs/css/) (no ES CSS available), [HTML in English (EN)](https://learnxinyminutes.com/docs/html/), and [HTML in Espanol (ES)](https://learnxinyminutes.com/docs/es-es/html-es/).
+
+Both w3schools and MDN web docs have extensive information about CSS and HTML. These are amazing resources.
+* [w3schools HTML](https://www.w3schools.com/html/default.asp). HTML tutorials, examples, and explanations.
+* [w3schools CSS](https://www.w3schools.com/css/default.asp). CSS tutorials, examples, and explanations.
+* [MDN web docs for HTML](https://developer.mozilla.org/en-US/docs/Web/HTML). HTML tutorials, examples, and explanations.
+* [MDN web docs for CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).  CSS tutorials, examples, and explanations.
+* MDN web docs also has many tutorials in [Spanish](https://developer.mozilla.org/es/docs/Web/Tutoriales).
+
+### Markdown
+
+From Learn X in Y minutes, [Markdown in English (EN)](https://learnxinyminutes.com/docs/markdown/) and [Markdown en Espanol (ES)](https://learnxinyminutes.com/docs/es-es/markdown-es/). Here is a
+
+### R
+
+From Learn X in Y minutes, [R in English (EN)](https://learnxinyminutes.com/docs/r/) and [R en Espanol (ES)](https://learnxinyminutes.com/docs/es-es/r-es/).
+
+### MathJax
+
+* [Basic tutorial & quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) from StackExchange. A bit old now but still good.
 
 
-{{< edit "https://github.com/stri-con/data-curation/blob/master/content/page/tutorials.md">}}
+{{< edit "https://github.com/stri-con/data-curation/blob/master/content/page/tutorials.md" >}}

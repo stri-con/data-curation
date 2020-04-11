@@ -35,4 +35,4 @@ Please continue to work on your skills in CSS, HTML, and CLI. See the [Self-Pace
 
 
 
-{{< edit "https://github.com/stri-con/data-curation/blob/master/content/page/about.md">}}
+{{< edit "https://github.com/stri-con/data-curation/blob/master/content/page/topics.md">}}

@@ -21,9 +21,15 @@ After you go through  this lesson (and understand the concepts :), you will star
 
 ## Self-Paced Tutorials
 
-You should also be working on the self-paced tutorials. The [command line interface tutorials](/data-curation/page/tutorials/#command-line-interface) are included to get you accustomed to the command line environment. In addition to simply being an invaluable skill, you will use the command line when we work on git and GitHub integration. You need to have some basic navigational skills including how to list files and hidden files as well as how to edit, rename, move, delete, and create, files. Over the next two weeks, you should complete the following tutorials: [A Command Line Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) and [Basics and Navigation](http://conqueringthecommandline.com/book/basics). I listed two videos on the [Resources Page](/data-curation/page/tutorials/#beginner-tutorials) that are recommended viewing.
+You should also be working on the self-paced tutorials. The [command line interface tutorials](/data-curation/page/tutorials/#command-line-interface) are included to get you accustomed to the command line environment. In addition to simply being an invaluable skill, you will use the command line when we work on git and GitHub integration. You need to have some basic navigational skills including how to list files and hidden files as well as how to edit, rename, move, delete, and create, files.
 
-I included a tutorial for [HTML & CSS](/data-curation/page/tutorials/#html--css) because at some point you will run into a situation that requires a basic knowledge of these languages. Please complete the following lessons over the next two weeks from *Interneting is Hard*: [Introduction](https://www.internetingishard.com/html-and-css/introduction/) and [Basic Web Pages](https://www.internetingishard.com/html-and-css/basic-web-pages/).
+{{% todo %}}
+
+Over the next two weeks, you should complete the following tutorials: [A Command Line Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) and [Basics and Navigation](http://conqueringthecommandline.com/book/basics). I listed two videos on the [Tutorials Page](/data-curation/page/tutorials/#cli-tutorials) that are recommended viewing.
+
+I included a tutorial for [HTML & CSS](/data-curation/page/tutorials/#interneting-is-hard-but-is-doesnt-have-to-be) because at some point you will run into a situation that requires a basic knowledge of these languages. Please complete the following lessons over the next two weeks from *Interneting is Hard*: [Introduction](https://www.internetingishard.com/html-and-css/introduction/) and [Basic Web Pages](https://www.internetingishard.com/html-and-css/basic-web-pages/).
+
+## Lesson Overview
 
 {{% opennote %}}
 This lesson will cover the following:
@@ -32,7 +38,6 @@ This lesson will cover the following:
 3) its three main components---[the YAML header](#the-yaml-header-1), [Markdown text](#markdown-formatted-text-1), & [R code chunks](#r-code-chunks-1); and finally
 4) how to run [Inline R Code](#inline-r-code-1).
 {{% /opennote %}}
-
 
 ## Rendering a Document
 
@@ -67,7 +72,7 @@ At the top of an R Markdown document you must include YAML metadata as the heade
 
 We control how PanDoc configures our rendered document by populating the metadata with different *options*. For examples, we can specify the type of document we want PanDoc to construct---HTML, PDF, Word, etc. We can also include a table of contents (toc) or specify a *theme*. Themes allow you to set the look of the document---the font style, coloring, etc. Each theme comes prepackage with its own CSS and HTML code that PanDoc applies to the final document. We will cover themes more extensively during the tutorial part of the lesson. I've listed some of the theme options in the [YAML section](/data-curation/page/resources/#yaml) of the Resources page.
 
-All YAML header options are tied to *built in functions*. What this means is that we need to know what the YAML options are and what each one does. A YAML option = *an argument + a property*. For example, if we want to add a date to our document, we include the `date` **argument** and then pass a **property** to that argument. However, something like `agouti` is not a YAML argument and nothing will happen if you try to use it. If you want to control a component that is *not* a built-in function, you must include additional instructions like custom CSS and HTML code. This is not too difficult, but it is a topic for another day. A side note---on the Web, you may see **argument** referred to as a *key* and **property** referred to as a *value*. I am not aware of a strict naming convention, but I will do my best to be consistent and use the **argument**/**property** construct.
+All YAML header options are tied to *built in functions*. What this means is that we need to know what the YAML options are and what each one does. A YAML option consists of a pair of values---*an argument + a property*. For example, if we want to add a date to our document, we include the `date` **argument** and then pass a **property** to that argument. However, something like `agouti` is not a YAML argument and nothing will happen if you try to use it. If you want to control a component that is *not* a built-in function, you must include additional instructions like custom CSS and HTML code. This is not too difficult, but it is a topic for another day. A side note---on the Web, you may see **argument** referred to as a *key* and **property** referred to as a *value*. I am not aware of a strict naming convention, but I will do my best to be consistent and use the **argument**/**property** pair.
 
 For a single page document like the one you will create in this lesson, the YAML metadata must be enclosed in [delimiters](https://en.wikipedia.org/wiki/Delimiter). We will use delimiters a lot, so make sure you [understand the concept](https://en.wikipedia.org/wiki/Delimiter). For YAML headers, we use three consecutive dashes (`---`) without spaces. The delimiters must be on their own lines and you must add the YAML metadata between the two delimiters. Like so...
 
@@ -77,12 +82,17 @@ Some YAML metadata
 ---
 ```
 
-### YAML Options
+### YAML options
 
-> The structure of a YAML *option* is `argument: property` where *argument* is a built-in function and *property* is the information you pass to the argument.
+> The structure of a YAML *option* is `argument: property` pair where *argument* is a built-in function and *property* is the information you pass to the argument.
 
-There are many arguments you can include in your YAML header, some of which are general and others that only apply to specific document types. Please spend some time looking at [The YAML Fieldguide](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html), in particular the sections called [Basic YAML](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#basic-yaml) and [R Markdown Websites](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#r-markdown-websites). Most of the YAML arguments we can use for our project are listed in these two sections. Each entry contains the argument name, a description of what it does and how to use it, and a link to a help page. The help pages contain additional details and examples.
+There are many arguments you can include in your YAML header, some of which are general and others that only apply to specific document types.
 
+{{% read %}}
+
+Please spend some time looking at [The YAML Fieldguide](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html), in particular the sections called [Basic YAML](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#basic-yaml) and [R Markdown Websites](https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html#r-markdown-websites). Most of the YAML arguments we can use for our project are listed in these two sections. Each entry contains the argument name, a description of what it does and how to use it, and a link to a help page. The help pages contain additional details and examples.
+
+{{% todo %}}
 
 Open R Studio and go to `File > New File > R Markdown`. A window like this should pop up where you can fill in the details. It is not important what you put here since you can change it at any time. What *is important* is that **Document** and **HTML** are both  selected. Hit `Ok`.
 
@@ -108,9 +118,11 @@ Notice that some of the properties, like the name of the `author` or the `title`
 1) **Variables**: A variable can be any string you want (a string is just a sequence of characters). For example, I could set the property of the `author` argument like this `author:"Iamtheauthorofthispaperhearmeroar"`. For arguments like `author`, `title`, etc., PanDoc doesn't care what property you set. It knows these arguments can take pretty much any string you pass it.
 2) **Operators**: Think of an operator like a choice. The `output` argument here is set to `output: html_document`. The property `html_document` is one of the [choices](https://rmarkdown.rstudio.com/lesson-9.html/#documents) you have for this argument. If you enter a property that is not in the list of choices, you will get an error, and your document will not render. Like `output: cold_beer` may work in some situations but not in our YAML header.
 
-The convention is that *variable* properties are enclosed in  quotes and *operator* properties are not. The argument itself is never quoted.
+The convention is that *variable* properties are enclosed in quotes and *operator* properties are not. The argument itself is never quoted.
 
 Now that I told you all of this, I also need to  tell you that *most* of the time, quotes for variable properties are optional. However, putting variable properties in quotes allows you to include special or reserved characters in your string. For example, let’s say you want to set the `author` property to your Twitter handle, `@cool_coder` (I think this handle is available :). The `@` sign at the beginning of a string has a special meaning for PanDoc. If you do not put this string in quotes, you will get an error and your document will not render. By writing the option like this---`author: "@cool_coder"`---with the property in quotes, you can use the `@` sign and everything works fine. There is a lot of confusion on the Web about when to include quotes and when not to.  My *best practice* advice is to always use quotes with variable properties. Symfony has a pretty good [breakdown](https://symfony.com/doc/current/components/yaml/yaml_format.html#strings) of quote usage in variable strings.
+
+{{% todo %}}
 
 Go ahead and customize your YAML header with a name and title. Now hit the `knit` button just above the text editor window. There is a little dropdown menu that lets you select the type of document to produce, but since you have already specified `output: html_document`,  you can just hit the button. RStudio will prompt you to save the document. **Do not** add a file extension. RStudio just needs a *root* name.
 
@@ -206,7 +218,7 @@ I save the file, run knit, and look at the output. Hum. Nothing changed. This is
 blogdown::shortcode("figure", src ='"/data-curation/img/lesson-2/theme.png"', link ='"/data-curation/img/lesson-2/theme.png"',  alt = "Doc Window", caption = "Truncated view of the PanDoc options section from the R Markdown Reference Guide.")
 ```
 
-If you look more broadly at that section you should notice that most options can only be used with specific document types. Please note, you will often see *option* and *argument* used interchangeably. This is annoying. Again, I will use the term *option* to refer to an *argument* plus it’s *property*.
+If you look more broadly at this section you should notice that most options can only be used with specific document types. Please note, you will often see *option* and *argument* used interchangeably. This is annoying. Again, I will use the term *option* to refer to an *argument* plus it’s *property*.
 
 Ok, in order to use `theme`, we first need to make sure we are using the property for `output`. Check. Next, we need to make `theme` as a nested element of the output property `html_document`. In doing so, `html_document` becomes both the property of `output` and the argument of `theme`. Since we cannot have two arguments on the same line, we need to set `html_document` as a nested element of the `output`.
 
@@ -231,6 +243,8 @@ In essence, a nested list of options. Anytime we want to add a new option, we ne
 ## Markdown Formatted Text
 
 Now it is time to add some content. Any document you create needs some text or else it is just a bunch of code and not very fun to read. But remember, in R Markdown the text is formatted using Markdown syntax. I already covered the [basics of Markdown](/data-curation/2020/03/28/lesson-0/#markdown-3) so I will not spend any more time on it here. Markdown syntax is pretty straightforward. Use the reference guides on the [Resources Page](/data-curation/page/resources/#markdown) to get started. Still feeling  a little lost? Try this brief but excellent [Interactive Markdown Tutorial](https://commonmark.org/help/tutorial/index.html). Each lesson contains a brief explanation of Markdown syntax. Hit the ***Try it*** button to test your skills and see what your solution looks like when it is rendered. There is also an option to see the HTML equivalent of the Markdown text. This is a nice tutorial.
+
+{{% todo %}}
 
 In your new R Markdown document, add some Markdown-formatted content. If you already have some text, feel free to add it. If not, use a [Lorem ipsum generator](https://loremipsum.io/) to make a bunch of plain text that you can add to your page. Your assignment is to use Markdown syntax to format the document. Add headers, links, make some text bold or italic, etc. Structure your document like you would a real page or project. Your goal here is to get comfortable with  Markdown and the best way to do that is to practice.
 
@@ -257,7 +271,7 @@ This is called a **code chunk**. There is another code chunk at the top of the `
 
 I covered the general concept of code chunks  in [Lesson 0](/data-curation/2020/03/28/lesson-0/#r-markdown-1), but this piece of the puzzle is important, so I want to discuss it in more detail here. Like our YAML header, an R code chuck is distinguished from the rest of the text with delimiters, in this case three consecutive back ticks without spaces (` ``` `). Think of a code chunk like a mini R environment. Knitr essentially pulls the code out of the chunk, runs the code in R, and then puts the results in a new document as Markdown-formatted text. Code chunks can also have options, which are enclosed in curly brackets. We will get back to chunk options in a minute.
 
-### Running R Code
+### Running R code
 
 Open the `.html` file generated when you rendered (or *knitted*) the R Markdown document and scroll to the part that corresponds to the `summary(cars)` section. This R command simply calls the `summary` function against the data frame `cars`.
 
@@ -273,7 +287,7 @@ On the right is a screenshot of my R console. I just copied the command and ran 
 
 You cannot see the chunk details because they are hidden. Chunk details are instructions for knitr on how  chunks should be rendered. This information is not important for reproducibility or transparency, so it is hidden. Anytime you do see code chunk information on a page, it is because that chunk is intentionally being rendered [*verbatim*](https://rmarkdown.rstudio.com/articles_verbatim.html). Normally we do this for demonstration purposes only. From now on, I will only show code chunk information as a learning tool. Otherwise it will be hidden, and you will have to dig around on GitHub to find it :)
 
-### Chunk Structure & Options
+### Chunk structure & options
 
 Great. Let’s review the structure of a code chunk. Below is an annotated screenshot of a piece of code I wrote to define a simple color palette. If you haven't worked much with colors, the strings preceded by hash tags (`#`) are called [hex codes](https://www.color-hex.com/). Hex codes are great for encoding color in many languages including R.
 
@@ -360,9 +374,11 @@ min(cars$speed)` ``.
 
 What I did here was create inline, mini code chunks by enclosing each command in *single backticks*, adding the `r` language qualifier, and then the command. R Markdown will always display the results of inline code, but not the code itself, and it will apply relevant text formatting to the results. Inline expressions do not take knitr options and inline output is indistinguishable from the surrounding text. Here is what the  passage looks like when it is rendered in the final document.
 
-
 > The `cars` data frame has `r nrow(cars)` observations on `r length(cars)` variables. The maximum distance is `r max(cars$dist)` and the minimum speed is `r min(cars$speed)`.
 
+You can even use inline code for quick calculations and render the results right in the text. The square root of 2 is `` `r
+sqrt(2)` ``
+renders as  The square root of 2 is `r sqrt(2)`. Running inline r code is super handy. 
 
 ## Ending Remarks
 

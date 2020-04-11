@@ -155,7 +155,7 @@ To run  R code in your document there is a particular syntax you must use when c
 Here is what the example looks like in code chunk format.
 
 ````
-```{r, chunk name, chunk options}`r ''`
+```{r chunk name, chunk options}`r ''`
 # Start with three back ticks
 # add the r tag inside curly brackets
 # Name the chunk and add chunk options
@@ -169,7 +169,7 @@ qplot(speed, dist, data=cars) + geom_smooth()
 
 And this is what happens when this code is executed by R Studio. First, the command `library(ggplot2)` is executed, then a summary is produced with the `summary(cars)` command, and finally a plot is rendered using the command `qplot(speed, dist, data=cars) + geom_smooth()`.
 
-```{r, chunk_name, echo  = FALSE, fig.height = 3}
+```{r chunk_name, echo  = FALSE, fig.height = 3}
 library(ggplot2)
 summary(cars)
 qplot(speed, dist, data=cars) + geom_smooth()
