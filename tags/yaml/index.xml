@@ -28,8 +28,9 @@ Learning Objectives In this section of the course, you will create a single page
       <pubDate>Sat, 28 Mar 2020 02:13:50 +0000</pubDate>
       
       <guid>/data-curation/page/resources/</guid>
-      <description>This page contains quick access to valuable resources, categorized by language or tool including R Markdown, YAML, Markdown, Command Line Interface, CSS &amp;amp; HTML, MathJax.   General Learn X in Y minutes. Where X is a programming language. Tutorials available English, Spanish, and many other languages. Use the Highlight your language: button in the upper right corner to filter. Tutorials includes:
- R English (EN), R Espanol (ES). Markdown EN, Markdown ES.</description>
+      <description>This page is a work in progress and will be updated on the fly.
+ Pictoral Table of Contents.  R Markdown  R Markdown: The Definitive Guide. Title says it all. You should use this. A lot.
+  R Markdown Cookbook. Another must have. RStudio IDE Cheatsheet. An overview of the RStudio IDE. R Markdown Cheatsheet. A general R Markdown reference. Another R Markdown Cheatsheet. One more? There are a lot of cheatsheets.</description>
     </item>
     
   </channel>
