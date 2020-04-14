@@ -18,8 +18,7 @@
       <pubDate>Thu, 09 Apr 2020 21:13:14 -0500</pubDate>
       
       <guid>/data-curation/2020/04/09/lesson-2/</guid>
-      <description>R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more. Markdown allows documents to be simple and portable while R integration gives you the benefit of creating dynamic documents that contain your results (e.g., tables, graphics, and inline values). Results can be computed and rendered dynamically from R code and are more likely to be reproducible.
-Learning Objectives In this section of the course, you will create a single page R Markdown document and then turn that document into an HTML page.</description>
+      <description>Here is the link to the Practicals Page for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw .Rmd file on GitHub. The link is in the title of the page.  R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more.</description>
     </item>
     
     <item>
@@ -38,7 +37,7 @@ Learning Objectives In this section of the course, you will create a single page
       
       <guid>/data-curation/page/topics/</guid>
       <description> This page contains an outline of topics we will cover in this course and will updated often. As always, suggestions are welcome.   Please continue to work on your skills in CSS, HTML, and CLI. See the Self-Paced Tutorials for more information.
-   Lesson Topic Skills     L0 R Markdown example    L1 Setup IDE, Dev Tools, GitHub, RStudio   L1 Problem Solving Web search, GitHub, StackOverflow   L2 R Markdown Page YAML, Markdown, R Code chunks, inline R Code    R Markdown Page Tables, Figures    GitHub Submitting Issues &amp;amp; Requests, Pull Requests    Git &amp;amp; GitHub Git from the CLI, Creating &amp;amp; cloning a Repo, Push changes    Customization CSS style sheets, inline HTML code    R Markdown Site Take what you&amp;rsquo;ve learned and make a site    Archiving Data Figshare      Edit this page  </description>
+   Lesson Topic Skills     L0 R Markdown example    L1 Setup IDE, Dev Tools, GitHub, RStudio   L1 Problem Solving Web search, GitHub, StackOverflow   L2 R Markdown Page YAML, Markdown, R Code chunks, inline R Code   L2 R Markdown Page Tables, Figures   L3 GitHub Submitting Issues &amp;amp; Requests, Pull Requests   L3 Git &amp;amp; GitHub Git from the CLI, Creating &amp;amp; cloning a Repo, Push changes   L4 Customization CSS style sheets, inline HTML code   L4 R Markdown Site Take what you&amp;rsquo;ve learned and make a site    Archiving Data Figshare      Edit this page  </description>
     </item>
     
     <item>
