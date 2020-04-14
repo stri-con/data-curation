@@ -9,6 +9,9 @@ draft: true
 
 
 
+<p>{{% openbox %}}
+Here is the link to the <a href="https://stri-con.github.io/dc-single/index.html">Practicals Page</a> for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw <code>.Rmd</code> file on GitHub. The link is in the title of the page.
+{{% /openbox %}}</p>
 <p>R Markdown is a versatile framework for creating a range of <a href="https://rmarkdown.rstudio.com/gallery.html">high-quality documents</a> including HTML, PDF, presentations, books, websites, and more. Markdown allows documents to be simple and portable while R integration gives you the benefit of creating dynamic documents that contain your results (e.g., tables, graphics, and inline values). Results can be computed and rendered dynamically from R code and are more likely to be reproducible.</p>
 <div id="learning-objectives" class="section level2">
 <h2>Learning Objectives</h2>
@@ -100,11 +103,13 @@ output: html_document
 <blockquote>
 <p>A note on file naming <em>best practices</em>. You can save yourself a lot of trouble by following a few simple rules when naming files.</p>
 </blockquote>
+<p>Make sure your files are <strong><em>Machine readable</em></strong> and <strong><em>Human readable</em></strong>.</p>
 <ol style="list-style-type: decimal">
 <li><strong>Never</strong> use special characters in your file name (e.g., <code>* # : \ / &lt; &gt; | &quot; ? [ ] ; = + &amp; £ $</code>, and so on). Letters and numbers <strong>only</strong>. A lot of software will reject files that contain these symbols. Periods <code>.</code> should only be used for a file extension, like <code>document.html</code>.</li>
-<li><strong>Do not</strong> use spaces. If you need to separate words, use a dash (<code>-</code>) or an underscore (<code>_</code>). This is an exception to rule #1.</li>
-<li>Capitals are ok, but they can make autofill a pain. This is a matter of personal preference.</li>
-<li>Make the name meaningful. This is important when dealing with a lot of files, like for a website. But do not make the names super long either. Long file names mean long URLs, which can increase the likelihood of errors.</li>
+<li><strong>Do not</strong> use spaces. Separate words using a dash (<code>-</code>) or an underscore (<code>_</code>). This is an exception to rule #1.</li>
+<li>The file name should be meaningful. This is important when dealing with a lot of files, like for a website. So add relevant details.</li>
+<li>But do not make the names super long either. Long file names mean long URLs, which can increase the likelihood of errors.</li>
+<li>Capital letters are ok, but they can make autofill a pain. This is a matter of personal preference.</li>
 </ol>
 <p>Once you hit save, RStudio will render the document following the process <a href="#rendering-a-document-1">I described above</a>. Do you see any errors in the Console window? No? Good. What about a new <code>.html</code> document in the working directory? Yes? Also good. Double-click that file and it should open in your default browser. Does it look something like this?</p>
 {{% figure src="/data-curation/img/lesson-2/single-page.png" alt="Doc Window" %}}
@@ -251,20 +256,17 @@ cols(friend_pal)</code></pre>
 ls -lah
 ```</code></pre>
 <pre><code>## total 424
-## drwxr-xr-x  16 rad  staff   512B Apr 11 08:47 .
+## drwxr-xr-x  13 rad  staff   416B Apr 14 17:53 .
 ## drwxr-xr-x   6 rad  staff   192B Mar 31 11:38 ..
-## -rw-r--r--@  1 rad  staff   6.0K Apr  7 17:24 .DS_Store
+## -rw-r--r--@  1 rad  staff   6.0K Apr 14 17:46 .DS_Store
 ## -rw-r--r--   1 rad  staff     0B Apr  5 10:34 .Rhistory
 ## -rw-r--r--@  1 rad  staff    14K Apr  6 20:51 help.md
 ## -rw-r--r--@  1 rad  staff    15K Apr 11 06:02 lesson-0.Rmd
 ## -rw-r--r--   1 rad  staff    16K Apr 11 08:47 lesson-0.html
-## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_cache
-## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_files
 ## -rw-r--r--@  1 rad  staff    27K Apr 11 06:19 lesson-1.Rmd
 ## -rw-r--r--   1 rad  staff    29K Apr 11 08:47 lesson-1.html
-## drwxr-xr-x   3 rad  staff    96B Mar 30 08:47 lesson-1_files
-## -rw-r--r--@  1 rad  staff    36K Apr 11 08:46 lesson-2.Rmd
-## -rw-r--r--@  1 rad  staff    41K Apr 11 08:46 lesson-2.html
+## -rw-r--r--@  1 rad  staff    37K Apr 14 17:53 lesson-2.Rmd
+## -rw-r--r--@  1 rad  staff    41K Apr 14 17:52 lesson-2.html
 ## drwxr-xr-x   3 rad  staff    96B Apr  8 20:57 lesson-2_files
 ## -rw-r--r--@  1 rad  staff   4.2K Apr  1 08:59 rationale.md</code></pre>
 <p>By specifying a language, knitr was able to interpret the code and run the commands. And as you can see, I got a printout of the results right in the final document. Of course, in our case, we will mainly use the <code>r</code> language option. But you may want to explore the functionality of other languages in your own work.</p>

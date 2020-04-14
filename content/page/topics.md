@@ -22,11 +22,11 @@ Please continue to work on your skills in CSS, HTML, and CLI. See the [Self-Pace
 | L1      |  Setup                | IDE, Dev Tools, GitHub, RStudio                                 |
 | L1      |  Problem Solving      | Web search, GitHub, StackOverflow                               |
 | L2      |  R Markdown Page      | YAML, Markdown, R Code chunks, inline R Code                    |
-|         |  R Markdown Page      | Tables, Figures                                                 |
-|         |  GitHub               | Submitting Issues & Requests, Pull Requests                     |
-|         |  Git & GitHub         | Git from the CLI, Creating & cloning a Repo, Push changes       |
-|         |  Customization        | CSS style sheets, inline HTML code                              |
-|         |  R Markdown Site      | Take what you've learned and make a site                        |
+| L2      |  R Markdown Page      | Tables, Figures                                                 |
+| L3      |  GitHub               | Submitting Issues & Requests, Pull Requests                     |
+| L3      |  Git & GitHub         | Git from the CLI, Creating & cloning a Repo, Push changes       |
+| L4      |  Customization        | CSS style sheets, inline HTML code                              |
+| L4      |  R Markdown Site      | Take what you've learned and make a site                        |
 |         |  Archiving Data       | Figshare                                                        |
 
 

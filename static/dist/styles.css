@@ -71,11 +71,6 @@ ul li, ol li { margin: 0 0 6px; }
 ul li:last-of-type, ol li:last-of-type { margin-bottom: 0; }
 blockquote { border-left: 2px dotted #006ddb; margin: 40px 0; padding: 5px 30px; }
 blockquote p { font-size: 1.1em;color: #3C3B3B; display: block; font-style: normal; margin: 0; width: 100%; }
-/* Added this, from here....*/
-p.edit-page > p:first-child::before {margin-top: 1rem; }
-.edit-page {hyphens: auto; word-wrap: break-word; padding: 11px 0 12px; width: 100%;}
-.edit-page a { color: #006ddb; line-height: 1.7; text-transform: none; font-family: "source sans pro";}
-/* To here....*/
 img { display: block; margin: 40px 0 20px; width: auto; max-width: 100%; }
 img[src$="align-center"] { margin: auto; }
 img[src$="align-left"] { float: left; margin-right: 40px; }
@@ -231,3 +226,11 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
 figcaption{font-size: 0.8em;margin: 0 0 30px;line-height: 1.8em}
 ul {list-style-type: circle;}
 img.map, map area{outline: none;}
+.inline-svg {display: inline-block;height: 1rem;width: 1rem;top: 0.15rem;position: relative;color: #006ddb}
+.inline-svg span {font-family: "source sans pro"}
+
+/* Added this, from here....*/
+p.edit-page > p:first-child::before {margin-top: 1rem; }
+.edit-page {hyphens: auto; word-wrap: break-word; padding: 11px 0 12px; width: 100%;}
+.edit-page a { color: #006ddb; line-height: 1.7; text-transform: none; font-family: "source sans pro";}
+/* To here....*/

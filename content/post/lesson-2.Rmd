@@ -10,6 +10,10 @@ draft: true
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
+{{% openbox %}}
+Here is the link to the [Practicals Page](https://stri-con.github.io/dc-single/index.html) for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw `.Rmd` file on GitHub. The link is in the title of the page. 
+{{% /openbox %}}
+
 
 R Markdown is a versatile framework for creating a range of [high-quality documents](https://rmarkdown.rstudio.com/gallery.html) including HTML, PDF, presentations, books, websites, and more. Markdown allows documents to be simple and portable while R integration gives you the benefit of creating dynamic documents that contain your results (e.g., tables, graphics, and inline values). Results can be computed and rendered dynamically from R code and are more likely to be reproducible.
 
@@ -130,10 +134,13 @@ Go ahead and customize your YAML header with a name and title. Now hit the `knit
 
 > A note on file naming *best practices*. You can save yourself a lot of trouble by following a few simple rules when naming files.
 
+Make sure your files are ***Machine readable*** and ***Human readable***.
+
 1) **Never** use special characters in your file name (e.g., `* # : \ / < > | " ? [ ] ; = + & £ $`,  and so on). Letters and numbers **only**. A lot of software will reject files that contain these symbols. Periods `.` should only be used for a file extension, like `document.html`.
-2) **Do not** use spaces. If you need to separate words, use a dash (`-`) or an underscore (`_`). This is an exception to rule #1.
-3) Capitals are ok, but they can make autofill a pain. This is a matter of personal preference.
-4) Make the name meaningful. This is important when dealing with a lot of files, like for a website. But do not make the names super long either. Long file names mean long URLs, which can increase the likelihood of errors.
+2) **Do not** use spaces. Separate words using a dash (`-`) or an underscore (`_`). This is an exception to rule #1.
+3) The file name should be meaningful. This is important when dealing with a lot of files, like for a website. So add relevant details.
+4) But do not make the names super long either. Long file names mean long URLs, which can increase the likelihood of errors.
+5) Capital letters are ok, but they can make autofill a pain. This is a matter of personal preference.
 
 Once you hit save, RStudio will render the document following the process [I described above](#rendering-a-document-1). Do you see any errors in the Console window? No? Good. What about a new `.html` document in the working directory? Yes? Also good. Double-click that file and it should open in your default browser. Does it look something like this?
 
@@ -378,7 +385,7 @@ What I did here was create inline, mini code chunks by enclosing each command in
 
 You can even use inline code for quick calculations and render the results right in the text. The square root of 2 is `` `r
 sqrt(2)` ``
-renders as  The square root of 2 is `r sqrt(2)`. Running inline r code is super handy. 
+renders as  The square root of 2 is `r sqrt(2)`. Running inline r code is super handy.
 
 ## Ending Remarks
 

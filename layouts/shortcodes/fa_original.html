@@ -1,0 +1,11 @@
+<!-- Load fontawesome only once per page -->
+{{ if not (.Page.Scratch.Get "fontawesomeLoaded") }}
+  {{ .Page.Scratch.Set "fontawesomeLoaded" true }}
+  <script defer src="/all.js"></script>
+{{ end }}
+<p style="font-size: {{ .Get "font-size" }}; margin-top: 1rem;">
+  <a href="{{ .Get "link" }}">
+    <i class="fas fa-{{ .Get "icon" }}" aria-hidden="true"></i>
+    {{ .Get "text"}}
+  </a>
+</p>

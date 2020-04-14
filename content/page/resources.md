@@ -19,7 +19,7 @@ This page is a *work in progress* and will be updated on the fly.
 <area target="_top" alt="YAML" title="YAML" href="#yaml" coords="287,19,364,95" shape="rect">
 <area target="_top" alt="Markdown" title="Markdown" href="#markdown" coords="428,27,526,86" shape="rect">
 <area target="_top" alt="HTML &amp; CSS" title="HTML &amp; CSS" href="#css--html" coords="642,59,718,29,799,58,771,120,721,110,672,120" shape="poly">
-<area target="_top" alt="PanDoc" title="PanDoc" href="" coords="439,231,495,213,553,235,533,294,497,284,459,295" shape="poly">
+<area target="_top" alt="PanDoc" title="PanDoc" href="#pandoc" coords="439,231,495,213,553,235,533,294,497,284,459,295" shape="poly">
 <area target="_top" alt="knitr" title="knitr" href="" coords="288,222,328,199,370,222,371,267,329,291,289,271" shape="poly">
 <area target="_top" alt="Shiny" title="Shiny" href="" coords="529,126,570,104,613,128,613,172,572,197,530,176" shape="poly">
 <area target="_top" alt="R Markdown" title="R Markdown" href="#r-markdown" coords="374,127,415,99,455,124,456,172,414,193,372,172" shape="poly">
@@ -77,6 +77,9 @@ There are many similarities with the R Markdown references above.
 * [MDN web docs CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 * [MDN web docs HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference).
 
+## PanDoc
+
+* [Try Pandoc](https://pandoc.org/try/). Convert different input formats to various output formats using [PanDoc's](https://pandoc.org/) online tool.
 
 ## MathJax
 
