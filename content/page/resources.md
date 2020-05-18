@@ -48,6 +48,12 @@ There are many similarities with the R Markdown references above.
 * [Extended Markdown Syntax Reference](https://www.markdownguide.org/extended-syntax/) also from *[The Markdown Guide](https://www.markdownguide.org/)*.
 * [Interactive Markdown Tutorial](https://commonmark.org/help/tutorial/index.html) for beginners.
 * [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables). Tired of typing all of those hyphens and pipes?
+* [Character Entity Reference Chart](https://dev.w3.org/html5/html-author/charref) for coding special symblos in Markdown.
+
+### Markdown Editors
+
+* [MarkdownPad](http://markdownpad.com/) and [MarkdownPad 2](http://markdownpad.com/news/2013/introducing-markdownpad-2/) are full-featured Markdown editors for Windows.
+* [MacDown](https://macdown.uranusjr.com/) is an open source Markdown editor for macOS.
 
 ## YAML
 
@@ -86,6 +92,11 @@ There are many similarities with the R Markdown references above.
 * [MathJax Documentation](http://docs.mathjax.org/en/latest/). Extensive resource for anyone interested in MathJax.
 * [Basic tutorial & quick reference](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) from StackExchange. A bit old now but still good.
 * [LaTeX mathematics cheat sheet](https://davidhamann.de/2017/06/12/latex-cheat-sheet/) from David Hamann.
+
+## Licencing
+
+* [Choose an open source license](https://choosealicense.com/). A good place to start to help you figure out how to Licence your site.
+* 
 
 Even though this page has some resources, I think the puppy can stay.
 

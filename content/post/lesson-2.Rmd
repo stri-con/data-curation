@@ -1,7 +1,7 @@
 ---
 title: "Lesson 2: Single Page R Markdown 📃 Document"
 author: "Jarrod"
-date: 2020-04-09T21:13:14-05:00
+date: 2020-04-21T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "YAML", "R", "Markdown"]
 draft: true
@@ -10,8 +10,9 @@ draft: true
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
+
 {{% openbox %}}
-Here is the link to the [Practicals Page](https://stri-con.github.io/dc-single/index.html) for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw `.Rmd` file on GitHub. The link is in the title of the page. 
+Here is the link to the [Practicals Page](https://stri-con.github.io/dc-single/index.html) for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw `.Rmd` file on GitHub. The link is in the title of the Practicals Page. 
 {{% /openbox %}}
 
 

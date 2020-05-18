@@ -98,7 +98,11 @@ Now look at the [actual web version](https://istmobiome.github.io/DIGEST/Phylose
 
 > If you want to practice working in your new source code editor AND learn more HTML/CSS in the process, check out the [*Interneting is Hard*](/data-curation/page/tutorials/#html--css) tutorial by Oliver James linked in the HTML/CSS section on the Tutorials page (also linked in the navigation bar up top).
 
-### An Atom note from a Windows user
+### Atom
+
+If you decide to use Atom check out [the Atom manual](https://flight-manual.atom.io/getting-started/).
+
+#### A note from a Windows user
 
 Markdown syntax highlighting in Atom is done by package *markdown-language*. In order to have syntax highlighting working properly, check that this package is installed. Go to `Packages` > `Settings View` > `Install packages/Themes`, find `markdown-language` and install if needed. The markdown-language package highlights markdown syntax for GitHub, R and other. Another useful package is *markdown-preview*. It can open a rendered preview of a markdown file, just hit `ctrl` + `shift`+ `m`.
 

@@ -1,0 +1,38 @@
+---
+title: "Reproducibility"
+author: "Jarrod"
+date: 2020-04-15T21:13:14-05:00
+categories: ["R"]
+tags: ["reproducible", "YAML", "R", "Markdown"]
+draft: true
+---
+
+
+
+<p>{{% openbox %}}
+In this post I want to share some <em>best practices</em> for creating <strong>reproducible</strong> documents and workflows.
+{{% /openbox %}}</p>
+<div id="reproducibility" class="section level2">
+<h2>Reproducibility</h2>
+<p>I already made a case for <a href="/data-curation/2020/03/31/rationale/#transparency--reproducibility">why reproducible research is important</a>. So now lets define the term and see if we can’t come up with a set of criteria that encompasses its meaning. <em>Reproducibility</em> …</p>
+<blockquote>
+<p>{{% fa icon=quote-left size=1.25em %}} … [is a] set of procedures that permit the reader of a paper to see the entire processing trail from the raw data and code to figures and tables <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. {{% fa icon=quote-right size=1.25em %}}</p>
+</blockquote>
+<p>Or according to the U.S. National Science Foundation (NSF)…</p>
+<blockquote>
+<p>{{% fa icon=quote-left size=1.25em %}} … refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. {{% fa icon=quote-right size=1.25em %}}</p>
+</blockquote>
+<p>These are straightforward, yet broad, definitions. For example, we could apply these definitions to laboratoratoy techniques, field sampling methods, and so on. Rather than trying to cover all forms of reproducible research, lets focus on steps we can take to make the <em>data</em> portion of our science reproducible. Basically, we are ignoring <em>how</em> we got the data and instead focusing on <em>what</em> we did with the data. Some of the material presented here has been covered in previous lessons but I would like to capture all of these ideas in one place; so please pardon the repetition. These are <em>best practices</em> recommendations and it is up to you whether or not to implement them.</p>
+</div>
+<div id="document" class="section level2">
+<h2>Document</h2>
+{{% edit "https://github.com/stri-con/data-curation/blob/master/content/post/reproducibility.Rmd" %}}
+{{% anchor %}}
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><em>from <a href="https://doi.org/10.1126/scitranslmed.aaf5027">What does research reproducibility mean?</a> by Goodman, Fanelli &amp; Ioannidis. Science Translational Medicine (2016) 8:341ps12</em><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p><em>from <a href="https://www.nsf.gov/sbe/AC_Materials/SBE_Robust_and_Reliable_Research_Report.pdf">Social, Behavioral, and Economic Sciences Perspectives on Robust and Reliable Science</a> by Bollen, Cacioppo, Kaplan, Krosnick, &amp; Olds. (2015) National Science Foundation, Arlington, VA, USA.</em><a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

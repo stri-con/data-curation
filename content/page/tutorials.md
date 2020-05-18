@@ -57,6 +57,8 @@ In this section, I will add other tutorials you can explore on your own time for
 
 [Learn X in Y minutes](https://learnxinyminutes.com/). Where `X` is a programming language. Beginner tutorials available English, Spanish, and many other languages. Use the *Highlight your language:* button in the upper right corner to filter. I highlight some in the sections below.
 
+[80+ Ways to Learn to Code for Free in 2020](https://skillcrush.com/blog/64-online-resources-to-learn-to-code-for-free/). 
+
 ### HTML/CSS
 
 From Learn X in Y minutes, [CSS in English (EN)](https://learnxinyminutes.com/docs/css/) (no ES CSS available), [HTML in English (EN)](https://learnxinyminutes.com/docs/html/), and [HTML in Espanol (ES)](https://learnxinyminutes.com/docs/es-es/html-es/).

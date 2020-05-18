@@ -1,4 +1,4 @@
-<span class="inline-svg" >
+<span class="inline-svg" style="width: {{ .Get "size" }};">
   <a style="white-space: nowrap;" href="{{ .Get "link" }}">
     {{- $fname:=print "fontawesome/" ( .Get "icon" ) ".svg" -}}
     {{- $path:="<path" -}}

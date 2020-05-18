@@ -1,0 +1,35 @@
+---
+title: "Practical Exercises"
+author: "Jarrod"
+date: 2020-05-01T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "YAML", "R", "Markdown"]
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+{{% openbox %}}
+This page provides quick links to the Practical Exercises---the hands-on learning portion of the course. These exercises are written entirely in R Markdown, as opposed to the course website, which contains Hugo, CSS, and HTML code. Because I want you to work in pure R Markdown, I created separate pages for the exercises. The look and feel of these pages are different than the main course website. What this means is that you should be able to implement anything you see on the Practical Pages in your own documents using only R Markdown. The raw code for each lesson is available on the linked GitHub repo.
+{{% /openbox %}}
+
+## Lesson 2: Single page R Markdown Document
+
+The webpage for this lesson can be found [here](https://stri-con.github.io/dc-single/index.html) and the GitHub repo for the lesson can be found [here](https://github.com/stri-con/dc-single). Individual assignments and code blocks are linked below.
+
+* [Assignment 1: The Basics](https://stri-con.github.io/dc-single/index.html#assignment_1:_the_basics) and the [code](https://github.com/stri-con/dc-single/blob/6006778be1e15e100e71576f4c181ecdf74a82a2/index.Rmd#L64) on GitHub. Posted Tuesday April 14, 2020.
+* [Assignment 2: Tables](https://stri-con.github.io/dc-single/index.html#assignment_2:_tables)  and the [code](https://github.com/stri-con/dc-single/blob/6006778be1e15e100e71576f4c181ecdf74a82a2/index.Rmd#L138) on GitHub. Posted Thursday April 16, 2020. 
+* [Assignment 3: Code](https://stri-con.github.io/dc-single/index.html#assignment_3:_code)  and the [code](https://github.com/stri-con/dc-single/blob/6006778be1e15e100e71576f4c181ecdf74a82a2/index.Rmd#L362) on GitHub. Posted Wednesday April 22, 2020.
+* [Assignment 4: Graphics](https://stri-con.github.io/dc-single/index.html#assignment_4:_graphics)  and the [code](https://github.com/stri-con/dc-single/blob/6006778be1e15e100e71576f4c181ecdf74a82a2/index.Rmd#L478) on GitHub. Posted Saturday May 16, 2020.
+
+This page will be updated as new lessons and assignments are added. 
+
+```{r, echo=FALSE}
+blogdown::shortcode('edit', 'https://github.com/stri-con/data-curation/blob/master/content/post/practicals.Rmd')
+```
+
+```{r, echo=FALSE}
+blogdown::shortcode('anchor')
+```
