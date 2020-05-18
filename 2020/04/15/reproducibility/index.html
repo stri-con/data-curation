@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reproducibility &middot; STRI-CON</title>
+        <meta name="description" content="In this post I want to share some best practices for creating reproducible documents and workflows.  Reproducibility I already made a case for why reproducible research is important. So now lets define the term and see if we can’t come up with a set of criteria that encompasses its meaning. Reproducibility …
+      … [is a] set of procedures that permit the reader of a paper to see the entire processing trail from the raw data and code to figures and tables 1.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.67.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Reproducibility">
+<meta property="og:description" content="In this post I want to share some best practices for creating reproducible documents and workflows.  Reproducibility I already made a case for why reproducible research is important. So now lets define the term and see if we can’t come up with a set of criteria that encompasses its meaning. Reproducibility …
+      … [is a] set of procedures that permit the reader of a paper to see the entire processing trail from the raw data and code to figures and tables 1.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/data-curation/2020/04/15/reproducibility/">
+        <link rel="stylesheet" href="/data-curation/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Lessons &amp; Readings" href="/data-curation/">Lessons &amp; Readings</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/data-curation/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/stri-con/data-curation" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="HOME" href="/data-curation/">HOME</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Description" href="/data-curation/page/about/">Course Description</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Topics" href="/data-curation/page/topics/">Course Topics</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Self-Paced Tutorials" href="/data-curation/page/tutorials/">Self-Paced Tutorials</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Course Resources" href="/data-curation/page/resources/">Course Resources</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Reproducibility</h1>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2020-04-15" itemprop="datePublished">Wed, Apr 15, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://google.com/&#43;XXX" itemprop="url" rel="author">Jarrod</a>
+            </span>
+        </span>
+    </p>
+    
+        <p class="post-reading post-line">
+            <span>Estimated reading time: 2 min</span>
+        </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+      <div itemid="articleBody">
+        
+
+
+<p><div id="openbox" class="container"style="color:#141414;font-size:0.95em;background-color:#f5f5f5;border-color:#7c7c7cFF;border-radius:7px;margin:0rem 0 2rem 0;padding:1rem 0 1rem 0;border-width:1px;border-color:#141414;border-style:solid;">
+       <p style="margin:1rem 2rem 1rem 2rem;">
+         In this post I want to share some <em>best practices</em> for creating <strong>reproducible</strong> documents and workflows.
+       </p>
+</div>
+</p>
+<div id="reproducibility" class="section level2">
+<h2>Reproducibility</h2>
+<p>I already made a case for <a href="/data-curation/2020/03/31/rationale/#transparency--reproducibility">why reproducible research is important</a>. So now lets define the term and see if we can’t come up with a set of criteria that encompasses its meaning. <em>Reproducibility</em> …</p>
+<blockquote>
+<p><span class="inline-svg" style="width: 1.25em;">
+  <a style="white-space: nowrap;" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
+    <span>
+      
+    </span>
+  </a>
+</span>
+ … [is a] set of procedures that permit the reader of a paper to see the entire processing trail from the raw data and code to figures and tables <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. <span class="inline-svg" style="width: 1.25em;">
+  <a style="white-space: nowrap;" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg>
+    <span>
+      
+    </span>
+  </a>
+</span>
+</p>
+</blockquote>
+<p>Or according to the U.S. National Science Foundation (NSF)…</p>
+<blockquote>
+<p><span class="inline-svg" style="width: 1.25em;">
+  <a style="white-space: nowrap;" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
+    <span>
+      
+    </span>
+  </a>
+</span>
+ … refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. <span class="inline-svg" style="width: 1.25em;">
+  <a style="white-space: nowrap;" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg>
+    <span>
+      
+    </span>
+  </a>
+</span>
+</p>
+</blockquote>
+<p>These are straightforward, yet broad, definitions. For example, we could apply these definitions to laboratoratoy techniques, field sampling methods, and so on. Rather than trying to cover all forms of reproducible research, lets focus on steps we can take to make the <em>data</em> portion of our science reproducible. Basically, we are ignoring <em>how</em> we got the data and instead focusing on <em>what</em> we did with the data. Some of the material presented here has been covered in previous lessons but I would like to capture all of these ideas in one place; so please pardon the repetition. These are <em>best practices</em> recommendations and it is up to you whether or not to implement them.</p>
+</div>
+<div id="document" class="section level2">
+<h2>Document</h2>
+<p class="edit-page">
+  <a href="https://github.com/stri-con/data-curation/blob/master/content/post/reproducibility.Rmd">
+    <i class="fa fa-pencil" aria-hidden="true"></i> Edit this page
+  </a>
+</p>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.js'></script>
+<script>
+    anchors.add();
+</script>
+
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><em>from <a href="https://doi.org/10.1126/scitranslmed.aaf5027">What does research reproducibility mean?</a> by Goodman, Fanelli &amp; Ioannidis. Science Translational Medicine (2016) 8:341ps12</em><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p><em>from <a href="https://www.nsf.gov/sbe/AC_Materials/SBE_Robust_and_Reliable_Research_Report.pdf">Social, Behavioral, and Economic Sciences Perspectives on Robust and Reliable Science</a> by Bollen, Cacioppo, Kaplan, Krosnick, &amp; Olds. (2015) National Science Foundation, Arlington, VA, USA.</em><a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+      </div>
+    
+</div>
+
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/data-curation/tags/reproducible/">reproducible</a>, 
+            
+                <a href="/data-curation/tags/yaml/">YAML</a>, 
+            
+                <a href="/data-curation/tags/r/">R</a>, 
+            
+                <a href="/data-curation/tags/markdown/">Markdown</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+
+        
+
+        
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Lessons &amp; Readings" href="/data-curation/">Lessons &amp; Readings</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; metacrobe 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span>
+                      Wriiten in <a href="https://rmarkdown.rstudio.com/">R Markdown </a> & created using 
+                      <a href="https://bookdown.org/yihui/blogdown/">blogdown.</a>
+                      </span> <br/>
+                    <span>
+                      Modified from the <a href="https://github.com/roryg/ghostwriter">Ghostwriter </a> theme
+                      by <a href="http://jollygoodthemes.com">JollyGoodThemes</a>
+                      <a href="https://github.com/jbub/ghostwriter">itself </a> Ported
+                      to Hugo By <a href="https://github.com/jbub">jbub</a>
+                    </span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/data-curation/js/jquery-1.11.3.min.js"></script>
+        <script src="/data-curation/js/jquery.fitvids.js"></script>
+
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+
+        <script src="/data-curation/js/scripts.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    </body>
+</html>
+

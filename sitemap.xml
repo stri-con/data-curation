@@ -3,43 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/data-curation/2020/04/09/lesson-2/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/data-curation/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/tags/markdown/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/post/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/2020/05/01/practicals/</loc>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/tags/r/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/tags/r-markdown/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/tags/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/data-curation/tags/yaml/</loc>
-    <lastmod>2020-04-09T21:13:14-05:00</lastmod>
+    <lastmod>2020-05-01T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/2020/04/21/lesson-2/</loc>
+    <lastmod>2020-04-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/2020/04/15/reproducibility/</loc>
+    <lastmod>2020-04-15T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/data-curation/tags/reproducible/</loc>
+    <lastmod>2020-04-15T21:13:14-05:00</lastmod>
   </url>
   
   <url>

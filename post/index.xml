@@ -7,18 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Thu, 09 Apr 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/data-curation/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Lesson 2: Single Page R Markdown 📃 Document</title>
-      <link>/data-curation/2020/04/09/lesson-2/</link>
-      <pubDate>Thu, 09 Apr 2020 21:13:14 -0500</pubDate>
+      <title>Practical Exercises</title>
+      <link>/data-curation/2020/05/01/practicals/</link>
+      <pubDate>Fri, 01 May 2020 21:13:14 -0500</pubDate>
       
-      <guid>/data-curation/2020/04/09/lesson-2/</guid>
-      <description>Here is the link to the Practicals Page for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw .Rmd file on GitHub. The link is in the title of the page.  R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more.</description>
+      <guid>/data-curation/2020/05/01/practicals/</guid>
+      <description>This page provides quick links to the Practical Exercises—the hands-on learning portion of the course. These exercises are written entirely in R Markdown, as opposed to the course website, which contains Hugo, CSS, and HTML code. Because I want you to work in pure R Markdown, I created separate pages for the exercises. The look and feel of these pages are different than the main course website. What this means is that you should be able to implement anything you see on the Practical Pages in your own documents using only R Markdown.</description>
+    </item>
+    
+    <item>
+      <title>Lesson 2: Single Page R Markdown 📃 Document</title>
+      <link>/data-curation/2020/04/21/lesson-2/</link>
+      <pubDate>Tue, 21 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/04/21/lesson-2/</guid>
+      <description>Here is the link to the Practicals Page for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw .Rmd file on GitHub. The link is in the title of the Practicals Page.  R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more.</description>
+    </item>
+    
+    <item>
+      <title>Reproducibility</title>
+      <link>/data-curation/2020/04/15/reproducibility/</link>
+      <pubDate>Wed, 15 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/2020/04/15/reproducibility/</guid>
+      <description>In this post I want to share some best practices for creating reproducible documents and workflows.  Reproducibility I already made a case for why reproducible research is important. So now lets define the term and see if we can’t come up with a set of criteria that encompasses its meaning. Reproducibility …
+      … [is a] set of procedures that permit the reader of a paper to see the entire processing trail from the raw data and code to figures and tables 1.</description>
     </item>
     
     <item>

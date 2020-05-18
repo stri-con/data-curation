@@ -13,7 +13,7 @@
         <meta property="og:title" content="Lesson 2: Single Page R Markdown 📃 Document">
 <meta property="og:description" content="Here is the link to the Practicals Page for Lesson 2. I will add new assignments every day or so to help you create a single page document. For now you can find the raw .Rmd file on GitHub. The link is in the title of the Practicals Page.  R Markdown is a versatile framework for creating a range of high-quality documents including HTML, PDF, presentations, books, websites, and more.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/data-curation/2020/04/09/lesson-2/">
+<meta property="og:url" content="/data-curation/2020/04/21/lesson-2/">
         <link rel="stylesheet" href="/data-curation/dist/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -85,7 +85,7 @@
     <h1 class="post-title" itemprop="name headline">Lesson 2: Single Page R Markdown 📃 Document</h1>
     
     <p class="post-date">
-        <span>Published <time datetime="2020-04-09" itemprop="datePublished">Thu, Apr 9, 2020</time></span>
+        <span>Published <time datetime="2020-04-21" itemprop="datePublished">Tue, Apr 21, 2020</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -395,25 +395,27 @@ cols(friend_pal)</code></pre>
 <pre><code>```{bash}
 ls -lah
 ```</code></pre>
-<pre><code>## total 440
-## drwxr-xr-x  18 rad  staff   576B Apr 28 11:42 .
+<pre><code>## total 456
+## drwxr-xr-x  20 rad  staff   640B May 18 08:15 .
 ## drwxr-xr-x   6 rad  staff   192B Mar 31 11:38 ..
 ## -rw-r--r--@  1 rad  staff   6.0K Apr 14 17:46 .DS_Store
 ## -rw-r--r--   1 rad  staff     0B Apr  5 10:34 .Rhistory
 ## -rw-r--r--@  1 rad  staff    14K Apr  6 20:51 help.md
 ## -rw-r--r--@  1 rad  staff    15K Apr 11 06:02 lesson-0.Rmd
-## -rw-r--r--   1 rad  staff    16K Apr 28 11:42 lesson-0.html
+## -rw-r--r--   1 rad  staff    16K May 18 08:15 lesson-0.html
 ## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_cache
 ## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_files
 ## -rw-r--r--@  1 rad  staff    27K Apr 20 07:24 lesson-1.Rmd
-## -rw-r--r--   1 rad  staff    29K Apr 28 11:42 lesson-1.html
+## -rw-r--r--@  1 rad  staff    29K May 18 08:15 lesson-1.html
 ## drwxr-xr-x   3 rad  staff    96B Mar 30 08:47 lesson-1_files
-## -rw-r--r--@  1 rad  staff    37K Apr 15 06:27 lesson-2.Rmd
-## -rw-r--r--@  1 rad  staff    41K Apr 15 06:27 lesson-2.html
+## -rw-r--r--@  1 rad  staff    36K May 18 07:54 lesson-2.Rmd
+## -rw-r--r--@  1 rad  staff    41K May 18 07:54 lesson-2.html
 ## drwxr-xr-x   3 rad  staff    96B Apr  8 20:57 lesson-2_files
+## -rw-r--r--@  1 rad  staff   2.4K May 18 08:13 practicals.Rmd
+## -rw-r--r--   1 rad  staff   2.5K May 18 08:13 practicals.html
 ## -rw-r--r--@  1 rad  staff   4.2K Apr  1 08:59 rationale.md
 ## -rw-r--r--@  1 rad  staff   2.6K Apr 15 11:15 reproducibility.Rmd
-## -rw-r--r--   1 rad  staff   3.0K Apr 15 11:15 reproducibility.html</code></pre>
+## -rw-r--r--   1 rad  staff   3.0K May 18 07:54 reproducibility.html</code></pre>
 <p>By specifying a language, knitr was able to interpret the code and run the commands. And as you can see, I got a printout of the results right in the final document. Of course, in our case, we will mainly use the <code>r</code> language option. But you may want to explore the functionality of other languages in your own work.</p>
 <ol start="3" style="list-style-type: decimal">
 <li><strong>Chunk name</strong>: The name <strong>must be unique</strong>, it needs to come right after the language variable, and it must be separated by a space.</li>

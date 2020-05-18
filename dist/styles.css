@@ -226,7 +226,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
 figcaption{font-size: 0.8em;margin: 0 0 30px;line-height: 1.8em}
 ul {list-style-type: circle;}
 img.map, map area{outline: none;}
-.inline-svg {display: inline-block;height: 1rem;width: 1rem;top: 0.15rem;position: relative;color: #006ddb}
+.inline-svg {display: inline-block;top: 0.15rem;position: relative;color: #006ddb}
 .inline-svg span {font-family: "source sans pro"}
 
 /* Added this, from here....*/

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>STRI-CON</copyright>
-    <lastBuildDate>Thu, 09 Apr 2020 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/data-curation/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Markdown</title>
       <link>/data-curation/tags/markdown/</link>
-      <pubDate>Thu, 09 Apr 2020 21:13:14 -0500</pubDate>
+      <pubDate>Fri, 01 May 2020 21:13:14 -0500</pubDate>
       
       <guid>/data-curation/tags/markdown/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>R</title>
       <link>/data-curation/tags/r/</link>
-      <pubDate>Thu, 09 Apr 2020 21:13:14 -0500</pubDate>
+      <pubDate>Fri, 01 May 2020 21:13:14 -0500</pubDate>
       
       <guid>/data-curation/tags/r/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>R Markdown</title>
       <link>/data-curation/tags/r-markdown/</link>
-      <pubDate>Thu, 09 Apr 2020 21:13:14 -0500</pubDate>
+      <pubDate>Fri, 01 May 2020 21:13:14 -0500</pubDate>
       
       <guid>/data-curation/tags/r-markdown/</guid>
       <description></description>
@@ -42,9 +42,18 @@
     <item>
       <title>YAML</title>
       <link>/data-curation/tags/yaml/</link>
-      <pubDate>Thu, 09 Apr 2020 21:13:14 -0500</pubDate>
+      <pubDate>Fri, 01 May 2020 21:13:14 -0500</pubDate>
       
       <guid>/data-curation/tags/yaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reproducible</title>
+      <link>/data-curation/tags/reproducible/</link>
+      <pubDate>Wed, 15 Apr 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/data-curation/tags/reproducible/</guid>
       <description></description>
     </item>
     
