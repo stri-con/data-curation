@@ -91,11 +91,11 @@ output: html_document
 <p>This is the YAML header of the R Markdown document you just created. As you can see, the format is simple. R Markdown took the information I provided in the set-up window and populated the header with some basic YAML metadata. Each line has a YAML argument followed by a colon <code>:</code> and then a property. Any information you put in the YAML header must be in this form; however, you can include comments by using a hashtag (<code>#</code>) at the beginning of a line.</p>
 <p>Notice that some of the properties, like the name of the <code>author</code> or the <code>title</code> of the document, are in quotes, while the property for the <code>output</code> is not in quotes. Why is this the case? Good question. For the sake of explanation, let me categorize properties into two classes—<em>variables</em> and <em>operators</em>.</p>
 <ol style="list-style-type: decimal">
-<li><strong>Variables</strong>: A variable can be any string you want (a string is just a sequence of characters). For example, I could set the property of the <code>author</code> argument like this <code>author:&quot;Iamtheauthorofthispaperhearmeroar&quot;</code>. For arguments like <code>author</code>, <code>title</code>, etc., PanDoc doesn’t care what property you set. It knows these arguments can take pretty much any string you pass it.</li>
+<li><strong>Variables</strong>: A variable can be any string you want (a string is just a sequence of characters). For example, I could set the property of the <code>author</code> argument like this <code>author:"Iamtheauthorofthispaperhearmeroar"</code>. For arguments like <code>author</code>, <code>title</code>, etc., PanDoc doesn’t care what property you set. It knows these arguments can take pretty much any string you pass it.</li>
 <li><strong>Operators</strong>: Think of an operator like a choice. The <code>output</code> argument here is set to <code>output: html_document</code>. The property <code>html_document</code> is one of the <a href="https://rmarkdown.rstudio.com/lesson-9.html/#documents">choices</a> you have for this argument. If you enter a property that is not in the list of choices, you will get an error, and your document will not render. Like <code>output: cold_beer</code> may work in some situations but not in our YAML header.</li>
 </ol>
 <p>The convention is that <em>variable</em> properties are enclosed in quotes and <em>operator</em> properties are not. The argument itself is never quoted.</p>
-<p>Now that I told you all of this, I also need to tell you that <em>most</em> of the time, quotes for variable properties are optional. However, putting variable properties in quotes allows you to include special or reserved characters in your string. For example, let’s say you want to set the <code>author</code> property to your Twitter handle, <code>@cool_coder</code> (I think this handle is available :). The <code>@</code> sign at the beginning of a string has a special meaning for PanDoc. If you do not put this string in quotes, you will get an error and your document will not render. By writing the option like this—<code>author: &quot;@cool_coder&quot;</code>—with the property in quotes, you can use the <code>@</code> sign and everything works fine. There is a lot of confusion on the Web about when to include quotes and when not to. My <em>best practice</em> advice is to always use quotes with variable properties. Symfony has a pretty good <a href="https://symfony.com/doc/current/components/yaml/yaml_format.html#strings">breakdown</a> of quote usage in variable strings.</p>
+<p>Now that I told you all of this, I also need to tell you that <em>most</em> of the time, quotes for variable properties are optional. However, putting variable properties in quotes allows you to include special or reserved characters in your string. For example, let’s say you want to set the <code>author</code> property to your Twitter handle, <code>@cool_coder</code> (I think this handle is available :). The <code>@</code> sign at the beginning of a string has a special meaning for PanDoc. If you do not put this string in quotes, you will get an error and your document will not render. By writing the option like this—<code>author: "@cool_coder"</code>—with the property in quotes, you can use the <code>@</code> sign and everything works fine. There is a lot of confusion on the Web about when to include quotes and when not to. My <em>best practice</em> advice is to always use quotes with variable properties. Symfony has a pretty good <a href="https://symfony.com/doc/current/components/yaml/yaml_format.html#strings">breakdown</a> of quote usage in variable strings.</p>
 <p>{{% todo %}}</p>
 <p>Go ahead and customize your YAML header with a name and title. Now hit the <code>knit</code> button just above the text editor window. There is a little dropdown menu that lets you select the type of document to produce, but since you have already specified <code>output: html_document</code>, you can just hit the button. RStudio will prompt you to save the document. <strong>Do not</strong> add a file extension. RStudio just needs a <em>root</em> name.</p>
 <div id="file-naming" class="section level4">
@@ -105,7 +105,7 @@ output: html_document
 </blockquote>
 <p>Make sure your files are <strong><em>Machine readable</em></strong> and <strong><em>Human readable</em></strong>.</p>
 <ol style="list-style-type: decimal">
-<li><strong>Never</strong> use special characters in your file name (e.g., <code>* # : \ / &lt; &gt; | &quot; ? [ ] ; = + &amp; £ $</code>, and so on). Letters and numbers <strong>only</strong>. A lot of software will reject files that contain these symbols. Periods <code>.</code> should only be used for a file extension, like <code>document.html</code>.</li>
+<li><strong>Never</strong> use special characters in your file name (e.g., <code>* # : \ / &lt; &gt; | " ? [ ] ; = + &amp; £ $</code>, and so on). Letters and numbers <strong>only</strong>. A lot of software will reject files that contain these symbols. Periods <code>.</code> should only be used for a file extension, like <code>document.html</code>.</li>
 <li><strong>Do not</strong> use spaces. Separate words using a dash (<code>-</code>) or an underscore (<code>_</code>). This is an exception to rule #1.</li>
 <li>The file name should be meaningful. This is important when dealing with a lot of files, like for a website. So add relevant details.</li>
 <li>But do not make the names super long either. Long file names mean long URLs, which can increase the likelihood of errors.</li>
@@ -256,26 +256,26 @@ cols(friend_pal)</code></pre>
 ls -lah
 ```</code></pre>
 <pre><code>## total 456
-## drwxr-xr-x  20 rad  staff   640B May 18 08:15 .
+## drwxr-xr-x  20 rad  staff   640B Sep 12 08:33 .
 ## drwxr-xr-x   6 rad  staff   192B Mar 31 11:38 ..
 ## -rw-r--r--@  1 rad  staff   6.0K Apr 14 17:46 .DS_Store
 ## -rw-r--r--   1 rad  staff     0B Apr  5 10:34 .Rhistory
 ## -rw-r--r--@  1 rad  staff    14K Apr  6 20:51 help.md
-## -rw-r--r--@  1 rad  staff    15K Apr 11 06:02 lesson-0.Rmd
-## -rw-r--r--   1 rad  staff    16K May 18 08:15 lesson-0.html
+## -rw-r--r--@  1 rad  staff    15K Aug  6 08:34 lesson-0.Rmd
+## -rw-r--r--@  1 rad  staff    16K Sep 12 08:33 lesson-0.html
 ## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_cache
 ## drwxr-xr-x   4 rad  staff   128B Mar 30 05:10 lesson-0_files
 ## -rw-r--r--@  1 rad  staff    27K Apr 20 07:24 lesson-1.Rmd
-## -rw-r--r--@  1 rad  staff    29K May 18 08:15 lesson-1.html
+## -rw-r--r--@  1 rad  staff    29K Sep 12 08:33 lesson-1.html
 ## drwxr-xr-x   3 rad  staff    96B Mar 30 08:47 lesson-1_files
 ## -rw-r--r--@  1 rad  staff    36K May 18 07:54 lesson-2.Rmd
-## -rw-r--r--@  1 rad  staff    41K May 18 07:54 lesson-2.html
+## -rw-r--r--@  1 rad  staff    42K May 18 08:15 lesson-2.html
 ## drwxr-xr-x   3 rad  staff    96B Apr  8 20:57 lesson-2_files
-## -rw-r--r--@  1 rad  staff   2.4K May 18 08:13 practicals.Rmd
-## -rw-r--r--   1 rad  staff   2.5K May 18 08:13 practicals.html
+## -rw-r--r--@  1 rad  staff   2.4K May 18 08:15 practicals.Rmd
+## -rw-r--r--   1 rad  staff   2.5K May 18 08:15 practicals.html
 ## -rw-r--r--@  1 rad  staff   4.2K Apr  1 08:59 rationale.md
 ## -rw-r--r--@  1 rad  staff   2.6K Apr 15 11:15 reproducibility.Rmd
-## -rw-r--r--   1 rad  staff   3.0K May 18 07:54 reproducibility.html</code></pre>
+## -rw-r--r--@  1 rad  staff   3.0K May 18 08:15 reproducibility.html</code></pre>
 <p>By specifying a language, knitr was able to interpret the code and run the commands. And as you can see, I got a printout of the results right in the final document. Of course, in our case, we will mainly use the <code>r</code> language option. But you may want to explore the functionality of other languages in your own work.</p>
 <ol start="3" style="list-style-type: decimal">
 <li><strong>Chunk name</strong>: The name <strong>must be unique</strong>, it needs to come right after the language variable, and it must be separated by a space.</li>

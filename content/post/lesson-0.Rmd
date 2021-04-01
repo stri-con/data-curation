@@ -283,21 +283,21 @@ And now we plot the results and save a `png` copy just in case. With so many ite
 
 ```{r, clifford_plot, cache=TRUE}
 ggplot(df, aes(x, y)) +
-  geom_point(color="#007da2", shape=46, alpha=.01) +
+  geom_point(color = "#007da2", shape = 46, alpha = .01) +
   opt +
   theme(panel.background = element_rect(fill = '#ffffff'))
 ```
 
 ```{r, clifford_plot_save, cache=TRUE, echo = FALSE, eval=FALSE}
-png("files/clifford_fac015.png", units="px", width=1600,
-         height=1600, res=100)
+png("files/clifford_fac015.png", units = "px", width = 1600,
+         height = 1600, res = 100)
 
 dev.off()
 ```
 
 Amazing what a couple of simple trigonometric functions iterated 10,000,000 times can do.
 
-If you have regular old R installed, try running the scipt which is available to download here: [Clifford code](/data-curation/files/lesson-0-clifford.R). There is a small description on the top. You may need to install some libraries.
+If you have regular old R installed, try running the script which is available to download here: [Clifford code](/data-curation/files/lesson-0-clifford.R). There is a small description on the top. You may need to install some libraries.
 
 And that's it for this mini lesson. The next lesson will focus primarily on setting up your working environment. This mainly entails installing the tools and libraries we will need throughout the course. Others  will be added as needed. I will also post a general course outline soon.
 
